@@ -1,0 +1,556 @@
+{
+  "meta": {
+    "app": "Brújula360 Intelligence Hub",
+    "empresa": "360educa",
+    "autora": "C.P. Maribel Vázquez Menchaca",
+    "version": "1.1.0",
+    "ultimaActualizacion": "2026-01-23"
+  },
+  "organismos": {
+    "FATF": {
+      "nombre": "FATF / GAFI",
+      "categoria": "internacional",
+      "sede": "París, Francia",
+      "objetivo": "Establece estándares internacionales AML/CFT. Emite las 40 Recomendaciones y evalúa países mediante evaluaciones mutuas.",
+      "web": "fatf-gafi.org",
+      "color": "#1e3a5f",
+      "icon": "🌐"
+    },
+    "UNODC": {
+      "nombre": "UNODC",
+      "categoria": "internacional",
+      "sede": "Viena, Austria",
+      "objetivo": "Combate drogas, crimen organizado y terrorismo. Publica informes sobre flujos financieros ilícitos y tipologías.",
+      "web": "unodc.org",
+      "color": "#2c5530",
+      "icon": "⚖️"
+    },
+    "EGMONT": {
+      "nombre": "Egmont Group",
+      "categoria": "internacional",
+      "sede": "Toronto, Canadá",
+      "objetivo": "Red de 166 UIFs del mundo. Facilita intercambio de inteligencia financiera y cooperación internacional.",
+      "web": "egmontgroup.org",
+      "color": "#4a3f6b",
+      "icon": "🔗"
+    },
+    "BANCO_MUNDIAL": {
+      "nombre": "Banco Mundial",
+      "categoria": "internacional",
+      "sede": "Washington D.C., EE.UU.",
+      "objetivo": "Evalúa regímenes AML/CFT, brinda asistencia técnica y financia proyectos de fortalecimiento institucional.",
+      "web": "worldbank.org",
+      "color": "#0066b3",
+      "icon": "🏦"
+    },
+    "WOLFSBERG": {
+      "nombre": "Wolfsberg Group",
+      "categoria": "internacional",
+      "sede": "Consorcio de 13 bancos globales",
+      "objetivo": "Desarrolla mejores prácticas para banca privada, corresponsalía, KYC y monitoreo de transacciones.",
+      "web": "wolfsberg-group.org",
+      "color": "#1a1a2e",
+      "icon": "🏛️"
+    },
+    "GAFILAT": {
+      "nombre": "GAFILAT",
+      "categoria": "internacional",
+      "sede": "Buenos Aires, Argentina",
+      "objetivo": "FATF regional para Latinoamérica. Realiza evaluaciones mutuas y tipologías regionales AML/CFT.",
+      "web": "gafilat.org",
+      "color": "#8b4513",
+      "icon": "🌎"
+    },
+    "OFAC": {
+      "nombre": "OFAC",
+      "categoria": "internacional",
+      "sede": "Washington D.C., EE.UU.",
+      "objetivo": "Administra sanciones económicas de EE.UU. Publica lista SDN de personas y entidades sancionadas.",
+      "web": "ofac.treasury.gov",
+      "color": "#b22234",
+      "icon": "🇺🇸"
+    },
+    "UE": {
+      "nombre": "Unión Europea",
+      "categoria": "internacional",
+      "sede": "Bruselas, Bélgica",
+      "objetivo": "Emite Directivas AML, lista de terceros países de alto riesgo y coordina la nueva autoridad AMLA.",
+      "web": "ec.europa.eu",
+      "color": "#003399",
+      "icon": "🇪🇺"
+    },
+    "FINCEN": {
+      "nombre": "FinCEN",
+      "categoria": "internacional",
+      "sede": "Washington D.C., EE.UU.",
+      "objetivo": "UIF de Estados Unidos. Emite advisories, tipologías y reglas de reporte (CTR, SAR, FBAR).",
+      "web": "fincen.gov",
+      "color": "#c41e3a",
+      "icon": "📊"
+    },
+    "TRANSPARENCY": {
+      "nombre": "Transparency International",
+      "categoria": "internacional",
+      "sede": "Berlín, Alemania",
+      "objetivo": "Publica el Índice de Percepción de Corrupción (CPI). Referencia clave para riesgo país y due diligence.",
+      "web": "transparency.org",
+      "color": "#f5a623",
+      "icon": "🔍"
+    },
+    "IEP": {
+      "nombre": "Institute for Economics & Peace",
+      "categoria": "internacional",
+      "sede": "Sídney, Australia",
+      "objetivo": "Publica Global Terrorism Index y Global Peace Index. Datos clave para análisis CFT y riesgo geopolítico.",
+      "web": "economicsandpeace.org",
+      "color": "#2d5a27",
+      "icon": "☮️"
+    },
+    "SHCP": {
+      "nombre": "SHCP",
+      "categoria": "mexicana",
+      "sede": "Ciudad de México",
+      "objetivo": "Define política nacional AML. Coordina el sistema financiero y emite lineamientos PLD/FT.",
+      "web": "gob.mx/shcp",
+      "color": "#006847",
+      "icon": "🇲🇽"
+    },
+    "CNBV": {
+      "nombre": "CNBV",
+      "categoria": "mexicana",
+      "sede": "Ciudad de México",
+      "objetivo": "Supervisa entidades financieras. Emite Disposiciones de Carácter General en materia PLD/FT.",
+      "web": "gob.mx/cnbv",
+      "color": "#006847",
+      "icon": "📋"
+    },
+    "UIF": {
+      "nombre": "UIF México",
+      "categoria": "mexicana",
+      "sede": "Ciudad de México",
+      "objetivo": "Unidad de Inteligencia Financiera de México. Recibe reportes, emite tipologías y lista de bloqueo.",
+      "web": "gob.mx/uif",
+      "color": "#006847",
+      "icon": "🔎"
+    }
+  },
+  "monitoreos": {
+    "2026-01-23": {
+      "fecha": "23 de enero de 2026",
+      "resumen": "Semana intensa en sanciones y listas: OFAC con múltiples designaciones (narcotráfico, terrorismo, Irán); UE añade a Rusia a lista de alto riesgo AML; Banco Mundial actualiza Integrity Compliance Guidelines por primera vez en 15 años; FATF reporta progresos de Surinam y BVI; FinCEN posterga regla AML para asesores de inversión hasta 2028.",
+      "puntosClavesMX": [
+        "OFAC: Múltiples designaciones por narcotráfico (22 ene), terrorismo (21 ene), Irán (16 ene) - actualizar listas de screening inmediatamente",
+        "UE añade a Rusia como país de alto riesgo AML - aplicar EDD en operaciones vinculadas a Rusia",
+        "Banco Mundial actualiza Integrity Compliance Guidelines - nuevo benchmark para programas de cumplimiento (PEPs, terceros, M&A)",
+        "FinCEN posterga regla AML para asesores de inversión hasta enero 2028 - más tiempo para grupos con presencia en EE.UU.",
+        "México preside FATF hasta junio 2026 - progresos regionales (Surinam, BVI) influyen en prioridades de supervisión"
+      ],
+      "datos": {
+        "FATF": {
+          "novedades": 2,
+          "detalleNovedades": ["Progreso Surinam en medidas AML/CFT", "Progreso Islas Vírgenes Británicas en medidas AML/CFT"],
+          "temas": "Progresos en evaluaciones mutuas de Surinam (evaluación 2023) e Islas Vírgenes Británicas (evaluación 2024) en medidas contra lavado y financiamiento del terrorismo.",
+          "regulaciones": "Informes de progreso: 'Suriname's progress in strengthening measures to tackle money laundering and terrorist financing'; 'British Virgin Islands' progress in strengthening measures to tackle money laundering and terrorist financing'.",
+          "eventos": "Sin eventos nuevos esta semana. Próximos movimientos esperados hacia Plenario de febrero 2026.",
+          "alertas": "Sin nuevas listas ni cambios en grey list/black list esta semana.",
+          "relevanciaMX": "Como México preside FATF hasta junio 2026, estos progresos regionales influyen en prioridades de supervisión. Línea de trabajo en recuperación de activos y TF sigue empujando fortalecimiento de matrices de riesgo."
+        },
+        "UNODC": {
+          "novedades": 3,
+          "detalleNovedades": ["Informe trata-corrupción (120+ casos)", "Apoyo Montenegro compensación víctimas", "Briefing Consejo Seguridad sobre Haití"],
+          "temas": "Vínculos entre trata de personas y corrupción (análisis de 120+ casos); apoyo a Montenegro en compensación a víctimas; briefing ante Consejo de Seguridad sobre Haití y crimen organizado.",
+          "regulaciones": "Informe 'Understanding the hidden links between human trafficking and corruption' - expone conexiones sistémicas entre trata y corrupción.",
+          "eventos": "UN Security Council Briefing on the Situation in Haiti (16-17 marzo 2026). Reuniones en Viena sobre ciberdelito y delitos ambientales en febrero.",
+          "alertas": "Refuerzo del mensaje sobre efecto de conflictos en tráfico de drogas, armas y personas.",
+          "relevanciaMX": "Actualizar matrices de riesgo en trata y corrupción transfronteriza. Ciberdelito como fuente de recursos ilícitos relevante para tipologías de fraude. Impacta supervisión en sectores vulnerables como migración y comercio."
+        },
+        "EGMONT": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin novedades directas esta semana. Contexto 2025: Comité se reunió en Bakú para avanzar en cooperación internacional y analítica de datos según Plan Estratégico 2022-2027.",
+          "regulaciones": "Sin nuevas guías. Participación de presidencia Egmont anunciada para European Anti-Financial Crime Summit 2026.",
+          "eventos": "Sin eventos nuevos anunciados esta semana.",
+          "alertas": "Sin alertas. Enfoque continuo en autonomía de UIFs.",
+          "relevanciaMX": "UIF México presionada a profundizar analítica avanzada y mejorar tiempos/calidad de cooperación internacional."
+        },
+        "BANCO_MUNDIAL": {
+          "novedades": 2,
+          "detalleNovedades": ["Actualización Integrity Compliance Guidelines (1ª en 15 años)", "Perspectivas económicas globales"],
+          "temas": "Actualización profunda de Integrity Compliance Guidelines (primera en 15 años). Perspectivas económicas globales con resiliencia ante incertidumbres.",
+          "regulaciones": "Integrity Compliance Guidelines revisadas: amplían alcance a empresas sancionadas, refuerzan cobertura de PEPs, terceros, cadenas de suministro, joint ventures, M&A, uso de tecnología y canales de denuncia robustos.",
+          "eventos": "Firmas especializadas organizan webinars sobre los cambios. Sin evento oficial del Banco Mundial esta semana.",
+          "alertas": "Actualización estructural, no alerta. Nuevo benchmark para programas de cumplimiento.",
+          "relevanciaMX": "Bancos y SOFOMes con financiamiento multilateral deben alinear programas de integridad a estándares más exigentes. Referencia fuerte para supervisores y entidades."
+        },
+        "WOLFSBERG": {
+          "novedades": 1,
+          "detalleNovedades": ["Nuevo co-presidente y miembro Management Committee"],
+          "temas": "Anuncio de nuevo co-presidente y miembro del Management Committee (21 enero 2026), señalando continuidad y posible orientación renovada.",
+          "regulaciones": "Sin nuevas guías esta semana. Vigentes: Guía 2025 sobre stablecoins, Guía 2023 Anti-Bribery & Corruption para instituciones financieras.",
+          "eventos": "Sin nuevos eventos anunciados.",
+          "alertas": "Ninguna.",
+          "relevanciaMX": "Nuevo liderazgo podría influir en guías sobre monitoreo. Bancos deben fortalecer controles de corrupción y tratamiento de clientes vinculados a stablecoins/activos virtuales."
+        },
+        "GAFILAT": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados nuevos. Contexto: Panamá asumirá Presidencia Pro Témpore 2026 con agenda fuerte en beneficiario final, activos virtuales y supervisión basada en riesgo.",
+          "regulaciones": "Sin nuevas guías. Ejes de Panamá implican próximos talleres sobre BO, AV y evaluaciones mutuas.",
+          "eventos": "Sin eventos específicos esta semana.",
+          "alertas": "Sin alertas urgentes.",
+          "relevanciaMX": "México debe acelerar fortalecimiento de registros de beneficiario final y ajustar supervisión de activos virtuales."
+        },
+        "OFAC": {
+          "novedades": 4,
+          "detalleNovedades": ["Designaciones narcotráfico (22 ene)", "Designaciones terrorismo (21 ene)", "Presión redes hutíes (16 ene)", "Sanciones Irán (15 ene)"],
+          "temas": "Semana muy activa en sanciones: designaciones por narcotráfico, terrorismo, presión sobre redes hutíes, sanciones contra arquitectos de represión en Irán.",
+          "regulaciones": "Emisión y modificación de licencias generales relacionadas con Rusia. FAQs actualizadas sobre alcance de sanciones financieras.",
+          "eventos": "Sin webinars nuevos. Carga en documentos y actualizaciones en línea.",
+          "alertas": "22 ene: designaciones narcotráfico. 21 ene: contraterrorismo y remociones TSRA. 16 ene: presión redes hutíes. 15 ene: sanciones Irán. Efectos inmediatos para screening.",
+          "relevanciaMX": "MUY ALTA: Entidades mexicanas deben actualizar INMEDIATAMENTE listas para screening, especialmente contrapartes ligadas a narcotráfico, Rusia e Irán."
+        },
+        "UE": {
+          "novedades": 3,
+          "detalleNovedades": ["Rusia añadida a lista alto riesgo AML", "Extensión sanciones Hamas/Jihad Islámica", "Ajuste tope precio petróleo ruso"],
+          "temas": "Comisión Europea añade a RUSIA a lista de terceros países de alto riesgo AML - alejándose de postura GAFI. Extensiones de sanciones Hamas/Jihad Islámica.",
+          "regulaciones": "Delegated Regulations (EU) 2026/46 y 2026/83: deficiencias AML/CFT, agregando Rusia, Bolivia, Islas Vírgenes Británicas a lista de alto riesgo.",
+          "eventos": "Sin eventos. Foco regulatorio.",
+          "alertas": "Renovación sanciones Hamas/Jihad Islámica hasta 20 ene 2027. Ajuste tope precio petróleo ruso (15 ene). Rusia requiere EDD obligatorio.",
+          "relevanciaMX": "Grupos con presencia UE deben aplicar EDD para Rusia. Entidades solo sujetas a regulación mexicana deben considerar Rusia como alto riesgo en matrices."
+        },
+        "FINCEN": {
+          "novedades": 2,
+          "detalleNovedades": ["Postergación regla AML asesores inversión a 2028", "Reunión grupo trabajo crimen transnacional"],
+          "temas": "Postergación de regla AML para asesores de inversión registrados y exempt reporting advisers. Reunión de grupo de trabajo contra crimen organizado transnacional.",
+          "regulaciones": "Regla final: posterga entrada en vigor de IA AML Rule del 1 enero 2026 al 1 enero 2028, con revisión futura del alcance.",
+          "eventos": "Sin webinars nuevos. Discusión por comunicados sectoriales.",
+          "alertas": "No es alerta sino alivio regulatorio para sector asesores de inversión, manteniendo objetivo de cubrir riesgos de lavado.",
+          "relevanciaMX": "Grupos con asesores de inversión en EE.UU. tienen más tiempo para implementar programas AML/CFT. Sector inversiones sigue visto como alto riesgo."
+        },
+        "TRANSPARENCY": {
+          "novedades": 2,
+          "detalleNovedades": ["Prioridades Venezuela contra corrupción", "Deforestación por corrupción en Sumatra"],
+          "temas": "Prioridades para reconstruir democracia en Venezuela contra corrupción. Deforestación impulsada por corrupción en Sumatra. TI Malasia lanzó informe anticorrupción 2026.",
+          "regulaciones": "Sin nuevos índices. CPI 2025 vigente como referencia.",
+          "eventos": "Sin eventos nuevos anunciados.",
+          "alertas": "Ninguna urgente. Monitorear actualización CPI.",
+          "relevanciaMX": "CPI sigue siendo referencia obligada para matrices de riesgo país. Análisis de corrupción transfronteriza aplicable a due diligence de terceros."
+        },
+        "IEP": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados nuevos esta semana. Vigentes: Global Terrorism Index 2024 y Global Peace Index.",
+          "regulaciones": "Sin nuevas publicaciones.",
+          "eventos": "Sin eventos.",
+          "alertas": "Ninguna.",
+          "relevanciaMX": "Índices IEP útiles para análisis de riesgo geopolítico y CFT en matrices de riesgo."
+        },
+        "SHCP": {
+          "novedades": 1,
+          "detalleNovedades": ["Presupuesto 927 mdp combate lavado 2026"],
+          "temas": "Sin comunicados nuevos esta semana. Vigentes: bloqueos a casinos y asignación presupuestal 2026 para combate al lavado.",
+          "regulaciones": "Sin nuevas disposiciones normativas formales. Vigente: 927 mdp asignados para combate al lavado 2026 (UIF + FGR) con fortalecimiento de Dirección Especializada en Organizaciones Delictivas.",
+          "eventos": "Sin anuncios de capacitación pública esta semana.",
+          "alertas": "Bloqueos a casinos de noviembre se mantienen como referencia de riesgo sectorial elevado para juegos y sorteos.",
+          "relevanciaMX": "Aumento presupuestal y especialización de UIF anticipan supervisión e investigación más intensa con foco en organizaciones delictivas y esquemas complejos."
+        },
+        "CNBV": {
+          "novedades": 2,
+          "detalleNovedades": ["Reglas prevención fraude vigentes (2 ene)", "Criterios MTU transferencias (1 ene)"],
+          "temas": "Sin comunicados nuevos esta semana. Vigentes: reglas de fraude y MTU implementados desde enero 2026. Historial de sanciones significativas a bancos por fallas PLD.",
+          "regulaciones": "Reglas para planes de gestión de prevención de fraude (vigentes desde 2 enero 2026). Criterios operativos del MTU para transferencias electrónicas (vigentes desde 1 enero 2026).",
+          "eventos": "Sin webinars nuevos. Implementación de reglas fraude/MTU ya inició.",
+          "alertas": "Historial reciente de sanciones a CIBanco, Intercam, Vector, Banco Base y Mifel por fallas PLD subraya enfoque supervisor estricto.",
+          "relevanciaMX": "Reglas de fraude y MTU obligan a integrar prevención de fraude y PLD. Replantear modelos de monitoreo, umbrales, alertas y autenticación."
+        },
+        "UIF": {
+          "novedades": 1,
+          "detalleNovedades": ["Dirección Especializada Organizaciones Delictivas"],
+          "temas": "Sin comunicados nuevos. Vigente: incremento presupuestal 2026 y creación de Dirección Especializada en Organizaciones Delictivas.",
+          "regulaciones": "Sin nuevas tipologías publicadas.",
+          "eventos": "Sin eventos anunciados.",
+          "alertas": "Verificar lista de personas bloqueadas. Caso casinos refuerza riesgo sectorial.",
+          "relevanciaMX": "Aumento de presupuesto y nueva dirección especializada anticipan investigación más agresiva en sectores de alto efectivo y esquemas internacionales."
+        }
+      }
+    },
+    "2026-01-16": {
+      "fecha": "16 de enero de 2026",
+      "resumen": "Semana sin alto volumen de comunicados formales nuevos, pero con novedades puntuales importantes: FATF refuerza agenda de recuperación de activos y tipologías de terrorismo/proliferación; CNBV implementa reglas de fraude y MTU desde enero; UIF aumenta presupuesto y crea Dirección de Organizaciones Delictivas.",
+      "puntosClavesMX": [
+        "Mayor alineación regional GAFI-GAFILAT en beneficiario final, activos virtuales y recuperación de activos - México debe acelerar integración en matrices de riesgo",
+        "Reglas CNBV sobre fraude y MTU desde enero 2026 exigen convergencia operativa entre áreas de fraude y PLD",
+        "Aumento de presupuesto UIF y nueva Dirección de Organizaciones Delictivas anticipan supervisión más agresiva en sectores de alto efectivo",
+        "Desarrollos FATF en terrorismo, proliferación y cripto subrayan que reguladores exigirán evidencia de efectividad real en monitoreo",
+        "Capacitación internacional (WCA, Egmont/EAFCS) brinda ventana para alinear personal de cumplimiento con mejores prácticas globales"
+      ],
+      "datos": {
+        "FATF": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin anuncios formales nuevos. Se mantiene agenda de reformas recientes: activos virtuales, recuperación de activos, pagos y TF. Preparación de 5ª ronda de evaluaciones.",
+          "regulaciones": "Vigentes: Reporte tendencias globales de financiamiento del terrorismo. Reporte sobre proliferación y evasión de sanciones con 40 casos. Manual de recuperación de activos incluyendo criptoactivos.",
+          "eventos": "Sin nuevos eventos públicos. Continúan preparativos para 5ª ronda con evaluaciones in situ para varios países en 2026.",
+          "alertas": "Sin nuevas listas ni cambios de listas grises/negra esta semana.",
+          "relevanciaMX": "México entra en fase crítica de preparación para evaluación 5ª ronda. Necesario robustecer matrices de riesgo, trazabilidad de beneficiario final y capacidades de recuperación de activos incluyendo cripto."
+        },
+        "UNODC": {
+          "novedades": 2,
+          "detalleNovedades": ["Informe narcotráfico Libia/norte África", "Directrices Montenegro compensación víctimas trata"],
+          "temas": "Informe sobre dinámicas de narcotráfico en Libia y norte de África. Nuevas directrices en Montenegro para compensación a víctimas de trata de personas.",
+          "regulaciones": "Informe de investigación sobre narcotráfico en Libia y norte de África - útil para bancos y remesadoras con exposición a la región.",
+          "eventos": "Sesión del Grupo de Expertos sobre crímenes ambientales bajo CNUDOT, finales de enero 2026 en Viena, con agenda sobre delitos ambientales y flujos financieros ilícitos.",
+          "alertas": "Sin alertas de listas o sanciones. Anuncios centrados en cooperación técnica y victimología.",
+          "relevanciaMX": "Refuerza expectativa de integrar variable geográfica y cadenas logísticas en matrices de riesgo LA/FT. Debida diligencia reforzada en sectores expuestos a trata."
+        },
+        "EGMONT": {
+          "novedades": 1,
+          "detalleNovedades": ["Participación EAFCS 2026 Dublín confirmada"],
+          "temas": "Participación del liderazgo de Egmont en European Anti-Financial Crime Summit 2026. Recordatorio de actualizaciones al Estatuto que refuerzan independencia de UIFs.",
+          "regulaciones": "Sin nuevas guías formales. Vigente agenda de mejora de intercambio de información y efectividad según Plan Estratégico 2022-2027.",
+          "eventos": "European Anti-Financial Crime Summit 2026 (Dublín, 29 abril 2026) con participación de presidencia Egmont, líderes AFC de bancos globales y expertos en trata.",
+          "alertas": "Sin advertencias urgentes nuevas.",
+          "relevanciaMX": "Énfasis en independencia de UIF fortalece expectativas sobre UIF mexicana. Necesario alinear indicadores de calidad de ROS con mejores prácticas internacionales."
+        },
+        "BANCO_MUNDIAL": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin lanzamientos específicos LA/FT esta semana. Continuidad de agenda en integridad financiera, transparencia y anticorrupción.",
+          "regulaciones": "Sin nuevos manuales/guías AML. Vigentes reportes de gobernanza e integridad de 2025.",
+          "eventos": "Eventos recientes vinculados a desarrollo, inversión sostenible y gobernanza. Nada focalizado en AML/CFT esta semana.",
+          "alertas": "No aplica - Banco Mundial no actúa como organismo sancionador AML.",
+          "relevanciaMX": "Recomendaciones sobre gobernanza y anticorrupción siguen siendo referencia para diseño de marcos de integridad, beneficiario final y compras públicas."
+        },
+        "WOLFSBERG": {
+          "novedades": 1,
+          "detalleNovedades": ["Continuidad compromisos Forum 2025 sobre monitoreo"],
+          "temas": "Continuidad de compromisos Wolfsberg Forum 2025: pasar de alineación estratégica a ganancias operativas en monitoreo. Foco en redefinir costo-beneficio y clarificar concepto de sospecha.",
+          "regulaciones": "Marco reciente (2025) sobre modernización del monitoreo de actividad sospechosa y aplicación a blockchain y cripto.",
+          "eventos": "Sin nuevo foro esta semana. Centro Wolfsberg se mantiene como sede para capacitaciones de alto nivel.",
+          "alertas": "Ninguna.",
+          "relevanciaMX": "Bancos con corresponsalías verán presión para alinear sistemas de monitoreo a estándares Wolfsberg con analítica avanzada y enfoque en efectividad vs volumen de ROS."
+        },
+        "GAFILAT": {
+          "novedades": 1,
+          "detalleNovedades": ["Panamá asume Presidencia Pro Témpore 2026"],
+          "temas": "Panamá asume Presidencia Pro Témpore 2026 con foco en beneficiario final, supervisión basada en riesgo y activos virtuales.",
+          "regulaciones": "Sin nuevas guías esta semana. Presidencia panameña priorizará registros de beneficiarios finales, supervisión basada en riesgos y regulación de activos virtuales.",
+          "eventos": "Se esperan plenarios y grupos de trabajo a lo largo de 2026 bajo presidencia panameña.",
+          "alertas": "Sin actualización de listas o medidas especiales. Continúa seguimiento a salidas de listas y preparación para 5ª ronda GAFI.",
+          "relevanciaMX": "Agenda GAFILAT 2026 se alinea con retos de México. Anticipar mayor escrutinio regional sobre efectividad en condenas, extinción de dominio y recuperación de activos."
+        },
+        "OFAC": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados relevantes esta semana.",
+          "regulaciones": "Sin nuevas regulaciones.",
+          "eventos": "Sin eventos.",
+          "alertas": "Verificar actualizaciones a lista SDN.",
+          "relevanciaMX": "Crítico para compliance de instituciones con operaciones en USD."
+        },
+        "UE": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados relevantes esta semana.",
+          "regulaciones": "Sin nuevas regulaciones.",
+          "eventos": "Sin eventos.",
+          "alertas": "Monitorear lista consolidada de sanciones UE.",
+          "relevanciaMX": "Relevante para instituciones con corresponsalía europea."
+        },
+        "FINCEN": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados relevantes esta semana.",
+          "regulaciones": "Sin nuevas regulaciones.",
+          "eventos": "Sin eventos.",
+          "alertas": "Verificar nuevos advisories.",
+          "relevanciaMX": "Tipologías FinCEN son referencia para programas de cumplimiento en México."
+        },
+        "TRANSPARENCY": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados relevantes esta semana.",
+          "regulaciones": "CPI 2025 vigente.",
+          "eventos": "Sin eventos.",
+          "alertas": "Monitorear actualizaciones al CPI.",
+          "relevanciaMX": "CPI fundamental para matrices de riesgo país."
+        },
+        "IEP": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados relevantes esta semana.",
+          "regulaciones": "Índices vigentes.",
+          "eventos": "Sin eventos.",
+          "alertas": "Monitorear índices de terrorismo y paz.",
+          "relevanciaMX": "Datos clave para análisis CFT."
+        },
+        "SHCP": {
+          "novedades": 1,
+          "detalleNovedades": ["Presupuesto 2026 combate lavado asignado"],
+          "temas": "Sin comunicados nuevos esta semana. Vigentes: bloqueos a casinos y asignación presupuestal 2026.",
+          "regulaciones": "Vigente: 927 mdp asignados para combate al lavado 2026.",
+          "eventos": "Sin eventos.",
+          "alertas": "Bloqueos casinos vigentes como referencia.",
+          "relevanciaMX": "Mayor presupuesto anticipa supervisión más intensa."
+        },
+        "CNBV": {
+          "novedades": 2,
+          "detalleNovedades": ["Reglas fraude vigentes desde 2 ene", "Criterios MTU vigentes desde 1 ene"],
+          "temas": "Implementación de reglas de fraude y MTU desde enero 2026.",
+          "regulaciones": "Reglas para planes de gestión de prevención de fraude (2 ene). Criterios MTU transferencias (1 ene).",
+          "eventos": "Implementación activa.",
+          "alertas": "Historial sanciones a bancos por fallas PLD.",
+          "relevanciaMX": "Convergencia fraude-PLD obligatoria. Actualizar modelos de monitoreo."
+        },
+        "UIF": {
+          "novedades": 1,
+          "detalleNovedades": ["Nueva Dirección Organizaciones Delictivas"],
+          "temas": "Incremento presupuestal y nueva Dirección Especializada.",
+          "regulaciones": "Sin nuevas tipologías.",
+          "eventos": "Sin eventos.",
+          "alertas": "Verificar lista de bloqueo.",
+          "relevanciaMX": "Investigación más agresiva anticipada."
+        }
+      }
+    },
+    "2026-01-09": {
+      "fecha": "9 de enero de 2026",
+      "resumen": "Sin nuevas regulaciones duras, pero con anuncios clave: México entra en ciclo de preparación para evaluación GAFI septiembre 2026; SHCP/UIF con aumento de recursos y estructura especializada contra organizaciones delictivas; caso CIBanco/Intercam como referencia de supervisión estricta.",
+      "puntosClavesMX": [
+        "México entra al ciclo de preparación para evaluación GAFI 2026 - discusión plenaria programada para septiembre con énfasis en resultados efectivos",
+        "SHCP/UIF tendrá aumento de recursos 2026 y estructura especializada contra organizaciones delictivas - expectativa de casos relevantes y decomisos",
+        "Caso CNBV-FinCEN (CIBanco/Intercam) refuerza mensaje de tolerancia baja a fallas PLD/FT y alto impacto reputacional",
+        "Estándares Wolfsberg, Egmont y GAFILAT consolidan convergencia en RBA, activos virtuales y cooperación FIU",
+        "UNODC, Banco Mundial y WCA orientarán asistencia técnica en ciberdelito, crimen organizado y compliance avanzado"
+      ],
+      "datos": {
+        "FATF": {
+          "novedades": 1,
+          "detalleNovedades": ["Evaluación México programada septiembre 2026"],
+          "temas": "Calendario global de evaluaciones: discusión plenaria de México programada para septiembre 2026, con actividades preparatorias desde inicios de año.",
+          "regulaciones": "Sin nuevas recomendaciones o guías formales. Referencia: énfasis de 5ª ronda en resultados efectivos, no solo cumplimiento técnico.",
+          "eventos": "Entrenamientos para evaluadores 2026-2027 por grupos regionales (APG), enfocados en nueva metodología de evaluación.",
+          "alertas": "Sin nuevas listas GAFI ni anuncios de grey list/black list esta semana.",
+          "relevanciaMX": "México en ruta crítica de evaluación GAFI 2026. Énfasis en resultados y supervisión basada en riesgo incrementa presión sobre matrices de riesgo, efectividad de UIF y supervisores."
+        },
+        "UNODC": {
+          "novedades": 1,
+          "detalleNovedades": ["Consulta Estrategia 2026-2030"],
+          "temas": "Consulta a actores no gubernamentales para Estrategia UNODC 2026-2030. Agenda 2026 en delitos ambientales y crimen organizado.",
+          "regulaciones": "Sin nuevas guías AML/CFT. Estrategia 2026-2030 orientará futuras líneas de asistencia técnica (corrupción, crimen organizado, cibercrimen).",
+          "eventos": "Reuniones del grupo intergubernamental sobre delitos ambientales en 2026, Viena.",
+          "alertas": "Sin alertas operativas AML/CFT. Foco en nueva Convención contra ciberdelito adoptada 2024-2025.",
+          "relevanciaMX": "México puede usar estrategia 2026-2030 y convenio ciberdelito para reforzar facultades de investigación financiera en entornos digitales."
+        },
+        "EGMONT": {
+          "novedades": 2,
+          "detalleNovedades": ["Reuniones Arusha enero 2026", "Actualización agenda estratégica 2022-2027"],
+          "temas": "Anuncio de reuniones en Arusha, Tanzania para enero 2026. Actualización de agenda estratégica 2022-2027 y refuerzo de independencia de FIUs.",
+          "regulaciones": "Sin nuevas guías públicas. Referencia: trabajo en activos virtuales y cooperación FIU-FIU.",
+          "eventos": "Reuniones Egmont Working and Regional Group (Arusha, 26-30 enero 2026). Plan de entrenamientos 2026 sobre exposición internacional de FIU, activos virtuales y cooperación.",
+          "alertas": "Sin nuevas alertas. Se refuerza mensaje sobre autonomía de FIUs y calidad de intercambios de información.",
+          "relevanciaMX": "UIF México debe capitalizar reuniones para evidenciar casos y buenas prácticas de cooperación - indicador clave de efectividad para evaluación GAFI."
+        },
+        "BANCO_MUNDIAL": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin anuncios AML/CFT específicos esta semana. Continuidad de agenda de integridad financiera y anticorrupción.",
+          "regulaciones": "Sin nuevas guías AML/CFT. Vigentes diagnósticos de integridad y gobernanza como referencia.",
+          "eventos": "Sin nuevos eventos AML/CFT anunciados. Foco en eventos macroeconómicos y gobernanza.",
+          "alertas": "Ninguna en la semana.",
+          "relevanciaMX": "Programas del Banco Mundial sobre gobernanza y anticorrupción seguirán influyendo en diseño de reformas estructurales y criterios de evaluación internacional."
+        },
+        "WOLFSBERG": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin nueva publicación en enero 2026. Vigentes: Declaración 2025 sobre RBA, comunicación sobre monitoreo de operaciones sospechosas e innovación en SARs.",
+          "regulaciones": "Vigentes: Guía 2025 sobre servicios bancarios a emisores de stablecoins. Segunda declaración sobre monitoreo efectivo de actividad sospechosa.",
+          "eventos": "Sin nuevos eventos. Último gran hito fue Wolfsberg Forum 2025.",
+          "alertas": "Ninguna nueva.",
+          "relevanciaMX": "Bancos mexicanos pueden usar lineamientos Wolfsberg para justificar cambios en modelos de monitoreo ante CNBV. Guía stablecoins relevante para entidades con exposición a cripto."
+        },
+        "GAFILAT": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin nuevo comunicado. Panamá elegida para Presidencia Pro Témpore 2026 con prioridades en beneficiario final, supervisión basada en riesgo y activos virtuales.",
+          "regulaciones": "Sin nuevos documentos técnicos. Agenda de 5ª ronda y proyectos sobre registros de beneficiarios finales.",
+          "eventos": "Actividades de formación regional sobre régimen sancionador y recuperación de activos mencionadas sin fecha específica.",
+          "alertas": "Sin nuevas listas o medidas urgentes.",
+          "relevanciaMX": "Presidencia panameña 2026 pone en centro temas en que México está siendo evaluado. Visibilidad de Presidencia de México ante GAFI incrementa expectativas."
+        },
+        "OFAC": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados relevantes esta semana.",
+          "regulaciones": "Sin nuevas regulaciones.",
+          "eventos": "Sin eventos.",
+          "alertas": "Verificar lista SDN.",
+          "relevanciaMX": "Crítico para compliance en operaciones USD."
+        },
+        "UE": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados relevantes esta semana.",
+          "regulaciones": "Sin nuevas regulaciones.",
+          "eventos": "Sin eventos.",
+          "alertas": "Monitorear sanciones UE.",
+          "relevanciaMX": "Relevante para corresponsalía europea."
+        },
+        "FINCEN": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados relevantes esta semana.",
+          "regulaciones": "Sin nuevas regulaciones.",
+          "eventos": "Sin eventos.",
+          "alertas": "Verificar advisories.",
+          "relevanciaMX": "Tipologías FinCEN referencia para México."
+        },
+        "TRANSPARENCY": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados relevantes esta semana.",
+          "regulaciones": "CPI vigente.",
+          "eventos": "Sin eventos.",
+          "alertas": "Monitorear CPI.",
+          "relevanciaMX": "CPI fundamental para riesgo país."
+        },
+        "IEP": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados relevantes esta semana.",
+          "regulaciones": "Índices vigentes.",
+          "eventos": "Sin eventos.",
+          "alertas": "Monitorear índices.",
+          "relevanciaMX": "Datos clave para CFT."
+        },
+        "SHCP": {
+          "novedades": 1,
+          "detalleNovedades": ["Aumento recursos 2026 anunciado"],
+          "temas": "Aumento de recursos 2026 y estructura especializada.",
+          "regulaciones": "Sin nuevas disposiciones.",
+          "eventos": "Sin eventos.",
+          "alertas": "Bloqueos casinos vigentes.",
+          "relevanciaMX": "Mayor supervisión anticipada."
+        },
+        "CNBV": {
+          "novedades": 1,
+          "detalleNovedades": ["Caso CIBanco/Intercam sanciones PLD"],
+          "temas": "Historial de sanciones a bancos por fallas PLD.",
+          "regulaciones": "Reglas fraude y MTU próximas.",
+          "eventos": "Sin eventos.",
+          "alertas": "Sanciones recientes como referencia.",
+          "relevanciaMX": "Tolerancia baja a fallas PLD."
+        },
+        "UIF": {
+          "novedades": 1,
+          "detalleNovedades": ["Estructura especializada organizaciones delictivas"],
+          "temas": "Nueva estructura especializada contra organizaciones delictivas.",
+          "regulaciones": "Sin nuevas tipologías.",
+          "eventos": "Sin eventos.",
+          "alertas": "Verificar lista bloqueo.",
+          "relevanciaMX": "Investigación más agresiva."
+        }
+      }
+    }
+  }
+}
