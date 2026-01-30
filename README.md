@@ -32,7 +32,7 @@ Brújula360 es un espacio de inteligencia regulatoria para apoyar la toma de dec
 
 ```
 brujula360/
-├── index.html          ← La aplicación (no modificar)
+├── index.html          ← La aplicación (incluye Sopa de Letras)
 ├── data/
 │   └── monitoreos.json ← Datos semanales (actualizar cada viernes)
 ├── netlify.toml        ← Configuración de Netlify
@@ -41,7 +41,9 @@ brujula360/
 
 ## 🔄 Actualización Semanal
 
-Cada viernes solo se actualiza el archivo `data/monitoreos.json` con la nueva semana de monitoreo.
+Cada viernes se actualizan:
+1. `data/monitoreos.json` - Nueva semana de monitoreo
+2. Palabras de la sopa de letras en `index.html`
 
 ## 📜 Licencia
 

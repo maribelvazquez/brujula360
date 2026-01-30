@@ -24,6 +24,7 @@
             --coral-light: #ff9d82;
             --verde: #87d895;
             --verde-dark: #5cb86c;
+            --amarillo: #ffd166;
             --gris: #4d4d4d;
             --gris-oscuro: #393e41;
             --blanco: #ffffff;
@@ -51,6 +52,7 @@
         @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
         @keyframes celebrar { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
         @keyframes confetti { 0% { transform: translateY(0) rotate(0deg); opacity: 1; } 100% { transform: translateY(100vh) rotate(720deg); opacity: 0; } }
+        @keyframes glow { 0%, 100% { box-shadow: 0 0 5px var(--verde); } 50% { box-shadow: 0 0 20px var(--verde); } }
 
         #loading { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--bg-primary); z-index: 9999; }
         #loading .spinner { width: 60px; height: 60px; border-radius: 16px; background: linear-gradient(135deg, var(--morado) 0%, var(--coral) 100%); display: flex; align-items: center; justify-content: center; font-size: 1.8rem; animation: pulse 1.5s ease-in-out infinite; margin-bottom: 1rem; }
@@ -147,55 +149,142 @@
         .empty-state p { color: var(--text-secondary); }
         .empty-state strong { color: var(--morado); }
 
-        /* TRIVIA */
-        .trivia-container { max-width: 1000px; margin: 0 auto; }
-        .trivia-intro { text-align: center; margin-bottom: 2rem; }
-        .trivia-intro h2 { font-size: 1.8rem; margin-bottom: 0.5rem; }
-        .trivia-intro h2 strong { background: linear-gradient(135deg, var(--morado) 0%, var(--coral) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .trivia-intro p { color: var(--text-secondary); }
+        /* SOPA DE LETRAS */
+        .sopa-container { max-width: 1100px; margin: 0 auto; }
+        .sopa-intro { text-align: center; margin-bottom: 2rem; }
+        .sopa-intro h2 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+        .sopa-intro h2 strong { background: linear-gradient(135deg, var(--morado) 0%, var(--coral) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .sopa-intro p { color: var(--text-secondary); }
 
-        .trivia-score { display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; }
+        .sopa-score { display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; }
         .score-box { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1rem 1.5rem; text-align: center; }
         .score-box .label { font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; }
         .score-box .value { font-size: 2rem; font-weight: 700; background: linear-gradient(135deg, var(--morado) 0%, var(--coral) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .score-box.completado .value { background: linear-gradient(135deg, var(--verde) 0%, var(--verde-dark) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-        .trivia-game { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
-        @media (max-width: 900px) { .trivia-game { grid-template-columns: 1fr; } }
+        .sopa-game { display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start; }
+        @media (max-width: 900px) { .sopa-game { grid-template-columns: 1fr; } }
 
-        .crucigrama-section { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; padding: 1.5rem; }
-        .crucigrama-section h3 { font-size: 1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .sopa-grid-container { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; padding: 1.5rem; }
+        .sopa-grid-container h3 { font-size: 1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
 
-        .crucigrama-grid { display: flex; flex-direction: column; gap: 0.75rem; }
-        .crucigrama-word { display: flex; align-items: center; gap: 0.5rem; }
-        .word-number { width: 26px; height: 26px; background: var(--morado); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; flex-shrink: 0; }
-        .word-cells { display: flex; gap: 4px; }
-        .cell-input { width: 40px; height: 40px; border: 2px solid var(--border-color); border-radius: 8px; background: var(--bg-secondary); color: var(--text-primary); font-size: 1.2rem; font-weight: 700; font-family: 'Space Mono', monospace; text-align: center; text-transform: uppercase; outline: none; transition: all 0.2s ease; }
-        .cell-input:focus { border-color: var(--morado); box-shadow: 0 0 0 3px rgba(166, 99, 204, 0.2); }
-        .cell-input.correct { border-color: var(--verde); background: rgba(135, 216, 149, 0.15); color: var(--verde); }
-        .cell-input.incorrect { border-color: var(--coral); background: rgba(255, 131, 97, 0.15); }
-        .cell-input:disabled { opacity: 0.9; }
-        .word-status { font-size: 1.3rem; margin-left: 0.5rem; min-width: 25px; }
+        .sopa-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 4px;
+            user-select: none;
+        }
 
-        .pistas-section { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; padding: 1.5rem; }
-        .pistas-section h3 { font-size: 1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
-        .pista-card { background: rgba(166, 99, 204, 0.05); border-radius: 10px; padding: 0.75rem 1rem; margin-bottom: 0.5rem; border-left: 3px solid var(--morado); transition: all 0.3s ease; cursor: pointer; }
-        .pista-card:hover { background: rgba(166, 99, 204, 0.1); }
-        .pista-card.active { border-left-color: var(--coral); background: rgba(255, 131, 97, 0.1); }
-        .pista-card.correct { border-left-color: var(--verde); background: rgba(135, 216, 149, 0.1); }
-        .pista-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem; }
-        .pista-num { font-family: 'Space Mono', monospace; font-weight: 700; color: var(--morado); }
-        .pista-tipo { font-size: 0.65rem; padding: 2px 8px; border-radius: 10px; text-transform: uppercase; font-weight: 600; }
-        .pista-tipo.trivia { background: rgba(255, 131, 97, 0.2); color: var(--coral); }
-        .pista-tipo.definicion { background: rgba(166, 99, 204, 0.2); color: var(--morado-light); }
-        .pista-texto { font-size: 0.85rem; color: var(--text-primary); line-height: 1.4; }
+        .sopa-cell {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-secondary);
+            border: 2px solid var(--border-color);
+            border-radius: 6px;
+            font-family: 'Space Mono', monospace;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
 
-        .trivia-buttons { display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem; flex-wrap: wrap; }
+        .sopa-cell:hover {
+            border-color: var(--morado);
+            background: rgba(166, 99, 204, 0.1);
+        }
+
+        .sopa-cell.selected {
+            background: rgba(166, 99, 204, 0.3);
+            border-color: var(--morado);
+            color: white;
+        }
+
+        .sopa-cell.found {
+            background: linear-gradient(135deg, var(--verde) 0%, var(--verde-dark) 100%);
+            border-color: var(--verde);
+            color: white;
+            animation: glow 1s ease;
+        }
+
+        .palabras-section { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; padding: 1.5rem; }
+        .palabras-section h3 { font-size: 1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+
+        .palabra-item {
+            background: rgba(166, 99, 204, 0.05);
+            border-radius: 10px;
+            padding: 0.75rem 1rem;
+            margin-bottom: 0.5rem;
+            border-left: 3px solid var(--morado);
+            transition: all 0.3s ease;
+        }
+
+        .palabra-item.found {
+            border-left-color: var(--verde);
+            background: rgba(135, 216, 149, 0.1);
+        }
+
+        .palabra-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.25rem;
+        }
+
+        .palabra-word {
+            font-family: 'Space Mono', monospace;
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--morado);
+            letter-spacing: 2px;
+        }
+
+        .palabra-item.found .palabra-word {
+            color: var(--verde);
+            text-decoration: line-through;
+        }
+
+        .palabra-tipo {
+            font-size: 0.65rem;
+            padding: 2px 8px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .palabra-tipo.trivia { background: rgba(255, 131, 97, 0.2); color: var(--coral); }
+        .palabra-tipo.definicion { background: rgba(166, 99, 204, 0.2); color: var(--morado-light); }
+
+        .palabra-pista {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+
+        .palabra-status {
+            font-size: 1.2rem;
+            margin-left: 0.5rem;
+        }
+
+        .sopa-buttons { display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem; flex-wrap: wrap; }
         .btn { padding: 12px 24px; border-radius: 10px; border: none; font-weight: 600; font-size: 0.9rem; cursor: pointer; transition: all 0.3s ease; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 0.5rem; }
         .btn-primary { background: linear-gradient(135deg, var(--morado) 0%, var(--morado-dark) 100%); color: white; }
         .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(166, 99, 204, 0.3); }
         .btn-secondary { background: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-primary); }
         .btn-secondary:hover { border-color: var(--morado); color: var(--morado); }
+
+        .sopa-instructions {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-top: 1rem;
+            padding: 0.75rem;
+            background: rgba(166, 99, 204, 0.05);
+            border-radius: 10px;
+        }
 
         .share-cta { background: linear-gradient(135deg, rgba(166, 99, 204, 0.1) 0%, rgba(255, 131, 97, 0.1) 100%); border: 1px solid rgba(166, 99, 204, 0.3); border-radius: 16px; padding: 1.5rem; margin-top: 2rem; text-align: center; }
         .share-cta.victory { animation: celebrar 0.5s ease infinite; }
@@ -240,7 +329,8 @@
             .filtros-section { flex-direction: column; align-items: stretch; }
             .filter-buttons { justify-content: center; }
             .historico-item { flex-direction: column; text-align: center; gap: 1rem; }
-            .cell-input { width: 34px; height: 34px; font-size: 1rem; }
+            .sopa-cell { width: 28px; height: 28px; font-size: 0.8rem; }
+            .sopa-grid { gap: 2px; }
         }
 
         .hidden { display: none !important; }
@@ -273,7 +363,7 @@
                 <button class="nav-tab active" data-view="dashboard">Dashboard</button>
                 <button class="nav-tab" data-view="historico">Histórico</button>
                 <button class="nav-tab" data-view="organismos">Organismos</button>
-                <button class="nav-tab" data-view="trivia">🧩 Trivia</button>
+                <button class="nav-tab" data-view="sopa">🔤 Sopa de Letras</button>
             </div>
             
             <div class="brand-badge">by 360educa</div>
@@ -333,41 +423,43 @@
                 </div>
             </section>
 
-            <section id="view-trivia" class="hidden">
-                <div class="trivia-container">
-                    <div class="trivia-intro">
-                        <h2>🧩 Trivia <strong>Semanal</strong></h2>
-                        <p>Pon a prueba tus conocimientos PLD/FT con las novedades de esta semana</p>
+            <section id="view-sopa" class="hidden">
+                <div class="sopa-container">
+                    <div class="sopa-intro">
+                        <h2>🔤 Sopa de <strong>Letras</strong> Semanal</h2>
+                        <p>Encuentra las 5 palabras escondidas relacionadas con el monitoreo de esta semana</p>
                     </div>
 
-                    <div class="trivia-score">
-                        <div class="score-box"><div class="label">Correctas</div><div class="value" id="trivia-correctas">0</div></div>
-                        <div class="score-box"><div class="label">De</div><div class="value" id="trivia-total">5</div></div>
-                        <div class="score-box completado hidden" id="trivia-completado"><div class="label">Estado</div><div class="value">✓</div></div>
+                    <div class="sopa-score">
+                        <div class="score-box"><div class="label">Encontradas</div><div class="value" id="sopa-encontradas">0</div></div>
+                        <div class="score-box"><div class="label">De</div><div class="value" id="sopa-total">5</div></div>
+                        <div class="score-box completado hidden" id="sopa-completado"><div class="label">Estado</div><div class="value">✓</div></div>
                     </div>
 
-                    <div class="trivia-game">
-                        <div class="crucigrama-section">
-                            <h3>✏️ Crucigrama</h3>
-                            <div class="crucigrama-grid" id="crucigrama-grid"></div>
+                    <div class="sopa-game">
+                        <div class="sopa-grid-container">
+                            <h3>🎯 Encuentra las palabras</h3>
+                            <div class="sopa-grid" id="sopa-grid"></div>
+                            <div class="sopa-instructions">
+                                💡 Haz clic en la primera letra y arrastra hasta la última letra de la palabra
+                            </div>
                         </div>
-                        <div class="pistas-section">
-                            <h3>📋 Pistas</h3>
-                            <div id="trivia-pistas"></div>
+
+                        <div class="palabras-section">
+                            <h3>📋 Palabras a encontrar</h3>
+                            <div id="palabras-lista"></div>
                         </div>
                     </div>
 
-                    <div class="trivia-buttons">
-                        <button class="btn btn-primary" onclick="verificarTrivia()">✓ Verificar</button>
-                        <button class="btn btn-secondary" onclick="reiniciarTrivia()">🔄 Reiniciar</button>
-                        <button class="btn btn-secondary" onclick="darPista()">💡 Pista</button>
+                    <div class="sopa-buttons">
+                        <button class="btn btn-secondary" onclick="reiniciarSopa()">🔄 Reiniciar</button>
                     </div>
 
                     <div class="share-cta" id="share-cta">
                         <h4>📸 ¡Comparte tu resultado!</h4>
-                        <p>Cuando completes la trivia, sube tu captura de pantalla a redes sociales con el hashtag</p>
+                        <p>Cuando encuentres todas las palabras, sube tu captura de pantalla a redes sociales con el hashtag</p>
                         <span class="hashtag">#soy360educa</span>
-                        <p class="share-premio">🎁 ¡Premios especiales y sorpresas para quienes acumulen 5 trivias ganadas!</p>
+                        <p class="share-premio">🎁 ¡Premios especiales y sorpresas para quienes acumulen 5 sopas de letras ganadas!</p>
                     </div>
                 </div>
             </section>
@@ -391,16 +483,61 @@
         let currentFilter = 'todas';
         let currentSemana = null;
         let searchTerm = '';
-        let respuestasCorrectas = {};
+        
+        // Sopa de letras state
+        let isSelecting = false;
+        let selectedCells = [];
+        let foundWords = [];
 
-        const triviaData = {
+        // Sopa de letras data
+        const sopaData = {
             semana: "2026-01-23",
+            // Grid 12x12 con las palabras escondidas
+            grid: [
+                ['G','A','F','I','L','A','T','P','X','M','K','J'],
+                ['R','Q','W','E','R','T','Y','U','I','O','P','L'],
+                ['A','S','D','F','I','N','C','E','N','Z','X','C'],
+                ['V','B','N','M','L','K','J','H','G','F','D','S'],
+                ['R','U','S','I','A','Q','W','E','R','T','Y','U'],
+                ['I','O','P','A','S','D','F','G','H','J','K','L'],
+                ['Z','X','C','V','B','N','M','Q','W','E','R','T'],
+                ['S','U','R','I','N','A','M','Y','U','I','O','P'],
+                ['A','S','D','F','G','H','J','K','L','Z','X','C'],
+                ['V','B','N','O','F','A','C','M','Q','W','E','R'],
+                ['T','Y','U','I','O','P','A','S','D','F','G','H'],
+                ['J','K','L','Z','X','C','V','B','N','M','Q','W']
+            ],
             palabras: [
-                { palabra: "RUSIA", pista: "País añadido por la UE a lista de alto riesgo AML esta semana", tipo: "trivia" },
-                { palabra: "OFAC", pista: "Emitió designaciones por narcotráfico, terrorismo e Irán esta semana", tipo: "trivia" },
-                { palabra: "SURINAM", pista: "País que mostró progreso en medidas AML/CFT según FATF", tipo: "trivia" },
-                { palabra: "FINCEN", pista: "Unidad de Inteligencia Financiera de Estados Unidos", tipo: "definicion" },
-                { palabra: "GAFILAT", pista: "Organismo FATF regional para Latinoamérica", tipo: "definicion" }
+                { 
+                    palabra: "RUSIA", 
+                    pista: "País añadido por la UE a lista de alto riesgo AML esta semana", 
+                    tipo: "trivia",
+                    posiciones: [[4,0],[4,1],[4,2],[4,3],[4,4]] // fila 4, columnas 0-4
+                },
+                { 
+                    palabra: "OFAC", 
+                    pista: "Emitió designaciones por narcotráfico, terrorismo e Irán", 
+                    tipo: "trivia",
+                    posiciones: [[9,3],[9,4],[9,5],[9,6]] // fila 9, columnas 3-6
+                },
+                { 
+                    palabra: "SURINAM", 
+                    pista: "País que mostró progreso en medidas AML/CFT según FATF", 
+                    tipo: "trivia",
+                    posiciones: [[7,0],[7,1],[7,2],[7,3],[7,4],[7,5],[7,6]] // fila 7
+                },
+                { 
+                    palabra: "FINCEN", 
+                    pista: "Unidad de Inteligencia Financiera de Estados Unidos", 
+                    tipo: "definicion",
+                    posiciones: [[2,3],[2,4],[2,5],[2,6],[2,7],[2,8]] // fila 2, columnas 3-8
+                },
+                { 
+                    palabra: "GAFILAT", 
+                    pista: "Organismo FATF regional para Latinoamérica", 
+                    tipo: "definicion",
+                    posiciones: [[0,0],[0,1],[0,2],[0,3],[0,4],[0,5],[0,6]] // fila 0
+                }
             ]
         };
 
@@ -416,7 +553,7 @@
                 renderDashboard();
                 renderHistorico();
                 renderOrganismos();
-                renderTrivia();
+                renderSopa();
                 setupEventListeners();
             } catch (error) {
                 console.error('Error loading data:', error);
@@ -477,88 +614,197 @@
             document.getElementById('organismos-mexicanas').innerHTML = render(Object.entries(appData.organismos).filter(([k, v]) => v.categoria === 'mexicana'));
         }
 
-        function renderTrivia() {
-            document.getElementById('crucigrama-grid').innerHTML = triviaData.palabras.map((p, i) => `
-                <div class="crucigrama-word" id="word-${i}">
-                    <span class="word-number">${i + 1}</span>
-                    <div class="word-cells">${p.palabra.split('').map((l, j) => `<input type="text" class="cell-input" id="cell-${i}-${j}" maxlength="1" data-word="${i}" data-pos="${j}" data-letter="${l}" onfocus="activarPista(${i})" onkeyup="handleCell(event,${i},${j})">`).join('')}</div>
-                    <span class="word-status" id="status-${i}"></span>
+        // SOPA DE LETRAS
+        function renderSopa() {
+            // Render grid
+            const gridHTML = sopaData.grid.map((row, rowIndex) => 
+                row.map((letter, colIndex) => `
+                    <div class="sopa-cell" 
+                         data-row="${rowIndex}" 
+                         data-col="${colIndex}"
+                         data-letter="${letter}">
+                        ${letter}
+                    </div>
+                `).join('')
+            ).join('');
+            document.getElementById('sopa-grid').innerHTML = gridHTML;
+
+            // Render palabras
+            document.getElementById('palabras-lista').innerHTML = sopaData.palabras.map((p, i) => `
+                <div class="palabra-item" id="palabra-${i}">
+                    <div class="palabra-header">
+                        <span class="palabra-word">${p.palabra}</span>
+                        <span class="palabra-tipo ${p.tipo}">${p.tipo === 'trivia' ? '🎯 Trivia' : '📖 Definición'}</span>
+                    </div>
+                    <div class="palabra-pista">${p.pista}</div>
                 </div>
             `).join('');
-            document.getElementById('trivia-pistas').innerHTML = triviaData.palabras.map((p, i) => `
-                <div class="pista-card" id="pista-${i}" onclick="enfocarPalabra(${i})"><div class="pista-header"><span class="pista-num">${i + 1}.</span><span class="pista-tipo ${p.tipo}">${p.tipo === 'trivia' ? '🎯 Trivia' : '📖 Definición'}</span></div><div class="pista-texto">${p.pista}</div></div>
-            `).join('');
-            document.getElementById('trivia-total').textContent = triviaData.palabras.length;
+
+            document.getElementById('sopa-total').textContent = sopaData.palabras.length;
+
+            // Setup sopa events
+            setupSopaEvents();
         }
 
-        function activarPista(i) {
-            document.querySelectorAll('.pista-card').forEach(p => p.classList.remove('active'));
-            const pista = document.getElementById(`pista-${i}`);
-            if (pista && !pista.classList.contains('correct')) pista.classList.add('active');
-        }
-
-        function enfocarPalabra(i) { document.getElementById(`cell-${i}-0`).focus(); }
-
-        function handleCell(e, i, j) {
-            const input = e.target;
-            input.value = input.value.toUpperCase();
-            if (input.value && j < triviaData.palabras[i].palabra.length - 1) document.getElementById(`cell-${i}-${j + 1}`).focus();
-            if (e.key === 'Backspace' && !input.value && j > 0) document.getElementById(`cell-${i}-${j - 1}`).focus();
-            if (e.key === 'Enter') verificarPalabra(i);
-        }
-
-        function verificarPalabra(i) {
-            const palabra = triviaData.palabras[i];
-            let resp = '';
-            for (let j = 0; j < palabra.palabra.length; j++) resp += document.getElementById(`cell-${i}-${j}`).value.toUpperCase();
-            const ok = resp === palabra.palabra;
-            for (let j = 0; j < palabra.palabra.length; j++) {
-                const c = document.getElementById(`cell-${i}-${j}`);
-                c.classList.remove('correct', 'incorrect');
-                if (resp.length === palabra.palabra.length) { c.classList.add(ok ? 'correct' : 'incorrect'); if (ok) c.disabled = true; }
-            }
-            document.getElementById(`status-${i}`).textContent = ok ? '✓' : (resp.length === palabra.palabra.length ? '✗' : '');
-            const pista = document.getElementById(`pista-${i}`);
-            if (ok) { pista.classList.remove('active'); pista.classList.add('correct'); respuestasCorrectas[i] = true; }
-            return ok;
-        }
-
-        function verificarTrivia() {
-            let correctas = 0;
-            triviaData.palabras.forEach((p, i) => { if (verificarPalabra(i)) correctas++; });
-            document.getElementById('trivia-correctas').textContent = correctas;
-            if (correctas === triviaData.palabras.length) {
-                document.getElementById('trivia-completado').classList.remove('hidden');
-                document.getElementById('share-cta').classList.add('victory');
-                crearConfetti();
-            }
-        }
-
-        function reiniciarTrivia() {
-            respuestasCorrectas = {};
-            triviaData.palabras.forEach((p, i) => {
-                for (let j = 0; j < p.palabra.length; j++) {
-                    const c = document.getElementById(`cell-${i}-${j}`);
-                    c.value = ''; c.disabled = false; c.classList.remove('correct', 'incorrect');
+        function setupSopaEvents() {
+            const grid = document.getElementById('sopa-grid');
+            
+            grid.addEventListener('mousedown', (e) => {
+                if (e.target.classList.contains('sopa-cell') && !e.target.classList.contains('found')) {
+                    isSelecting = true;
+                    selectedCells = [e.target];
+                    e.target.classList.add('selected');
                 }
-                document.getElementById(`status-${i}`).textContent = '';
-                document.getElementById(`pista-${i}`).classList.remove('correct', 'active');
             });
-            document.getElementById('trivia-correctas').textContent = '0';
-            document.getElementById('trivia-completado').classList.add('hidden');
-            document.getElementById('share-cta').classList.remove('victory');
-        }
 
-        function darPista() {
-            for (let i = 0; i < triviaData.palabras.length; i++) {
-                if (!respuestasCorrectas[i]) {
-                    const palabra = triviaData.palabras[i].palabra;
-                    for (let j = 0; j < palabra.length; j++) {
-                        const c = document.getElementById(`cell-${i}-${j}`);
-                        if (!c.value) { c.value = palabra[j]; c.focus(); return; }
+            grid.addEventListener('mouseover', (e) => {
+                if (isSelecting && e.target.classList.contains('sopa-cell') && !e.target.classList.contains('found')) {
+                    if (!selectedCells.includes(e.target)) {
+                        // Check if valid selection (same row, column, or diagonal)
+                        const firstCell = selectedCells[0];
+                        const firstRow = parseInt(firstCell.dataset.row);
+                        const firstCol = parseInt(firstCell.dataset.col);
+                        const newRow = parseInt(e.target.dataset.row);
+                        const newCol = parseInt(e.target.dataset.col);
+
+                        const sameRow = newRow === firstRow;
+                        const sameCol = newCol === firstCol;
+                        
+                        if (sameRow || sameCol) {
+                            // Clear previous selection except first
+                            selectedCells.forEach((cell, i) => {
+                                if (i > 0) cell.classList.remove('selected');
+                            });
+                            selectedCells = [firstCell];
+
+                            // Select all cells in between
+                            if (sameRow) {
+                                const minCol = Math.min(firstCol, newCol);
+                                const maxCol = Math.max(firstCol, newCol);
+                                for (let c = minCol; c <= maxCol; c++) {
+                                    const cell = document.querySelector(`.sopa-cell[data-row="${firstRow}"][data-col="${c}"]`);
+                                    if (cell && !cell.classList.contains('found')) {
+                                        cell.classList.add('selected');
+                                        if (!selectedCells.includes(cell)) selectedCells.push(cell);
+                                    }
+                                }
+                            } else if (sameCol) {
+                                const minRow = Math.min(firstRow, newRow);
+                                const maxRow = Math.max(firstRow, newRow);
+                                for (let r = minRow; r <= maxRow; r++) {
+                                    const cell = document.querySelector(`.sopa-cell[data-row="${r}"][data-col="${firstCol}"]`);
+                                    if (cell && !cell.classList.contains('found')) {
+                                        cell.classList.add('selected');
+                                        if (!selectedCells.includes(cell)) selectedCells.push(cell);
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
+            });
+
+            grid.addEventListener('mouseup', () => {
+                if (isSelecting) {
+                    checkWord();
+                    isSelecting = false;
+                }
+            });
+
+            grid.addEventListener('mouseleave', () => {
+                if (isSelecting) {
+                    checkWord();
+                    isSelecting = false;
+                }
+            });
+
+            // Touch support
+            grid.addEventListener('touchstart', (e) => {
+                const touch = e.touches[0];
+                const cell = document.elementFromPoint(touch.clientX, touch.clientY);
+                if (cell && cell.classList.contains('sopa-cell') && !cell.classList.contains('found')) {
+                    isSelecting = true;
+                    selectedCells = [cell];
+                    cell.classList.add('selected');
+                }
+            });
+
+            grid.addEventListener('touchmove', (e) => {
+                e.preventDefault();
+                const touch = e.touches[0];
+                const cell = document.elementFromPoint(touch.clientX, touch.clientY);
+                if (isSelecting && cell && cell.classList.contains('sopa-cell')) {
+                    // Similar logic as mouseover
+                }
+            });
+
+            grid.addEventListener('touchend', () => {
+                if (isSelecting) {
+                    checkWord();
+                    isSelecting = false;
+                }
+            });
+        }
+
+        function checkWord() {
+            // Get selected word
+            const selectedWord = selectedCells.map(c => c.dataset.letter).join('');
+            const selectedWordReverse = selectedWord.split('').reverse().join('');
+
+            // Check against all words
+            let found = false;
+            sopaData.palabras.forEach((p, index) => {
+                if (!foundWords.includes(index) && (selectedWord === p.palabra || selectedWordReverse === p.palabra)) {
+                    found = true;
+                    foundWords.push(index);
+                    
+                    // Mark cells as found
+                    selectedCells.forEach(cell => {
+                        cell.classList.remove('selected');
+                        cell.classList.add('found');
+                    });
+
+                    // Mark word as found
+                    document.getElementById(`palabra-${index}`).classList.add('found');
+
+                    // Update score
+                    document.getElementById('sopa-encontradas').textContent = foundWords.length;
+
+                    // Check if complete
+                    if (foundWords.length === sopaData.palabras.length) {
+                        document.getElementById('sopa-completado').classList.remove('hidden');
+                        document.getElementById('share-cta').classList.add('victory');
+                        crearConfetti();
+                    }
+                }
+            });
+
+            if (!found) {
+                // Clear selection
+                selectedCells.forEach(cell => cell.classList.remove('selected'));
             }
+            selectedCells = [];
+        }
+
+        function reiniciarSopa() {
+            foundWords = [];
+            selectedCells = [];
+            isSelecting = false;
+
+            // Reset all cells
+            document.querySelectorAll('.sopa-cell').forEach(cell => {
+                cell.classList.remove('selected', 'found');
+            });
+
+            // Reset palabras
+            document.querySelectorAll('.palabra-item').forEach(item => {
+                item.classList.remove('found');
+            });
+
+            // Reset score
+            document.getElementById('sopa-encontradas').textContent = '0';
+            document.getElementById('sopa-completado').classList.add('hidden');
+            document.getElementById('share-cta').classList.remove('victory');
         }
 
         function crearConfetti() {
