@@ -17,6 +17,7 @@
     
     <style>
         :root {
+            /* Colores 360educa */
             --morado: #a663cc;
             --morado-light: #b87fd9;
             --morado-dark: #8a4db3;
@@ -29,12 +30,16 @@
             --gris-oscuro: #393e41;
             --blanco: #ffffff;
             --negro: #1b1b1e;
-            --bg-primary: #0f0f12;
-            --bg-secondary: #1a1a1f;
-            --bg-card: rgba(255, 255, 255, 0.03);
-            --text-primary: #f5f5f7;
-            --text-secondary: #a1a1a6;
-            --border-color: rgba(255, 255, 255, 0.08);
+            /* Modo claro */
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f7;
+            --bg-card: #ffffff;
+            --text-primary: #1b1b1e;
+            --text-secondary: #4d4d4d;
+            --border-color: rgba(0, 0, 0, 0.1);
+            /* Brújula colors */
+            --brujula-dark: #1e2a3a;
+            --brujula-red: #e74c3c;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -63,19 +68,19 @@
         #error h2 { color: var(--coral); margin-bottom: 0.5rem; }
         #error p { color: var(--text-secondary); max-width: 400px; }
 
-        header { padding: 1.25rem 2rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; background: rgba(15, 15, 18, 0.8); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
+        header { padding: 1.25rem 2rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
         .logo-section { display: flex; align-items: center; gap: 1rem; }
-        .logo-icon { width: 48px; height: 48px; background: linear-gradient(135deg, var(--morado) 0%, var(--coral) 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; }
-        .logo-text h1 { font-size: 1.4rem; font-weight: 700; letter-spacing: -0.5px; }
-        .logo-text h1 span { background: linear-gradient(135deg, var(--morado) 0%, var(--coral) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .logo-icon { width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; }
+        .logo-icon svg { width: 48px; height: 48px; }
+        .logo-text h1 { font-size: 1.4rem; font-weight: 700; letter-spacing: -0.5px; color: var(--brujula-dark); }
         .logo-text p { font-size: 0.75rem; color: var(--text-secondary); font-family: 'Space Mono', monospace; }
 
-        .nav-tabs { display: flex; background: var(--bg-secondary); border-radius: 10px; padding: 4px; gap: 4px; }
+        .nav-tabs { display: flex; background: var(--bg-secondary); border-radius: 10px; padding: 4px; gap: 4px; border: 1px solid var(--border-color); }
         .nav-tab { padding: 10px 16px; border: none; background: transparent; color: var(--text-secondary); cursor: pointer; font-weight: 500; font-size: 0.85rem; border-radius: 8px; transition: all 0.3s ease; font-family: 'Outfit', sans-serif; }
-        .nav-tab:hover { color: var(--text-primary); }
+        .nav-tab:hover { color: var(--morado); background: rgba(166, 99, 204, 0.1); }
         .nav-tab.active { background: linear-gradient(135deg, var(--morado) 0%, var(--morado-dark) 100%); color: white; }
 
-        .brand-badge { padding: 8px 16px; background: linear-gradient(135deg, rgba(166, 99, 204, 0.15) 0%, rgba(255, 131, 97, 0.15) 100%); border: 1px solid rgba(166, 99, 204, 0.3); border-radius: 20px; font-size: 0.8rem; color: var(--morado-light); font-weight: 500; }
+        .brand-badge { padding: 8px 16px; background: linear-gradient(135deg, rgba(166, 99, 204, 0.1) 0%, rgba(255, 131, 97, 0.1) 100%); border: 1px solid rgba(166, 99, 204, 0.2); border-radius: 20px; font-size: 0.8rem; color: var(--morado); font-weight: 500; }
 
         main { padding: 2rem; max-width: 1600px; margin: 0 auto; animation: fadeIn 0.5s ease; }
 
@@ -85,15 +90,15 @@
         .section-header p { color: var(--text-secondary); font-size: 1rem; max-width: 800px; line-height: 1.7; }
 
         .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
-        .stat-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 1.5rem; transition: all 0.3s ease; }
-        .stat-card:hover { transform: translateY(-4px); border-color: rgba(166, 99, 204, 0.3); box-shadow: 0 20px 40px rgba(166, 99, 204, 0.1); }
+        .stat-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 1.5rem; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .stat-card:hover { transform: translateY(-4px); border-color: rgba(166, 99, 204, 0.3); box-shadow: 0 12px 24px rgba(166, 99, 204, 0.12); }
         .stat-card .label { font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
         .stat-card .value { font-size: 2.5rem; font-weight: 700; background: linear-gradient(135deg, var(--morado) 0%, var(--coral) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 
-        .puntos-clave { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; padding: 1.5rem; margin-bottom: 2rem; }
-        .puntos-clave h3 { font-size: 1.1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
-        .punto-item { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.75rem; background: rgba(166, 99, 204, 0.05); border-radius: 10px; margin-bottom: 0.5rem; border-left: 3px solid var(--morado); transition: all 0.3s ease; }
-        .punto-item:hover { background: rgba(166, 99, 204, 0.1); }
+        .puntos-clave { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .puntos-clave h3 { font-size: 1.1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; color: var(--text-primary); }
+        .punto-item { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.75rem; background: rgba(166, 99, 204, 0.06); border-radius: 10px; margin-bottom: 0.5rem; border-left: 3px solid var(--morado); transition: all 0.3s ease; }
+        .punto-item:hover { background: rgba(166, 99, 204, 0.12); }
         .punto-numero { font-family: 'Space Mono', monospace; font-weight: 700; color: var(--morado); font-size: 0.85rem; }
         .punto-texto { color: var(--text-primary); font-size: 0.95rem; line-height: 1.5; }
 
@@ -106,8 +111,8 @@
         .filter-btn.active { background: linear-gradient(135deg, var(--morado) 0%, var(--morado-dark) 100%); border-color: transparent; color: white; }
 
         .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 1rem; }
-        .org-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease; animation: slideUp 0.4s ease backwards; }
-        .org-card:hover { transform: translateY(-4px); border-color: rgba(166, 99, 204, 0.3); box-shadow: 0 20px 40px rgba(166, 99, 204, 0.1); }
+        .org-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease; animation: slideUp 0.4s ease backwards; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .org-card:hover { transform: translateY(-4px); border-color: rgba(166, 99, 204, 0.3); box-shadow: 0 12px 24px rgba(166, 99, 204, 0.12); }
         .org-card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; }
         .org-info { display: flex; align-items: center; gap: 0.75rem; }
         .org-icon { font-size: 1.5rem; }
@@ -116,7 +121,7 @@
         .org-categoria.mexicana { background: rgba(135, 216, 149, 0.15); color: var(--verde); }
         .novedades-badge { padding: 6px 14px; border-radius: 20px; font-weight: 700; font-size: 0.9rem; }
         .novedades-badge.has-news { background: linear-gradient(135deg, var(--morado) 0%, var(--coral) 100%); color: white; }
-        .novedades-badge.no-news { background: var(--bg-secondary); color: var(--text-secondary); }
+        .novedades-badge.no-news { background: var(--bg-secondary); color: var(--text-secondary); border: 1px solid var(--border-color); }
         .org-card-content { color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 0.75rem; }
 
         .novedades-detalle { background: rgba(166, 99, 204, 0.08); border-radius: 8px; padding: 0.6rem 0.8rem; margin-top: 0.5rem; }
@@ -137,8 +142,8 @@
         .org-ficha-web a { font-size: 0.75rem; color: var(--morado); font-family: 'Space Mono', monospace; text-decoration: none; }
         .org-ficha-web a:hover { color: var(--coral); text-decoration: underline; }
 
-        .historico-item { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease; display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
-        .historico-item:hover { border-color: var(--morado); transform: translateX(8px); }
+        .historico-item { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 1.5rem; cursor: pointer; transition: all 0.3s ease; display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .historico-item:hover { border-color: var(--morado); transform: translateX(8px); box-shadow: 0 8px 20px rgba(166, 99, 204, 0.12); }
         .historico-fecha { font-size: 1.2rem; font-weight: 600; }
         .historico-resumen { color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem; max-width: 600px; }
         .historico-novedades { font-size: 2rem; font-weight: 700; color: var(--morado); }
@@ -165,8 +170,8 @@
         .sopa-game { display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start; }
         @media (max-width: 900px) { .sopa-game { grid-template-columns: 1fr; } }
 
-        .sopa-grid-container { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; padding: 1.5rem; }
-        .sopa-grid-container h3 { font-size: 1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .sopa-grid-container { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .sopa-grid-container h3 { font-size: 1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; color: var(--text-primary); }
 
         .sopa-grid {
             display: grid;
@@ -194,12 +199,12 @@
 
         .sopa-cell:hover {
             border-color: var(--morado);
-            background: rgba(166, 99, 204, 0.1);
+            background: rgba(166, 99, 204, 0.15);
         }
 
         .sopa-cell.selected {
-            background: rgba(166, 99, 204, 0.3);
-            border-color: var(--morado);
+            background: var(--morado);
+            border-color: var(--morado-dark);
             color: white;
         }
 
@@ -210,7 +215,7 @@
             animation: glow 1s ease;
         }
 
-        .palabras-section { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; padding: 1.5rem; }
+        .palabras-section { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
         .palabras-section h3 { font-size: 1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
 
         .palabra-item {
@@ -339,7 +344,15 @@
 </head>
 <body>
     <div id="loading">
-        <div class="spinner">🧭</div>
+        <div class="spinner">
+            <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" width="50" height="50">
+                <circle cx="25" cy="25" r="18" stroke="#1e2a3a" stroke-width="3" fill="none"/>
+                <line x1="5" y1="25" x2="13" y2="25" stroke="#1e2a3a" stroke-width="3" stroke-linecap="round"/>
+                <line x1="37" y1="25" x2="45" y2="25" stroke="#1e2a3a" stroke-width="3" stroke-linecap="round"/>
+                <path d="M25 10 L28 25 L25 32 L22 25 Z" fill="#1e2a3a"/>
+                <path d="M25 10 L28 25 L25 18 L22 25 Z" fill="#e74c3c"/>
+            </svg>
+        </div>
         <p>Cargando Brújula360...</p>
     </div>
 
@@ -352,9 +365,17 @@
     <div id="app" class="hidden">
         <header>
             <div class="logo-section">
-                <div class="logo-icon">🧭</div>
+                <div class="logo-icon">
+                    <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="18" stroke="#1e2a3a" stroke-width="3" fill="none"/>
+                        <line x1="5" y1="25" x2="13" y2="25" stroke="#1e2a3a" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="37" y1="25" x2="45" y2="25" stroke="#1e2a3a" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M25 10 L28 25 L25 32 L22 25 Z" fill="#1e2a3a"/>
+                        <path d="M25 10 L28 25 L25 18 L22 25 Z" fill="#e74c3c"/>
+                    </svg>
+                </div>
                 <div class="logo-text">
-                    <h1>Brújula<span>360</span></h1>
+                    <h1>Brújula360</h1>
                     <p>Intelligence Hub PLD/FT</p>
                 </div>
             </div>
