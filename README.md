@@ -45,6 +45,13 @@ Cada viernes se actualizan:
 1. `data/monitoreos.json` - Nueva semana de monitoreo
 2. Palabras de la sopa de letras en `index.html`
 
+## 📅 Historial de Actualizaciones
+
+- **2026-01-30**: Semana 4 - FATF lista gris, UE sanciones Irán, CPI anuncia fecha
+- **2026-01-23**: Semana 3 - OFAC narcotráfico, Rusia alto riesgo UE, Banco Mundial Guidelines
+- **2026-01-16**: Semana 2 - CNBV reglas fraude/MTU, GAFILAT presidencia
+- **2026-01-09**: Semana 1 - Evaluación México GAFI, UIF nueva dirección
+
 ## 📜 Licencia
 
 © 2026 360educa. Todos los derechos reservados.

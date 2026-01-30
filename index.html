@@ -489,54 +489,54 @@
         let selectedCells = [];
         let foundWords = [];
 
-        // Sopa de letras data
+        // Sopa de letras data - Semana 30 enero 2026
         const sopaData = {
-            semana: "2026-01-23",
+            semana: "2026-01-30",
             // Grid 12x12 con las palabras escondidas
             grid: [
-                ['G','A','F','I','L','A','T','P','X','M','K','J'],
-                ['R','Q','W','E','R','T','Y','U','I','O','P','L'],
-                ['A','S','D','F','I','N','C','E','N','Z','X','C'],
-                ['V','B','N','M','L','K','J','H','G','F','D','S'],
-                ['R','U','S','I','A','Q','W','E','R','T','Y','U'],
-                ['I','O','P','A','S','D','F','G','H','J','K','L'],
-                ['Z','X','C','V','B','N','M','Q','W','E','R','T'],
-                ['S','U','R','I','N','A','M','Y','U','I','O','P'],
-                ['A','S','D','F','G','H','J','K','L','Z','X','C'],
-                ['V','B','N','O','F','A','C','M','Q','W','E','R'],
-                ['T','Y','U','I','O','P','A','S','D','F','G','H'],
-                ['J','K','L','Z','X','C','V','B','N','M','Q','W']
+                ['C','R','O','A','C','I','A','X','M','K','J','P'],
+                ['Q','W','E','R','T','Y','U','I','O','P','L','S'],
+                ['D','F','I','R','A','N','G','H','J','K','L','Z'],
+                ['X','C','V','B','N','M','Q','W','E','R','T','Y'],
+                ['U','I','C','P','I','O','A','S','D','F','G','H'],
+                ['J','K','L','Z','X','C','V','B','N','M','Q','W'],
+                ['F','R','A','U','D','E','T','Y','U','I','O','P'],
+                ['A','S','D','G','H','J','K','L','Z','X','C','V'],
+                ['B','N','M','C','N','B','V','Q','W','E','R','T'],
+                ['Y','U','I','O','P','A','S','D','F','G','H','J'],
+                ['K','L','Z','X','C','V','B','N','M','Q','W','E'],
+                ['R','T','Y','U','I','O','P','A','S','D','F','G']
             ],
             palabras: [
                 { 
-                    palabra: "RUSIA", 
-                    pista: "País añadido por la UE a lista de alto riesgo AML esta semana", 
+                    palabra: "CROACIA", 
+                    pista: "País añadido a lista gris FATF junto con Camerún y Vietnam (27 ene)", 
                     tipo: "trivia",
-                    posiciones: [[4,0],[4,1],[4,2],[4,3],[4,4]] // fila 4, columnas 0-4
+                    posiciones: [[0,0],[0,1],[0,2],[0,3],[0,4],[0,5],[0,6]] // fila 0, columnas 0-6
                 },
                 { 
-                    palabra: "OFAC", 
-                    pista: "Emitió designaciones por narcotráfico, terrorismo e Irán", 
+                    palabra: "IRAN", 
+                    pista: "País sancionado por la UE por suministro de drones y misiles (29 ene)", 
                     tipo: "trivia",
-                    posiciones: [[9,3],[9,4],[9,5],[9,6]] // fila 9, columnas 3-6
+                    posiciones: [[2,2],[2,3],[2,4],[2,5]] // fila 2, columnas 2-5
                 },
                 { 
-                    palabra: "SURINAM", 
-                    pista: "País que mostró progreso en medidas AML/CFT según FATF", 
-                    tipo: "trivia",
-                    posiciones: [[7,0],[7,1],[7,2],[7,3],[7,4],[7,5],[7,6]] // fila 7
-                },
-                { 
-                    palabra: "FINCEN", 
-                    pista: "Unidad de Inteligencia Financiera de Estados Unidos", 
+                    palabra: "CPI", 
+                    pista: "Índice de Percepción de la Corrupción de Transparency International", 
                     tipo: "definicion",
-                    posiciones: [[2,3],[2,4],[2,5],[2,6],[2,7],[2,8]] // fila 2, columnas 3-8
+                    posiciones: [[4,2],[4,3],[4,4]] // fila 4, columnas 2-4
                 },
                 { 
-                    palabra: "GAFILAT", 
-                    pista: "Organismo FATF regional para Latinoamérica", 
+                    palabra: "FRAUDE", 
+                    pista: "Tema de alerta FinCEN sobre programas de nutrición infantil", 
+                    tipo: "trivia",
+                    posiciones: [[6,0],[6,1],[6,2],[6,3],[6,4],[6,5]] // fila 6, columnas 0-5
+                },
+                { 
+                    palabra: "CNBV", 
+                    pista: "Comisión Nacional Bancaria y de Valores - publicó convocatoria certificación PLD/FT", 
                     tipo: "definicion",
-                    posiciones: [[0,0],[0,1],[0,2],[0,3],[0,4],[0,5],[0,6]] // fila 0
+                    posiciones: [[8,3],[8,4],[8,5],[8,6]] // fila 8, columnas 3-6
                 }
             ]
         };
