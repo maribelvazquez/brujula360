@@ -154,146 +154,195 @@
         .empty-state p { color: var(--text-secondary); }
         .empty-state strong { color: var(--morado); }
 
-        /* CRUCIGRAMA */
-        .crucigrama-container { max-width: 1100px; margin: 0 auto; }
-        .crucigrama-intro { text-align: center; margin-bottom: 2rem; }
-        .crucigrama-intro h2 { font-size: 1.8rem; margin-bottom: 0.5rem; }
-        .crucigrama-intro h2 strong { background: linear-gradient(135deg, var(--morado) 0%, var(--coral) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .crucigrama-intro p { color: var(--text-secondary); }
+        /* AHORCADO */
+        .ahorcado-container { max-width: 900px; margin: 0 auto; }
+        .ahorcado-intro { text-align: center; margin-bottom: 2rem; }
+        .ahorcado-intro h2 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+        .ahorcado-intro h2 strong { background: linear-gradient(135deg, var(--morado) 0%, var(--coral) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .ahorcado-intro p { color: var(--text-secondary); }
 
-        .crucigrama-score { display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; }
+        .ahorcado-score { display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; }
         .score-box { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1rem 1.5rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
         .score-box .label { font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; }
         .score-box .value { font-size: 2rem; font-weight: 700; background: linear-gradient(135deg, var(--morado) 0%, var(--coral) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .score-box.completado .value { background: linear-gradient(135deg, var(--verde) 0%, var(--verde-dark) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-        .crucigrama-game { display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start; }
-        @media (max-width: 900px) { .crucigrama-game { grid-template-columns: 1fr; } }
+        .ahorcado-game { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+        @media (max-width: 800px) { .ahorcado-game { grid-template-columns: 1fr; } }
 
-        .crucigrama-grid-container { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-        .crucigrama-grid-container h3 { font-size: 1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; color: var(--text-primary); }
+        .ahorcado-main { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); text-align: center; }
 
-        .crucigrama-grid {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gap: 2px;
-            max-width: 420px;
+        .ahorcado-dibujo { 
+            width: 200px; 
+            height: 220px; 
+            margin: 0 auto 1.5rem; 
+            position: relative;
+            border-bottom: 4px solid var(--gris);
         }
+        .ahorcado-dibujo .poste { position: absolute; width: 4px; height: 180px; background: var(--gris); left: 40px; bottom: 0; }
+        .ahorcado-dibujo .techo { position: absolute; width: 100px; height: 4px; background: var(--gris); left: 40px; top: 0; }
+        .ahorcado-dibujo .cuerda { position: absolute; width: 4px; height: 30px; background: var(--gris); left: 120px; top: 0; }
+        .ahorcado-dibujo .cabeza { position: absolute; width: 40px; height: 40px; border: 4px solid var(--coral); border-radius: 50%; left: 102px; top: 30px; opacity: 0; }
+        .ahorcado-dibujo .cuerpo { position: absolute; width: 4px; height: 50px; background: var(--coral); left: 120px; top: 70px; opacity: 0; }
+        .ahorcado-dibujo .brazo-izq { position: absolute; width: 35px; height: 4px; background: var(--coral); left: 85px; top: 85px; transform: rotate(-30deg); opacity: 0; }
+        .ahorcado-dibujo .brazo-der { position: absolute; width: 35px; height: 4px; background: var(--coral); left: 124px; top: 85px; transform: rotate(30deg); opacity: 0; }
+        .ahorcado-dibujo .pierna-izq { position: absolute; width: 40px; height: 4px; background: var(--coral); left: 85px; top: 118px; transform: rotate(-45deg); opacity: 0; }
+        .ahorcado-dibujo .pierna-der { position: absolute; width: 40px; height: 4px; background: var(--coral); left: 120px; top: 118px; transform: rotate(45deg); opacity: 0; }
+        .ahorcado-dibujo .parte.visible { opacity: 1; }
 
-        .crucigrama-cell {
-            width: 34px;
-            height: 34px;
+        .palabra-display { 
+            display: flex; 
+            justify-content: center; 
+            gap: 8px; 
+            margin-bottom: 1.5rem; 
+            flex-wrap: wrap;
+        }
+        .letra-slot {
+            width: 40px;
+            height: 50px;
+            border-bottom: 3px solid var(--morado);
             display: flex;
             align-items: center;
             justify-content: center;
-            position: relative;
+            font-family: 'Space Mono', monospace;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-primary);
         }
+        .letra-slot.revealed { color: var(--verde); border-color: var(--verde); }
+        .letra-slot.wrong { color: var(--coral); }
 
-        .crucigrama-cell.empty {
-            background: transparent;
+        .pista-actual {
+            background: rgba(166, 99, 204, 0.1);
+            border: 1px solid rgba(166, 99, 204, 0.2);
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            margin-bottom: 1.5rem;
         }
+        .pista-actual .pista-label { 
+            font-size: 0.7rem; 
+            color: var(--morado); 
+            text-transform: uppercase; 
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .pista-actual .pista-texto { 
+            color: var(--text-primary); 
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .pista-tipo {
+            display: inline-block;
+            font-size: 0.65rem;
+            padding: 2px 8px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+        .pista-tipo.trivia { background: rgba(255, 131, 97, 0.2); color: var(--coral); }
+        .pista-tipo.definicion { background: rgba(166, 99, 204, 0.2); color: var(--morado); }
 
-        .crucigrama-cell.active {
-            background: var(--bg-secondary);
+        .teclado {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            gap: 6px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .tecla {
+            padding: 12px 8px;
             border: 2px solid var(--border-color);
-            border-radius: 4px;
-        }
-
-        .crucigrama-cell input {
-            width: 100%;
-            height: 100%;
-            border: none;
-            background: transparent;
-            text-align: center;
+            border-radius: 8px;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
             font-family: 'Space Mono', monospace;
             font-size: 1rem;
             font-weight: 700;
-            color: var(--text-primary);
-            text-transform: uppercase;
-            outline: none;
-        }
-
-        .crucigrama-cell input:focus {
-            background: rgba(166, 99, 204, 0.15);
-        }
-
-        .crucigrama-cell.correct input {
-            color: var(--verde);
-            background: rgba(135, 216, 149, 0.15);
-        }
-
-        .crucigrama-cell .cell-number {
-            position: absolute;
-            top: 2px;
-            left: 3px;
-            font-size: 0.6rem;
-            font-weight: 700;
-            color: var(--morado);
-        }
-
-        .pistas-section { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-        .pistas-section h3 { font-size: 1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; color: var(--text-primary); }
-
-        .pistas-group { margin-bottom: 1.5rem; }
-        .pistas-group h4 { font-size: 0.85rem; color: var(--morado); margin-bottom: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
-
-        .pista-item {
-            display: flex;
-            gap: 0.5rem;
-            padding: 0.5rem 0.75rem;
-            margin-bottom: 0.4rem;
-            border-radius: 8px;
-            transition: all 0.3s ease;
             cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .tecla:hover:not(.used) { 
+            border-color: var(--morado); 
+            background: rgba(166, 99, 204, 0.1);
+        }
+        .tecla.correct { 
+            background: var(--verde); 
+            border-color: var(--verde); 
+            color: white; 
+        }
+        .tecla.wrong { 
+            background: var(--coral); 
+            border-color: var(--coral); 
+            color: white; 
+            opacity: 0.6;
+        }
+        .tecla.used { cursor: not-allowed; }
+
+        .palabras-lista { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .palabras-lista h3 { font-size: 1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; color: var(--text-primary); }
+
+        .palabra-item-lista {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            border-radius: 10px;
             background: rgba(166, 99, 204, 0.03);
+            border-left: 3px solid var(--border-color);
+            transition: all 0.3s ease;
         }
-
-        .pista-item:hover {
-            background: rgba(166, 99, 204, 0.08);
+        .palabra-item-lista.current {
+            background: rgba(166, 99, 204, 0.1);
+            border-left-color: var(--morado);
         }
-
-        .pista-item.solved {
+        .palabra-item-lista.solved {
             background: rgba(135, 216, 149, 0.1);
+            border-left-color: var(--verde);
         }
-
-        .pista-numero {
-            font-family: 'Space Mono', monospace;
+        .palabra-item-lista.failed {
+            background: rgba(255, 131, 97, 0.1);
+            border-left-color: var(--coral);
+        }
+        .palabra-num {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--bg-secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-weight: 700;
-            color: var(--morado);
-            min-width: 24px;
-        }
-
-        .pista-item.solved .pista-numero {
-            color: var(--verde);
-        }
-
-        .pista-texto {
             font-size: 0.85rem;
             color: var(--text-secondary);
-            line-height: 1.4;
         }
-
-        .pista-item.solved .pista-texto {
-            text-decoration: line-through;
-            color: var(--verde);
+        .palabra-item-lista.solved .palabra-num { background: var(--verde); color: white; }
+        .palabra-item-lista.failed .palabra-num { background: var(--coral); color: white; }
+        .palabra-item-lista.current .palabra-num { background: var(--morado); color: white; }
+        .palabra-preview {
+            font-family: 'Space Mono', monospace;
+            letter-spacing: 2px;
+            color: var(--text-secondary);
         }
+        .palabra-item-lista.solved .palabra-preview { color: var(--verde); }
 
-        .crucigrama-buttons { display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem; flex-wrap: wrap; }
+        .ahorcado-buttons { display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem; flex-wrap: wrap; }
         .btn { padding: 12px 24px; border-radius: 10px; border: none; font-weight: 600; font-size: 0.9rem; cursor: pointer; transition: all 0.3s ease; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 0.5rem; }
         .btn-primary { background: linear-gradient(135deg, var(--morado) 0%, var(--morado-dark) 100%); color: white; }
         .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(166, 99, 204, 0.3); }
         .btn-secondary { background: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-primary); }
         .btn-secondary:hover { border-color: var(--morado); color: var(--morado); }
 
-        .crucigrama-instructions {
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: 0.85rem;
+        .mensaje-resultado {
+            padding: 1rem;
+            border-radius: 12px;
             margin-top: 1rem;
-            padding: 0.75rem;
-            background: rgba(166, 99, 204, 0.05);
-            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
         }
+        .mensaje-resultado.win { background: rgba(135, 216, 149, 0.2); color: var(--verde); }
+        .mensaje-resultado.lose { background: rgba(255, 131, 97, 0.2); color: var(--coral); }
 
         .share-cta { background: linear-gradient(135deg, rgba(166, 99, 204, 0.1) 0%, rgba(255, 131, 97, 0.1) 100%); border: 1px solid rgba(166, 99, 204, 0.3); border-radius: 16px; padding: 1.5rem; margin-top: 2rem; text-align: center; }
         .share-cta.victory { animation: celebrar 0.5s ease infinite; }
@@ -389,7 +438,7 @@
                 <button class="nav-tab active" data-view="dashboard">Dashboard</button>
                 <button class="nav-tab" data-view="historico">Histórico</button>
                 <button class="nav-tab" data-view="organismos">Organismos</button>
-                <button class="nav-tab" data-view="sopa">✏️ Crucigrama</button>
+                <button class="nav-tab" data-view="sopa">🎯 Ahorcado</button>
             </div>
             
             <div class="brand-badge">by 360educa</div>
@@ -450,44 +499,63 @@
             </section>
 
             <section id="view-sopa" class="hidden">
-                <div class="crucigrama-container">
-                    <div class="crucigrama-intro">
-                        <h2>✏️ <strong>Crucigrama</strong> Semanal</h2>
-                        <p>Resuelve las 8 palabras clave del monitoreo regulatorio de esta semana</p>
+                <div class="ahorcado-container">
+                    <div class="ahorcado-intro">
+                        <h2>🎯 <strong>Ahorcado</strong> Semanal</h2>
+                        <p>Adivina las 8 palabras clave del monitoreo regulatorio de esta semana</p>
                     </div>
 
-                    <div class="crucigrama-score">
-                        <div class="score-box"><div class="label">Correctas</div><div class="value" id="crucigrama-correctas">0</div></div>
-                        <div class="score-box"><div class="label">De</div><div class="value" id="crucigrama-total">8</div></div>
-                        <div class="score-box completado hidden" id="crucigrama-completado"><div class="label">Estado</div><div class="value">✓</div></div>
+                    <div class="ahorcado-score">
+                        <div class="score-box"><div class="label">Adivinadas</div><div class="value" id="ahorcado-correctas">0</div></div>
+                        <div class="score-box"><div class="label">De</div><div class="value">8</div></div>
+                        <div class="score-box completado hidden" id="ahorcado-completado"><div class="label">Estado</div><div class="value">✓</div></div>
                     </div>
 
-                    <div class="crucigrama-game">
-                        <div class="crucigrama-grid-container">
-                            <h3>🎯 Completa el crucigrama</h3>
-                            <div class="crucigrama-grid" id="crucigrama-grid"></div>
-                            <div class="crucigrama-instructions">
-                                💡 Escribe las letras en las casillas. Las palabras se cruzan en las letras compartidas.
+                    <div class="ahorcado-progreso" id="ahorcado-progreso"></div>
+
+                    <div class="ahorcado-game">
+                        <div class="ahorcado-main">
+                            <div class="ahorcado-dibujo" id="ahorcado-dibujo">
+                                <div class="poste"></div>
+                                <div class="techo"></div>
+                                <div class="cuerda"></div>
+                                <div class="cabeza parte"></div>
+                                <div class="cuerpo parte"></div>
+                                <div class="brazo-izq parte"></div>
+                                <div class="brazo-der parte"></div>
+                                <div class="pierna-izq parte"></div>
+                                <div class="pierna-der parte"></div>
                             </div>
+
+                            <div class="pista-actual">
+                                <div class="pista-label">💡 Pista <span id="palabra-num">1</span> de 8 <span class="pista-tipo" id="palabra-tipo">trivia</span></div>
+                                <div class="pista-texto" id="pista-texto"></div>
+                            </div>
+
+                            <div class="palabra-display" id="palabra-display"></div>
+
+                            <div class="teclado" id="teclado"></div>
+
+                            <div class="ahorcado-estado hidden" id="ahorcado-estado"></div>
                         </div>
 
-                        <div class="pistas-section">
-                            <h3>📋 Pistas</h3>
-                            <div id="pistas-horizontales"></div>
-                            <div id="pistas-verticales"></div>
+                        <div class="palabras-lista">
+                            <h3>📋 Progreso</h3>
+                            <div id="palabras-progreso"></div>
                         </div>
                     </div>
 
-                    <div class="crucigrama-buttons">
-                        <button class="btn btn-primary" onclick="verificarCrucigrama()">✓ Verificar</button>
-                        <button class="btn btn-secondary" onclick="reiniciarCrucigrama()">🔄 Reiniciar</button>
+                    <div class="ahorcado-navegacion">
+                        <button class="btn btn-secondary" onclick="palabraAnterior()">← Anterior</button>
+                        <button class="btn btn-primary" onclick="siguientePalabra()">Siguiente →</button>
+                        <button class="btn btn-secondary" onclick="reiniciarAhorcado()">🔄 Reiniciar Todo</button>
                     </div>
 
                     <div class="share-cta" id="share-cta">
                         <h4>📸 ¡Comparte tu resultado!</h4>
-                        <p>Cuando completes el crucigrama, sube tu captura de pantalla a redes sociales con el hashtag</p>
+                        <p>Cuando completes el ahorcado, sube tu captura de pantalla a redes sociales con el hashtag</p>
                         <span class="hashtag">#soy360educa</span>
-                        <p class="share-premio">🎁 ¡Premios especiales para quienes acumulen 5 crucigramas resueltos!</p>
+                        <p class="share-premio">🎁 ¡Premios especiales para quienes acumulen 5 ahorcados resueltos!</p>
                     </div>
                 </div>
             </section>
@@ -512,41 +580,26 @@
         let currentSemana = null;
         let searchTerm = '';
         
-        // Crucigrama state
-        let solvedWords = [];
+        // Ahorcado state
+        let ahorcadoIndex = 0;
+        let letrasUsadas = [];
+        let errores = 0;
+        let palabrasEstado = []; // 'pendiente', 'ganada', 'perdida'
+        const MAX_ERRORES = 6;
 
-        // Crucigrama data - Semana 30 enero 2026
-        const crucigramaData = {
+        // Ahorcado data - Semana 30 enero 2026 (6 trivia + 2 definición)
+        const ahorcadoData = {
             semana: "2026-01-30",
-            // Grid 10x12 - null = empty, string = cell ID
-            grid: [
-                [null, null, null, null, null, '1', null, null, null, null, null, null],
-                [null, null, '2', null, null, 'G', null, null, null, null, null, null],
-                ['3', 'C', 'R', 'O', 'A', 'C', 'I', 'A', null, null, null, null],
-                [null, null, 'O', null, null, 'F', null, null, '4', null, null, null],
-                [null, null, 'A', null, null, 'I', null, null, 'V', null, null, null],
-                ['5', 'D', 'R', 'O', 'N', 'E', 'S', null, 'I', null, null, null],
-                [null, null, 'I', null, null, null, null, null, 'E', null, null, null],
-                ['6', 'F', 'R', 'A', 'U', 'D', 'E', null, 'T', null, null, null],
-                [null, null, 'A', null, null, null, null, null, 'N', null, null, null],
-                [null, null, null, '7', 'C', 'P', 'I', null, 'A', null, null, null],
-                [null, null, null, null, null, null, null, '8', 'M', null, null, null],
-                [null, null, null, null, null, null, null, 'C', 'N', 'B', 'V', null]
-            ],
-            palabras: {
-                horizontales: [
-                    { num: 3, palabra: "CROACIA", pista: "País añadido a lista gris FATF junto con Camerún y Vietnam (27 ene)", fila: 2, colInicio: 0, longitud: 7 },
-                    { num: 5, palabra: "DRONES", pista: "Motivo por el cual UE sancionó a Irán (suministro de estos y misiles)", fila: 5, colInicio: 0, longitud: 6 },
-                    { num: 6, palabra: "FRAUDE", pista: "Tema de alerta FinCEN sobre programas de nutrición infantil", fila: 7, colInicio: 0, longitud: 6 },
-                    { num: 7, palabra: "CPI", pista: "Índice de Percepción de la Corrupción (siglas)", fila: 9, colInicio: 3, longitud: 3 },
-                    { num: 8, palabra: "CNBV", pista: "Comisión que publicó convocatoria certificación PLD/FT 2026", fila: 11, colInicio: 7, longitud: 4 }
-                ],
-                verticales: [
-                    { num: 1, palabra: "GAFI", pista: "Organismo que México preside en 2026 (siglas en español)", fila: 0, col: 5, longitud: 4 },
-                    { num: 2, palabra: "CROACIA", pista: "Primer país mencionado de los 3 añadidos a lista gris", fila: 1, col: 2, longitud: 7 },
-                    { num: 4, palabra: "VIETNAM", pista: "Tercer país asiático añadido a lista gris FATF", fila: 3, col: 8, longitud: 7 }
-                ]
-            }
+            palabras: [
+                { palabra: "CROACIA", pista: "País europeo añadido a lista gris FATF el 27 de enero 2026", tipo: "trivia", organismo: "FATF" },
+                { palabra: "IRAN", pista: "País sancionado por la Unión Europea por suministro de drones y misiles balísticos", tipo: "trivia", organismo: "UE" },
+                { palabra: "FRAUDE", pista: "Tema de la alerta FinCEN FIN-2026-Alert001 sobre programas de nutrición infantil", tipo: "trivia", organismo: "FinCEN" },
+                { palabra: "FEBRERO", pista: "Mes en que Transparency International lanzará el CPI 2026 (día 10)", tipo: "trivia", organismo: "TI" },
+                { palabra: "DRONES", pista: "Tipo de armamento por el que la UE sancionó a Irán el 29 de enero", tipo: "trivia", organismo: "UE" },
+                { palabra: "POTENCIAS", pista: "Tema de reportes IEP: '_____ medias remodelan el orden global'", tipo: "trivia", organismo: "IEP" },
+                { palabra: "CPI", pista: "Índice de Percepción de la Corrupción - siglas en español", tipo: "definicion", organismo: "TI" },
+                { palabra: "CNBV", pista: "Comisión Nacional Bancaria y de Valores - siglas del regulador mexicano", tipo: "definicion", organismo: "México" }
+            ]
         };
 
         async function loadData() {
@@ -561,7 +614,7 @@
                 renderDashboard();
                 renderHistorico();
                 renderOrganismos();
-                renderCrucigrama();
+                renderAhorcado();
                 setupEventListeners();
             } catch (error) {
                 console.error('Error loading data:', error);
@@ -622,212 +675,201 @@
             document.getElementById('organismos-mexicanas').innerHTML = render(Object.entries(appData.organismos).filter(([k, v]) => v.categoria === 'mexicana'));
         }
 
-        // CRUCIGRAMA
-        function renderCrucigrama() {
-            // Render grid
-            let gridHTML = '';
-            const cellMap = {}; // Para trackear qué celdas pertenecen a qué palabras
-            
-            // Mapear todas las celdas de palabras
-            crucigramaData.palabras.horizontales.forEach(p => {
-                for (let i = 0; i < p.longitud; i++) {
-                    const key = `${p.fila}-${p.colInicio + i}`;
-                    if (!cellMap[key]) cellMap[key] = { letra: p.palabra[i], num: i === 0 ? p.num : null, palabras: [] };
-                    cellMap[key].palabras.push({ tipo: 'h', num: p.num, index: i });
-                }
-            });
-            
-            crucigramaData.palabras.verticales.forEach(p => {
-                for (let i = 0; i < p.longitud; i++) {
-                    const key = `${p.fila + i}-${p.col}`;
-                    if (!cellMap[key]) cellMap[key] = { letra: p.palabra[i], num: i === 0 ? p.num : null, palabras: [] };
-                    else if (i === 0 && !cellMap[key].num) cellMap[key].num = p.num;
-                    cellMap[key].palabras.push({ tipo: 'v', num: p.num, index: i });
-                }
-            });
-
-            // Generar grid HTML
-            for (let row = 0; row < 12; row++) {
-                for (let col = 0; col < 12; col++) {
-                    const key = `${row}-${col}`;
-                    if (cellMap[key]) {
-                        const numHTML = cellMap[key].num ? `<span class="cell-number">${cellMap[key].num}</span>` : '';
-                        gridHTML += `
-                            <div class="crucigrama-cell active" data-row="${row}" data-col="${col}" data-letra="${cellMap[key].letra}">
-                                ${numHTML}
-                                <input type="text" maxlength="1" data-row="${row}" data-col="${col}">
-                            </div>
-                        `;
-                    } else {
-                        gridHTML += `<div class="crucigrama-cell empty"></div>`;
-                    }
-                }
+        // AHORCADO
+        function renderAhorcado() {
+            // Inicializar estado
+            if (palabrasEstado.length === 0) {
+                palabrasEstado = ahorcadoData.palabras.map(() => 'pendiente');
             }
-            document.getElementById('crucigrama-grid').innerHTML = gridHTML;
-
-            // Render pistas horizontales
-            document.getElementById('pistas-horizontales').innerHTML = `
-                <div class="pistas-group">
-                    <h4>→ Horizontales</h4>
-                    ${crucigramaData.palabras.horizontales.map(p => `
-                        <div class="pista-item" id="pista-h-${p.num}" data-num="${p.num}" data-tipo="h">
-                            <span class="pista-numero">${p.num}.</span>
-                            <span class="pista-texto">${p.pista}</span>
-                        </div>
-                    `).join('')}
-                </div>
-            `;
-
-            // Render pistas verticales
-            document.getElementById('pistas-verticales').innerHTML = `
-                <div class="pistas-group">
-                    <h4>↓ Verticales</h4>
-                    ${crucigramaData.palabras.verticales.map(p => `
-                        <div class="pista-item" id="pista-v-${p.num}" data-num="${p.num}" data-tipo="v">
-                            <span class="pista-numero">${p.num}.</span>
-                            <span class="pista-texto">${p.pista}</span>
-                        </div>
-                    `).join('')}
-                </div>
-            `;
-
-            // Setup events
-            setupCrucigramaEvents();
+            
+            renderPalabraActual();
+            renderProgreso();
         }
 
-        function setupCrucigramaEvents() {
-            const inputs = document.querySelectorAll('.crucigrama-cell input');
+        function renderPalabraActual() {
+            const palabraObj = ahorcadoData.palabras[ahorcadoIndex];
+            const palabra = palabraObj.palabra;
             
-            inputs.forEach(input => {
-                input.addEventListener('input', (e) => {
-                    e.target.value = e.target.value.toUpperCase();
-                    // Auto-focus next cell
-                    if (e.target.value) {
-                        const allInputs = Array.from(inputs);
-                        const currentIndex = allInputs.indexOf(e.target);
-                        if (currentIndex < allInputs.length - 1) {
-                            allInputs[currentIndex + 1].focus();
-                        }
-                    }
-                });
-
-                input.addEventListener('keydown', (e) => {
-                    const allInputs = Array.from(inputs);
-                    const currentIndex = allInputs.indexOf(e.target);
-                    
-                    if (e.key === 'Backspace' && !e.target.value && currentIndex > 0) {
-                        allInputs[currentIndex - 1].focus();
-                    } else if (e.key === 'ArrowRight' && currentIndex < allInputs.length - 1) {
-                        allInputs[currentIndex + 1].focus();
-                    } else if (e.key === 'ArrowLeft' && currentIndex > 0) {
-                        allInputs[currentIndex - 1].focus();
-                    }
-                });
-            });
-
-            // Click on pista to highlight
-            document.querySelectorAll('.pista-item').forEach(pista => {
-                pista.addEventListener('click', () => {
-                    const num = parseInt(pista.dataset.num);
-                    const tipo = pista.dataset.tipo;
-                    
-                    // Find first cell of this word and focus it
-                    let palabra;
-                    if (tipo === 'h') {
-                        palabra = crucigramaData.palabras.horizontales.find(p => p.num === num);
-                        if (palabra) {
-                            const input = document.querySelector(`input[data-row="${palabra.fila}"][data-col="${palabra.colInicio}"]`);
-                            if (input) input.focus();
-                        }
-                    } else {
-                        palabra = crucigramaData.palabras.verticales.find(p => p.num === num);
-                        if (palabra) {
-                            const input = document.querySelector(`input[data-row="${palabra.fila}"][data-col="${palabra.col}"]`);
-                            if (input) input.focus();
-                        }
-                    }
-                });
-            });
-        }
-
-        function verificarCrucigrama() {
-            let correctas = 0;
-            solvedWords = [];
-
-            // Verificar horizontales
-            crucigramaData.palabras.horizontales.forEach(p => {
-                let palabraUsuario = '';
-                for (let i = 0; i < p.longitud; i++) {
-                    const input = document.querySelector(`input[data-row="${p.fila}"][data-col="${p.colInicio + i}"]`);
-                    palabraUsuario += input ? input.value : '';
-                }
-                
-                if (palabraUsuario.toUpperCase() === p.palabra) {
-                    correctas++;
-                    solvedWords.push(`h-${p.num}`);
-                    document.getElementById(`pista-h-${p.num}`).classList.add('solved');
-                    // Mark cells as correct
-                    for (let i = 0; i < p.longitud; i++) {
-                        const cell = document.querySelector(`.crucigrama-cell[data-row="${p.fila}"][data-col="${p.colInicio + i}"]`);
-                        if (cell) cell.classList.add('correct');
-                    }
-                }
-            });
-
-            // Verificar verticales
-            crucigramaData.palabras.verticales.forEach(p => {
-                let palabraUsuario = '';
-                for (let i = 0; i < p.longitud; i++) {
-                    const input = document.querySelector(`input[data-row="${p.fila + i}"][data-col="${p.col}"]`);
-                    palabraUsuario += input ? input.value : '';
-                }
-                
-                if (palabraUsuario.toUpperCase() === p.palabra) {
-                    correctas++;
-                    solvedWords.push(`v-${p.num}`);
-                    document.getElementById(`pista-v-${p.num}`).classList.add('solved');
-                    // Mark cells as correct
-                    for (let i = 0; i < p.longitud; i++) {
-                        const cell = document.querySelector(`.crucigrama-cell[data-row="${p.fila + i}"][data-col="${p.col}"]`);
-                        if (cell) cell.classList.add('correct');
-                    }
-                }
-            });
-
-            // Update score
-            document.getElementById('crucigrama-correctas').textContent = correctas;
+            // Actualizar pista
+            document.getElementById('palabra-num').textContent = ahorcadoIndex + 1;
+            document.getElementById('pista-texto').textContent = palabraObj.pista;
+            document.getElementById('palabra-tipo').textContent = palabraObj.tipo;
+            document.getElementById('palabra-tipo').className = `pista-tipo ${palabraObj.tipo}`;
             
-            const totalPalabras = crucigramaData.palabras.horizontales.length + crucigramaData.palabras.verticales.length;
+            // Renderizar palabra con letras ocultas/reveladas
+            document.getElementById('palabra-display').innerHTML = palabra.split('').map(letra => {
+                const revealed = letrasUsadas.includes(letra);
+                return `<div class="letra-slot ${revealed ? 'revealed' : ''}">${revealed ? letra : ''}</div>`;
+            }).join('');
             
-            if (correctas === totalPalabras) {
-                document.getElementById('crucigrama-completado').classList.remove('hidden');
-                document.getElementById('share-cta').classList.add('victory');
-                crearConfetti();
+            // Renderizar teclado
+            const alfabeto = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
+            document.getElementById('teclado').innerHTML = alfabeto.split('').map(letra => {
+                const usado = letrasUsadas.includes(letra);
+                const correcto = usado && palabra.includes(letra);
+                const incorrecto = usado && !palabra.includes(letra);
+                return `<button class="tecla ${correcto ? 'correct' : ''} ${incorrecto ? 'wrong' : ''}" 
+                        ${usado ? 'disabled' : ''} 
+                        onclick="seleccionarLetra('${letra}')">${letra}</button>`;
+            }).join('');
+            
+            // Actualizar dibujo del ahorcado
+            actualizarDibujo();
+            
+            // Verificar estado
+            const estadoDiv = document.getElementById('ahorcado-estado');
+            if (palabrasEstado[ahorcadoIndex] === 'ganada') {
+                estadoDiv.className = 'ahorcado-estado ganado';
+                estadoDiv.innerHTML = `<h4>✅ ¡Correcto!</h4><p>La palabra era: <strong>${palabra}</strong></p>`;
+                estadoDiv.classList.remove('hidden');
+            } else if (palabrasEstado[ahorcadoIndex] === 'perdida') {
+                estadoDiv.className = 'ahorcado-estado perdido';
+                estadoDiv.innerHTML = `<h4>❌ Fallaste</h4><p>La palabra era: <strong>${palabra}</strong></p>`;
+                estadoDiv.classList.remove('hidden');
+            } else {
+                estadoDiv.classList.add('hidden');
             }
         }
 
-        function reiniciarCrucigrama() {
-            solvedWords = [];
-            
-            // Clear all inputs
-            document.querySelectorAll('.crucigrama-cell input').forEach(input => {
-                input.value = '';
+        function actualizarDibujo() {
+            const partes = document.querySelectorAll('.ahorcado-dibujo .parte');
+            partes.forEach((parte, i) => {
+                if (i < errores) {
+                    parte.classList.add('visible');
+                } else {
+                    parte.classList.remove('visible');
+                }
             });
+        }
+
+        function seleccionarLetra(letra) {
+            if (palabrasEstado[ahorcadoIndex] !== 'pendiente') return;
             
-            // Remove correct class
-            document.querySelectorAll('.crucigrama-cell').forEach(cell => {
-                cell.classList.remove('correct');
-            });
+            letrasUsadas.push(letra);
+            const palabra = ahorcadoData.palabras[ahorcadoIndex].palabra;
             
-            // Reset pistas
-            document.querySelectorAll('.pista-item').forEach(item => {
-                item.classList.remove('solved');
-            });
+            if (!palabra.includes(letra)) {
+                errores++;
+            }
             
-            // Reset score
-            document.getElementById('crucigrama-correctas').textContent = '0';
-            document.getElementById('crucigrama-completado').classList.add('hidden');
+            // Verificar si ganó o perdió
+            const todasReveladas = palabra.split('').every(l => letrasUsadas.includes(l));
+            
+            if (todasReveladas) {
+                palabrasEstado[ahorcadoIndex] = 'ganada';
+                actualizarContador();
+                verificarFinJuego();
+            } else if (errores >= MAX_ERRORES) {
+                palabrasEstado[ahorcadoIndex] = 'perdida';
+                // Revelar palabra
+                letrasUsadas.push(...palabra.split(''));
+            }
+            
+            renderPalabraActual();
+            renderProgreso();
+        }
+
+        function siguientePalabra() {
+            if (ahorcadoIndex < ahorcadoData.palabras.length - 1) {
+                ahorcadoIndex++;
+                letrasUsadas = [];
+                errores = 0;
+                renderPalabraActual();
+                renderProgreso();
+            }
+        }
+
+        function palabraAnterior() {
+            if (ahorcadoIndex > 0) {
+                ahorcadoIndex--;
+                // Restaurar estado de la palabra anterior
+                const estado = palabrasEstado[ahorcadoIndex];
+                if (estado === 'ganada' || estado === 'perdida') {
+                    letrasUsadas = ahorcadoData.palabras[ahorcadoIndex].palabra.split('');
+                    errores = estado === 'perdida' ? MAX_ERRORES : 0;
+                } else {
+                    letrasUsadas = [];
+                    errores = 0;
+                }
+                renderPalabraActual();
+                renderProgreso();
+            }
+        }
+
+        function renderProgreso() {
+            // Puntos de progreso
+            document.getElementById('ahorcado-progreso').innerHTML = ahorcadoData.palabras.map((_, i) => {
+                let clase = '';
+                if (i === ahorcadoIndex) clase = 'actual';
+                else if (palabrasEstado[i] === 'ganada') clase = 'completado';
+                else if (palabrasEstado[i] === 'perdida') clase = 'fallido';
+                return `<div class="progreso-dot ${clase}" onclick="irAPalabra(${i})"></div>`;
+            }).join('');
+            
+            // Lista de palabras
+            document.getElementById('palabras-progreso').innerHTML = ahorcadoData.palabras.map((p, i) => {
+                let estado = '';
+                let icono = '⬜';
+                if (palabrasEstado[i] === 'ganada') { estado = 'completada'; icono = '✅'; }
+                else if (palabrasEstado[i] === 'perdida') { estado = 'fallida'; icono = '❌'; }
+                else if (i === ahorcadoIndex) { estado = 'actual'; icono = '▶️'; }
+                
+                const mostrarPalabra = palabrasEstado[i] !== 'pendiente' ? p.palabra : '_ '.repeat(p.palabra.length);
+                
+                return `
+                    <div class="palabra-item-lista ${estado}" onclick="irAPalabra(${i})">
+                        <span class="status">${icono}</span>
+                        <span class="word">${mostrarPalabra}</span>
+                        <span class="pista-tipo ${p.tipo}">${p.tipo}</span>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function irAPalabra(index) {
+            ahorcadoIndex = index;
+            const estado = palabrasEstado[index];
+            if (estado === 'ganada' || estado === 'perdida') {
+                letrasUsadas = ahorcadoData.palabras[index].palabra.split('');
+                errores = estado === 'perdida' ? MAX_ERRORES : 0;
+            } else {
+                letrasUsadas = [];
+                errores = 0;
+            }
+            renderPalabraActual();
+            renderProgreso();
+        }
+
+        function actualizarContador() {
+            const ganadas = palabrasEstado.filter(e => e === 'ganada').length;
+            document.getElementById('ahorcado-correctas').textContent = ganadas;
+        }
+
+        function verificarFinJuego() {
+            const ganadas = palabrasEstado.filter(e => e === 'ganada').length;
+            const terminadas = palabrasEstado.filter(e => e !== 'pendiente').length;
+            
+            if (terminadas === ahorcadoData.palabras.length) {
+                if (ganadas === ahorcadoData.palabras.length) {
+                    document.getElementById('ahorcado-completado').classList.remove('hidden');
+                    document.getElementById('share-cta').classList.add('victory');
+                    crearConfetti();
+                }
+            }
+        }
+
+        function reiniciarAhorcado() {
+            ahorcadoIndex = 0;
+            letrasUsadas = [];
+            errores = 0;
+            palabrasEstado = ahorcadoData.palabras.map(() => 'pendiente');
+            
+            document.getElementById('ahorcado-correctas').textContent = '0';
+            document.getElementById('ahorcado-completado').classList.add('hidden');
             document.getElementById('share-cta').classList.remove('victory');
+            
+            renderPalabraActual();
+            renderProgreso();
         }
 
         function crearConfetti() {

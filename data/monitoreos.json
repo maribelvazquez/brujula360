@@ -149,11 +149,11 @@
         "FATF": {
           "novedades": 1,
           "detalleNovedades": ["Croacia, Camerún y Vietnam añadidos a lista gris (27 ene)"],
-          "temas": "Actualización de lista gris con tres nuevos países. Continúa énfasis en supervisión de criptoactivos y guías VA/VASP.",
-          "regulaciones": "Sin nuevas guías formales. Foco en recuperación de activos y activos virtuales.",
-          "eventos": "Sin eventos esta semana. México preside Pleno GAFI en febrero 2026.",
-          "alertas": "Lista gris actualizada: Croacia, Camerún, Vietnam añadidos el 27 de enero.",
-          "relevanciaMX": "CRÍTICA: México enfrenta evaluación onsite en marzo 2026. Shadow report de sociedad civil ya enviado. Reforzar ENR, supervisión cripto y matrices de riesgo."
+          "temas": "El Grupo de Acción Financiera Internacional (GAFI/FATF) actualizó su lista de jurisdicciones bajo monitoreo aumentado ('lista gris') el 27 de enero de 2026, añadiendo tres países: Croacia (primera vez), Camerún y Vietnam. Estos países han demostrado deficiencias estratégicas en sus regímenes AML/CFT que requieren monitoreo intensivo. Croacia ha sido añadida por deficiencias en supervisión de entidades no financieras y beneficiario final. Camerún y Vietnam presentan debilidades en investigación y persecución penal de delitos de lavado de dinero.",
+          "regulaciones": "La actualización de lista gris implica que estas jurisdicciones deben implementar planes de acción específicos acordados con FATF. Para entidades mexicanas, esto significa aplicar medidas de debida diligencia reforzada (EDD) en transacciones con contrapartes de estos países. La lista completa de jurisdicciones bajo monitoreo aumentado ahora incluye: Bulgaria, Burkina Faso, Camerún, Croacia, Filipinas, Haití, Jamaica, Malí, Mozambique, Nigeria, República Democrática del Congo, Senegal, Sudáfrica, Sudán del Sur, Tanzania, Venezuela, Vietnam y Yemen.",
+          "eventos": "México continúa su presidencia pro tempore del GAFI hasta junio 2026. El próximo Plenario se realizará en febrero 2026 en París, presidido por México. La evaluación mutua onsite de México está programada para marzo 2026, siendo crítico el resultado para la imagen del país como presidente del organismo.",
+          "alertas": "CRÍTICA: Actualizar filtros de screening para incluir nuevas jurisdicciones de lista gris. Revisar contrapartes existentes en Croacia, Camerún y Vietnam. Preparar documentación EDD para transacciones con estos países.",
+          "relevanciaMX": "CRÍTICA: México está a semanas de su evaluación onsite (marzo 2026) mientras preside el organismo. El shadow report de sociedad civil ya fue enviado. Es imperativo reforzar: Estrategia Nacional de Riesgos (ENR), supervisión de criptoactivos bajo guías VA/VASP, y demostrar efectividad en persecución penal de LD. El resultado de la evaluación impactará directamente la credibilidad de México como líder regional en materia AML/CFT."
         },
         "UNODC": {
           "novedades": 1,
@@ -212,38 +212,38 @@
         "UE": {
           "novedades": 1,
           "detalleNovedades": ["Nuevas sanciones a Irán por drones y misiles (29 ene)"],
-          "temas": "Comisión Europea impone nuevas sanciones a Irán por suministro de drones/misiles y represión interna.",
-          "regulaciones": "Paquete de sanciones 29 enero vigente.",
-          "eventos": "Sin eventos.",
-          "alertas": "Actualizar filtros de sanciones para contrapartes vinculadas a Irán.",
-          "relevanciaMX": "Media. Efecto en contrapartes UE y cadenas de suministro."
+          "temas": "La Comisión Europea adoptó un nuevo paquete de sanciones contra Irán el 29 de enero de 2026, enfocado en dos áreas principales: (1) transferencia de drones y misiles balísticos a terceros países en conflicto, y (2) represión interna contra manifestantes y activistas de derechos humanos. El paquete incluye congelamiento de activos y prohibición de viaje a individuos y entidades involucradas en el programa de drones y misiles iraní, así como funcionarios responsables de violaciones de derechos humanos. Se estima que el paquete afecta a más de 30 nuevas personas y entidades.",
+          "regulaciones": "El Reglamento de sanciones del 29 de enero 2026 es de aplicación inmediata en todos los Estados miembros de la UE. Las entidades financieras deben actualizar sus filtros de cumplimiento para incluir las nuevas designaciones. El congelamiento de activos aplica a todos los fondos y recursos económicos en territorio de la UE. Las sanciones se suman al régimen existente contra Irán que incluye restricciones al sector energético, financiero y de armas.",
+          "eventos": "La UE continúa coordinando con socios transatlánticos en materia de sanciones. Se esperan posibles designaciones adicionales en febrero dependiendo del desarrollo de conflictos regionales.",
+          "alertas": "URGENTE: Actualizar listas de sanciones UE inmediatamente. Revisar contrapartes con vínculos iraníes. Verificar cadenas de suministro que puedan tener componentes o financiamiento vinculado a Irán. Las entidades mexicanas con operaciones en la UE o con contrapartes europeas deben implementar estos filtros de manera obligatoria.",
+          "relevanciaMX": "Media-Alta. Aunque México no es Estado miembro UE, las entidades mexicanas con operaciones europeas, corresponsalía con bancos UE, o contrapartes europeas deben cumplir con sanciones UE. Revisar matrices de riesgo para clientes con conexiones iraníes. Las empresas mexicanas con cadenas de suministro que pasen por Europa deben verificar cumplimiento."
         },
         "FINCEN": {
           "novedades": 1,
           "detalleNovedades": ["Alerta fraude programas nutrición infantil (FIN-2026-Alert001)"],
-          "temas": "Alerta sobre esquemas de fraude en programas federales de nutrición infantil en EE.UU.",
-          "regulaciones": "FIN-2026-Alert001: Tipologías de fraude y término clave para SAR.",
-          "eventos": "Sin eventos.",
-          "alertas": "Integrar tipología en monitoreo de programas públicos.",
-          "relevanciaMX": "Media. Tipologías aplicables a monitoreo de programas sociales mexicanos."
+          "temas": "FinCEN emitió la alerta FIN-2026-Alert001 sobre esquemas de fraude identificados en programas federales de nutrición infantil en Estados Unidos. La alerta detalla tipologías específicas de cómo organizaciones criminales han explotado los programas Child and Adult Care Food Program (CACFP) y Summer Food Service Program (SFSP). Los esquemas incluyen: creación de centros de cuidado infantil ficticios, inflación de número de beneficiarios, colusión con proveedores de alimentos, y uso de empresas fachada para desviar fondos. FinCEN estima que el fraude ha desviado cientos de millones de dólares de programas diseñados para alimentar a niños en situación de vulnerabilidad.",
+          "regulaciones": "La alerta establece un nuevo término clave para reportes de actividad sospechosa (SAR): 'FIN-2026-NUT001' que debe incluirse en el campo narrativo cuando se identifiquen actividades relacionadas con fraude en programas de nutrición. Las instituciones financieras deben implementar monitoreo específico para: transacciones inusuales de organizaciones sin fines de lucro relacionadas con alimentación, patrones de facturación inconsistentes con volumen de operaciones, y flujos de efectivo que no corresponden con el tamaño de la organización.",
+          "eventos": "FinCEN coordinará con el Departamento de Agricultura (USDA) y el HHS para investigaciones cruzadas. Se esperan más alertas relacionadas con fraude en programas federales durante 2026.",
+          "alertas": "Integrar tipología en sistemas de monitoreo transaccional. Revisar clientes que sean organizaciones de asistencia social, comedores comunitarios, o proveedores de servicios de alimentación. Generar alertas para patrones de transacciones irregulares en este sector.",
+          "relevanciaMX": "Media-Alta. Aunque la alerta es específica para EE.UU., las tipologías son directamente aplicables al monitoreo de programas sociales mexicanos como Comedores Comunitarios, Desayunos Escolares DIF, y otros programas de asistencia alimentaria. Las instituciones financieras mexicanas deben adaptar estas tipologías a su monitoreo de clientes que participen en programas gubernamentales de apoyo social. Útil para auditorías de fondos públicos y prevención de desvío de recursos."
         },
         "TRANSPARENCY": {
           "novedades": 1,
           "detalleNovedades": ["CPI 2026 se lanzará el 10 de febrero"],
-          "temas": "Anuncio de fecha de lanzamiento del Índice de Percepción de la Corrupción 2026.",
-          "regulaciones": "CPI 2025 vigente como referencia hasta publicación.",
-          "eventos": "Lanzamiento CPI: 10 febrero 2026.",
-          "alertas": "Prepararse para resultados y posible impacto mediático.",
-          "relevanciaMX": "Alta. El índice evalúa a México e impacta percepción internacional."
+          "temas": "Transparency International anunció que el Índice de Percepción de la Corrupción (CPI) 2026 será publicado el 10 de febrero de 2026. El CPI es el principal indicador global que mide la percepción de corrupción en el sector público de 180 países. El índice utiliza una escala de 0 (altamente corrupto) a 100 (muy limpio) y se basa en encuestas y evaluaciones de expertos de 13 fuentes independientes. El CPI influye directamente en decisiones de inversión, calificaciones de riesgo país, y percepciones internacionales sobre gobernanza. México históricamente ha oscilado entre los puestos 120-130 con puntajes alrededor de 31-35 puntos.",
+          "regulaciones": "El CPI 2025 vigente posiciona a México en el lugar 126 de 180 países con 31 puntos. Los datos del nuevo CPI 2026 reflejarán la percepción del periodo 2024-2025. Las entidades financieras utilizan el CPI como insumo para matrices de riesgo país, decisiones de EDD, y evaluación de contrapartes. Un deterioro en el CPI puede impactar costos de financiamiento soberano y privado.",
+          "eventos": "Lanzamiento global: 10 de febrero de 2026 a las 6:00 AM hora de Berlín (11:00 PM del 9 de febrero hora CDMX). Se espera amplia cobertura mediática internacional y análisis por país. Transparency México típicamente emite comunicados específicos sobre la posición del país.",
+          "alertas": "Prepararse para el lanzamiento del CPI: revisar posicionamiento actual de México, preparar análisis de impacto para stakeholders, actualizar matrices de riesgo país si hay cambios significativos. Monitorear comunicados de Transparency México y cobertura mediática.",
+          "relevanciaMX": "ALTA. El CPI impacta directamente la imagen de México en mercados internacionales. Un deterioro puede: aumentar costos de financiamiento, generar mayor escrutinio de corresponsales bancarios internacionales, activar requisitos de EDD por parte de contrapartes extranjeras, y afectar flujos de inversión extranjera directa. Las áreas de cumplimiento deben preparar comunicados internos y externos para explicar resultados."
         },
         "IEP": {
           "novedades": 5,
           "detalleNovedades": ["Potencias medias remodelan orden global", "Era post-superpotencias confirmada", "UAE como conector global", "Ascenso de Indonesia", "Informe Gran Fragmentación"],
-          "temas": "Serie de análisis sobre el ascenso de potencias medias y fragmentación del orden mundial.",
-          "regulaciones": "Publicaciones: Middle powers reshape global order; The Great Fragmentation Report.",
-          "eventos": "Sin eventos.",
-          "alertas": "Ninguna.",
-          "relevanciaMX": "Media. México debe considerar cambios geopolíticos en matrices de riesgo."
+          "temas": "El Institute for Economics and Peace publicó una serie de análisis que documentan el surgimiento de las 'potencias medias' como actores cada vez más determinantes en el orden mundial. Los informes incluyen: (1) 'Middle Powers Reshaping Global Order' - análisis de cómo países como India, Turquía, Arabia Saudita, Brasil e Indonesia están llenando vacíos de poder; (2) 'The Great Fragmentation Report' - documentación del colapso del orden mundial unipolar hacia un sistema multipolar fragmentado; (3) Estudios de caso específicos sobre UAE como hub financiero y conector global, e Indonesia como potencia emergente en el Pacífico. Los informes alertan sobre el aumento de 'zonas grises' donde el derecho internacional tradicional tiene menos aplicabilidad.",
+          "regulaciones": "Los informes del IEP no son regulaciones pero informan análisis de riesgo. Global Peace Index (GPI) y Global Terrorism Index (GTI) vigentes. México posicionado en nivel 'bajo de paz' en GPI 2025 (posición 137 de 163). El GTI muestra a México con niveles 'altos' de impacto terrorista por violencia de cárteles.",
+          "eventos": "IEP publicará actualización del Global Peace Index en junio 2026 y del Global Terrorism Index en marzo 2026. Estos índices son referencia para matrices de riesgo país y evaluación de amenazas.",
+          "alertas": "Considerar hallazgos de IEP en actualización de matrices de riesgo geopolítico. El ascenso de potencias medias puede crear nuevas rutas de evasión de sanciones y flujos financieros alternativos.",
+          "relevanciaMX": "Media-Alta. México es considerado 'potencia media' en clasificaciones internacionales, pero los informes destacan vulnerabilidades: violencia interna, debilidad institucional, y exposición a fragmentación regional. Para compliance: monitorear relaciones comerciales con nuevos actores globales (UAE, Indonesia, Turquía), actualizar matrices de riesgo país para reflejar cambios geopolíticos, y considerar rutas alternativas de lavado de dinero que emergen de la fragmentación global. Útil para reportes a consejos de administración sobre contexto geopolítico."
         },
         "SHCP": {
           "novedades": 1,
@@ -257,11 +257,11 @@
         "CNBV": {
           "novedades": 1,
           "detalleNovedades": ["Convocatoria certificación PLD/FT 2026 publicada"],
-          "temas": "Publicación de convocatoria para certificación en materia PLD/FT 2026.",
-          "regulaciones": "Convocatoria certificación 2026: exámenes 27 junio y 24 octubre.",
-          "eventos": "Evaluaciones: 27 junio 2026, 24 octubre 2026.",
-          "alertas": "Oficiales de cumplimiento deben registrarse para certificación.",
-          "relevanciaMX": "Alta. Capacitación obligatoria para oficiales de cumplimiento."
+          "temas": "La Comisión Nacional Bancaria y de Valores (CNBV) publicó la convocatoria oficial para el proceso de certificación de oficiales de cumplimiento en materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo (PLD/FT) para el año 2026. La certificación es obligatoria para oficiales de cumplimiento de entidades supervisadas por CNBV, incluyendo bancos, casas de bolsa, fondos de inversión, SOFOMES reguladas, entre otros. El proceso incluye: registro en línea, entrega de documentación, y presentación de examen. Los temas del examen abarcan: marco legal PLD/FT (LFPIORPI, DCG), identificación de clientes, operaciones relevantes e inusuales, reportes regulatorios, y tipologías de lavado de dinero.",
+          "regulaciones": "La convocatoria establece dos fechas de evaluación para 2026: Primera evaluación: 27 de junio de 2026; Segunda evaluación: 24 de octubre de 2026. Fechas límite de registro: 30 días antes de cada evaluación. Los oficiales con certificación próxima a vencer tienen sus certificados prorrogados automáticamente hasta la publicación de resultados. La certificación tiene vigencia de 3 años. El examen consta de 100 preguntas de opción múltiple con duración de 3 horas. Se requiere 70% de aciertos para aprobar.",
+          "eventos": "Sesiones informativas virtuales de CNBV programadas para marzo y mayo 2026. Material de estudio disponible en portal de CNBV. Empresas de capacitación ofrecerán cursos preparatorios a partir de febrero.",
+          "alertas": "IMPORTANTE: Oficiales de cumplimiento deben verificar vigencia de su certificación actual. Registrarse oportunamente para evaluación de junio o octubre. Iniciar preparación con suficiente anticipación (se recomienda mínimo 3 meses de estudio). Entidades deben presupuestar costos de capacitación y registro.",
+          "relevanciaMX": "DIRECTA Y CRÍTICA. La certificación PLD/FT es requisito legal para ejercer como oficial de cumplimiento en entidades supervisadas por CNBV. Acciones inmediatas: (1) Verificar vigencia de certificaciones de todo el equipo de cumplimiento, (2) Identificar quiénes deben certificarse o recertificarse en 2026, (3) Registrar fechas en calendario corporativo, (4) Presupuestar capacitación y registro, (5) Asignar tiempo para preparación del examen. No cumplir con certificación puede resultar en observaciones regulatorias y afectar la operación de la entidad."
         },
         "UIF": {
           "novedades": 0,
