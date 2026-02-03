@@ -137,9 +137,9 @@
   "monitoreos": {
     "2026-01-30": {
       "fecha": "30 de enero de 2026",
-      "resumen": "Semana clave para México: FATF añade a Croacia, Camerún y Vietnam a lista gris mientras México se prepara para evaluación onsite en marzo 2026. UE impone nuevas sanciones a Irán. FinCEN emite alerta sobre fraude en programas de nutrición infantil. Transparency International anuncia lanzamiento del CPI para el 10 de febrero. CNBV publica convocatoria para certificación PLD/FT 2026.",
+      "resumen": "Semana de preparación para México: próximo Plenario FATF será en Ciudad de México (9-13 febrero 2026) bajo presidencia mexicana. UE impone nuevas sanciones a Irán por drones y misiles. FinCEN emite alerta sobre fraude en programas de nutrición infantil. Transparency International anuncia lanzamiento del CPI para el 10 de febrero. CNBV publica convocatoria para certificación PLD/FT 2026.",
       "puntosClavesMX": [
-        "FATF añade Croacia, Camerún y Vietnam a lista gris (27 ene) - México debe intensificar preparación para evaluación onsite marzo 2026",
+        "FATF: Próximo Plenario 9-13 febrero 2026 en CDMX - México como anfitrión y presidente del organismo debe demostrar liderazgo",
         "Transparency International lanzará CPI el 10 febrero 2026 - prepararse para impacto en imagen internacional y programas anticorrupción",
         "CNBV publica convocatoria certificación PLD/FT 2026 - exámenes 27 junio y 24 octubre, certificados prorrogados hasta resultados",
         "FinCEN alerta fraude programas nutrición infantil - tipología aplicable a monitoreo de programas sociales en México",
@@ -147,13 +147,13 @@
       ],
       "datos": {
         "FATF": {
-          "novedades": 1,
-          "detalleNovedades": ["Croacia, Camerún y Vietnam añadidos a lista gris (27 ene)"],
-          "temas": "El Grupo de Acción Financiera Internacional (GAFI/FATF) actualizó su lista de jurisdicciones bajo monitoreo aumentado ('lista gris') el 27 de enero de 2026, añadiendo tres países: Croacia (primera vez), Camerún y Vietnam. Estos países han demostrado deficiencias estratégicas en sus regímenes AML/CFT que requieren monitoreo intensivo. Croacia ha sido añadida por deficiencias en supervisión de entidades no financieras y beneficiario final. Camerún y Vietnam presentan debilidades en investigación y persecución penal de delitos de lavado de dinero.",
-          "regulaciones": "La actualización de lista gris implica que estas jurisdicciones deben implementar planes de acción específicos acordados con FATF. Para entidades mexicanas, esto significa aplicar medidas de debida diligencia reforzada (EDD) en transacciones con contrapartes de estos países. La lista completa de jurisdicciones bajo monitoreo aumentado ahora incluye: Bulgaria, Burkina Faso, Camerún, Croacia, Filipinas, Haití, Jamaica, Malí, Mozambique, Nigeria, República Democrática del Congo, Senegal, Sudáfrica, Sudán del Sur, Tanzania, Venezuela, Vietnam y Yemen.",
-          "eventos": "México continúa su presidencia pro tempore del GAFI hasta junio 2026. El próximo Plenario se realizará en febrero 2026 en París, presidido por México. La evaluación mutua onsite de México está programada para marzo 2026, siendo crítico el resultado para la imagen del país como presidente del organismo.",
-          "alertas": "CRÍTICA: Actualizar filtros de screening para incluir nuevas jurisdicciones de lista gris. Revisar contrapartes existentes en Croacia, Camerún y Vietnam. Preparar documentación EDD para transacciones con estos países.",
-          "relevanciaMX": "CRÍTICA: México está a semanas de su evaluación onsite (marzo 2026) mientras preside el organismo. El shadow report de sociedad civil ya fue enviado. Es imperativo reforzar: Estrategia Nacional de Riesgos (ENR), supervisión de criptoactivos bajo guías VA/VASP, y demostrar efectividad en persecución penal de LD. El resultado de la evaluación impactará directamente la credibilidad de México como líder regional en materia AML/CFT."
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin actualizaciones a listas gris o negra esta semana. El FATF se prepara para su próximo Plenario que se celebrará del 9 al 13 de febrero de 2026 en Ciudad de México, bajo la presidencia de Elisa de Anda Madrazo. Será la primera vez que México sea sede de un Plenario FATF durante su presidencia. Se espera que se discutan temas de inclusión financiera, enfoque basado en riesgo, y avances en evaluaciones mutuas de la quinta ronda.",
+          "regulaciones": "La lista gris actual (Jurisdicciones bajo Monitoreo Aumentado) incluye 24 países según la última actualización de octubre 2025: Algeria, Angola, Bolivia, Bulgaria, Burkina Faso, Camerún, Costa de Marfil, RD Congo, Haití, Kenia, Laos, Líbano, Mónaco, Mozambique, Namibia, Nepal, Nigeria, Sudáfrica, Sudán del Sur, Siria, Venezuela, Vietnam, Islas Vírgenes Británicas y Yemen. Croacia fue removida de la lista en junio 2025.",
+          "eventos": "Próximo Plenario FATF: 9-13 febrero 2026 en Ciudad de México. México continúa su presidencia pro tempore del GAFI hasta junio 2026. La evaluación mutua onsite de México está programada para marzo 2026.",
+          "alertas": "PREPARACIÓN: Seguimiento cercano a resultados del Plenario de febrero. Sin cambios en listas que requieran actualización de screening esta semana.",
+          "relevanciaMX": "CRÍTICA: México será anfitrión del Plenario FATF en febrero 2026 y enfrenta su evaluación onsite en marzo. El shadow report de sociedad civil ya fue enviado. Es imperativo reforzar: Estrategia Nacional de Riesgos (ENR), supervisión de criptoactivos bajo guías VA/VASP, y demostrar efectividad en persecución penal de LD."
         },
         "UNODC": {
           "novedades": 1,
