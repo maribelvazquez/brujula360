@@ -44,10 +44,67 @@
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
+        /* Compliance360 Ribbon */
+        .c360-ribbon {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            background: linear-gradient(135deg, var(--morado-dark) 0%, var(--morado) 50%, var(--coral) 100%);
+            padding: 8px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            color: white;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(166, 99, 204, 0.3);
+        }
+        .c360-ribbon a {
+            color: white;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .c360-ribbon .c360-cta {
+            background: rgba(255,255,255,0.2);
+            padding: 3px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            transition: background 0.2s;
+            white-space: nowrap;
+        }
+        .c360-ribbon .c360-cta:hover {
+            background: rgba(255,255,255,0.35);
+        }
+        .c360-ribbon .c360-close {
+            position: absolute;
+            right: 12px;
+            background: none;
+            border: none;
+            color: rgba(255,255,255,0.7);
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 2px 6px;
+            line-height: 1;
+        }
+        .c360-ribbon .c360-close:hover { color: white; }
+        .c360-ribbon .c360-text { opacity: 0.95; }
+        .c360-ribbon.hidden { display: none; }
+        @media (max-width: 600px) {
+            .c360-ribbon { font-size: 0.75rem; padding: 6px 32px 6px 12px; }
+            .c360-ribbon .c360-cta { padding: 2px 8px; font-size: 0.7rem; }
+        }
+
         body {
             font-family: 'Outfit', -apple-system, sans-serif;
             background: var(--bg-primary);
             color: var(--text-primary);
+            padding-top: 38px;
             min-height: 100vh;
             line-height: 1.6;
         }
@@ -397,6 +454,14 @@
     </style>
 </head>
 <body>
+    <!-- Compliance360 Ribbon -->
+    <div class="c360-ribbon" id="c360-ribbon">
+        <a href="https://www.360educa.com/bundles/compliance360" target="_blank" rel="noopener">
+            <span class="c360-text">🎓 ¿Quieres ir más allá del monitoreo? Cursos, guías y herramientas PLD/FT →</span>
+            <span class="c360-cta">Compliance360 · Primer mes $99</span>
+        </a>
+        <button class="c360-close" onclick="document.getElementById('c360-ribbon').classList.add('hidden'); document.body.style.paddingTop='0';" title="Cerrar">✕</button>
+    </div>
     <div id="loading">
         <div class="spinner">
             <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" width="50" height="50">
