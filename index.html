@@ -44,67 +44,87 @@
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
-        /* Compliance360 Ribbon */
-        .c360-ribbon {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 9999;
-            background: linear-gradient(135deg, var(--morado-dark) 0%, var(--morado) 50%, var(--coral) 100%);
-            padding: 8px 16px;
+        /* Compliance360 CTA Banner */
+        .c360-banner {
+            background: linear-gradient(135deg, #1b1b1e 0%, #2a1f3d 60%, #3d2556 100%);
+            border-radius: 20px;
+            padding: 2rem 2.5rem;
+            margin-bottom: 2rem;
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 8px;
-            font-size: 0.85rem;
-            color: white;
-            font-weight: 500;
-            box-shadow: 0 2px 8px rgba(166, 99, 204, 0.3);
+            justify-content: space-between;
+            gap: 2rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(166, 99, 204, 0.15);
         }
-        .c360-ribbon a {
+        .c360-banner::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(166,99,204,0.15) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .c360-banner-content { flex: 1; z-index: 1; }
+        .c360-banner-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--morado), var(--coral));
             color: white;
-            text-decoration: none;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.75rem;
+        }
+        .c360-banner h4 {
+            color: white;
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+            line-height: 1.3;
+        }
+        .c360-banner p {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.85rem;
+            line-height: 1.5;
+            max-width: 520px;
+        }
+        .c360-banner-btn {
+            z-index: 1;
             display: inline-flex;
             align-items: center;
-            gap: 6px;
-        }
-        .c360-ribbon .c360-cta {
-            background: rgba(255,255,255,0.2);
-            padding: 3px 12px;
-            border-radius: 20px;
-            font-weight: 600;
-            font-size: 0.8rem;
-            transition: background 0.2s;
+            gap: 8px;
+            background: linear-gradient(135deg, var(--morado) 0%, var(--coral) 100%);
+            color: white;
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
             white-space: nowrap;
+            box-shadow: 0 4px 15px rgba(166, 99, 204, 0.3);
         }
-        .c360-ribbon .c360-cta:hover {
-            background: rgba(255,255,255,0.35);
+        .c360-banner-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(166, 99, 204, 0.4);
         }
-        .c360-ribbon .c360-close {
-            position: absolute;
-            right: 12px;
-            background: none;
-            border: none;
-            color: rgba(255,255,255,0.7);
-            cursor: pointer;
-            font-size: 1.1rem;
-            padding: 2px 6px;
-            line-height: 1;
-        }
-        .c360-ribbon .c360-close:hover { color: white; }
-        .c360-ribbon .c360-text { opacity: 0.95; }
-        .c360-ribbon.hidden { display: none; }
-        @media (max-width: 600px) {
-            .c360-ribbon { font-size: 0.75rem; padding: 6px 32px 6px 12px; }
-            .c360-ribbon .c360-cta { padding: 2px 8px; font-size: 0.7rem; }
+        .c360-banner-btn .arrow { transition: transform 0.2s; }
+        .c360-banner-btn:hover .arrow { transform: translateX(3px); }
+        @media (max-width: 700px) {
+            .c360-banner { flex-direction: column; text-align: center; padding: 1.5rem; }
+            .c360-banner p { max-width: 100%; }
         }
 
         body {
             font-family: 'Outfit', -apple-system, sans-serif;
             background: var(--bg-primary);
             color: var(--text-primary);
-            padding-top: 38px;
             min-height: 100vh;
             line-height: 1.6;
         }
@@ -454,14 +474,6 @@
     </style>
 </head>
 <body>
-    <!-- Compliance360 Ribbon -->
-    <div class="c360-ribbon" id="c360-ribbon">
-        <a href="https://www.360educa.com/bundles/compliance360" target="_blank" rel="noopener">
-            <span class="c360-text">🎓 ¿Quieres ir más allá del monitoreo? Cursos, guías y herramientas PLD/FT →</span>
-            <span class="c360-cta">Compliance360 · Primer mes $99</span>
-        </a>
-        <button class="c360-close" onclick="document.getElementById('c360-ribbon').classList.add('hidden'); document.body.style.paddingTop='0';" title="Cerrar">✕</button>
-    </div>
     <div id="loading">
         <div class="spinner">
             <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" width="50" height="50">
@@ -526,6 +538,18 @@
                 <div class="puntos-clave">
                     <h3>🇲🇽 Puntos Clave para México</h3>
                     <div id="puntos-lista"></div>
+                </div>
+
+                <!-- Compliance360 CTA Banner -->
+                <div class="c360-banner">
+                    <div class="c360-banner-content">
+                        <div class="c360-banner-badge">Suscripción 360educa</div>
+                        <h4>¿Quieres ir más allá del monitoreo?</h4>
+                        <p>Accede a cursos, libros, guías prácticas, matrices, webinars exclusivos y herramientas de cumplimiento PLD/FT. Todo en un solo lugar, siempre actualizado.</p>
+                    </div>
+                    <a href="https://www.360educa.com/bundles/compliance360" target="_blank" rel="noopener" class="c360-banner-btn">
+                        Conoce Compliance360 <span class="arrow">→</span>
+                    </a>
                 </div>
 
                 <div class="filtros-section">
