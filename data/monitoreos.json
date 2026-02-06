@@ -3,8 +3,8 @@
     "app": "Brújula360 Intelligence Hub",
     "empresa": "360educa",
     "autora": "C.P. Maribel Vázquez Menchaca",
-    "version": "1.2.0",
-    "ultimaActualizacion": "2026-01-30"
+    "version": "1.3.0",
+    "ultimaActualizacion": "2026-02-06"
   },
   "organismos": {
     "FATF": {
@@ -135,6 +135,169 @@
     }
   },
   "monitoreos": {
+    "2026-02-06": {
+      "fecha": "6 de febrero de 2026",
+      "resumen": "Semana decisiva para México: FATF Week en Ciudad de México arranca el 9 de febrero con Plenaria del 11 al 13 bajo presidencia mexicana. OFAC emite Licencias Generales 46 y 47 para petróleo venezolano y diluyentes. UE actualiza lista de terceros países de alto riesgo AML añadiendo a Rusia; AMLA publica Documento de Programación Única 2026-2028. Sanciones coordinadas OFAC-UE contra Irán. FinCEN pospone regla de asesores de inversión hasta 2028. Transparency International lanzará CPI 2025 el 10 de febrero.",
+      "puntosClavesMX": [
+        "FATF Week en CDMX (9-13 feb): Evento histórico bajo presidencia mexicana. Evaluaciones de Austria, Italia y Singapur. México debe demostrar liderazgo previo a su propia Evaluación Mutua 2026.",
+        "OFAC Licencias Generales Venezuela: GL 46 y GL 47 autorizan actividades petroleras con Venezuela - instituciones mexicanas con exposición a hidrocarburos deben actualizar screening y análisis de contrapartes.",
+        "UE lista alto riesgo: Reglamentos Delegados 2026/46 y 2026/83 añaden a Rusia - entidades mexicanas con corresponsalía europea deben aplicar debida diligencia reforzada inmediatamente.",
+        "AMLA operativa: Documento de Programación 2026-2028 define selección de 40 entidades para supervisión directa en 2027 - modelo de referencia para fortalecer CNBV y UIF.",
+        "TI lanza CPI 2025 el 10 de febrero: Prepararse para posible impacto en percepción internacional de México y ajustes en matrices de riesgo país."
+      ],
+      "datos": {
+        "FATF": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Anuncio oficial de FATF Week en Ciudad de México (9-13 febrero 2026)"
+          ],
+          "temas": "Preparativos para la quinta reunión plenaria bajo presidencia mexicana de Elisa de Anda Madrazo. FATF Week incluye reuniones de grupos de trabajo (9-10 feb) y Plenaria (11-13 feb). Se discutirán evaluaciones mutuas de Austria, Italia y Singapur, amenazas emergentes, innovación tecnológica contra el crimen y monitoreo de jurisdicciones de alto riesgo. Evento paralelo GAFILAT-BID el 8 de febrero sobre lavado por organizaciones criminales en América Latina.",
+          "regulaciones": "Vigentes: Modificaciones a Recomendación 1 sobre inclusión financiera (aprobadas feb 2025). Consulta pública sobre guía actualizada AML/CFT e inclusión financiera abierta. Segunda consulta pública sobre R.16 (Transparencia de Pagos) en curso. Lista gris sin cambios desde octubre 2025 (24 países).",
+          "eventos": "FATF Week: 9-13 febrero 2026 en Ciudad de México. Evento GAFILAT-BID: 8 febrero. Evaluación Mutua de México programada para junio 2026. Alerta Myanmar: si no hay progreso, FATF considerará contramedidas adicionales.",
+          "alertas": "PREPARACIÓN: Seguimiento cercano a resultados del Plenario. Sin cambios en listas que requieran actualización de screening. Evaluaciones mutuas de Italia y Singapur podrían establecer precedentes metodológicos para la evaluación de México.",
+          "relevanciaMX": "MÁXIMA: México como anfitrión y presidente del FATF demuestra liderazgo global. La Evaluación Mutua de México en 2026 será evaluada bajo la nueva metodología de quinta ronda. Cooperación reforzada con FinCEN y OFAC en casos transnacionales. Shadow report de sociedad civil ya enviado."
+        },
+        "UNODC": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Sesión del Comité Ad Hoc sobre convención contra ciberdelincuencia concluye"
+          ],
+          "temas": "Avances en la convención contra el uso de TIC para fines delictivos, con enfoque en cooperación internacional para compartir evidencia electrónica. Sesión del Comité Ad Hoc para preparar reglas de procedimiento de la Conferencia de Estados Parte (26-30 enero, concluida esta semana). Se prepara el 15° Congreso de la ONU sobre Prevención del Delito (25-30 abril 2026, Abu Dhabi).",
+          "regulaciones": "Manual de Cooperación Internacional (sept 2025) publicado con FATF, Egmont e INTERPOL sigue vigente como referencia clave. Llamado conjunto FATF-INTERPOL-UNODC por acción urgente contra lavado y financiamiento terrorista.",
+          "eventos": "15° Congreso ONU Prevención del Delito: 25-30 abril 2026, Abu Dhabi. Tema: 'Acelerar la prevención del delito, justicia penal y estado de derecho en la era digital'. Registro abierto desde enero 2026. 2ª reunión intersesional de Comisión de Prevención del Delito: 18 febrero 2026.",
+          "alertas": "Recortes presupuestarios UNODC: $130M USD para 2026/27 por reducción de fondos estadounidenses podrían afectar programas de asistencia técnica regional.",
+          "relevanciaMX": "El Congreso 2026 será plataforma para posicionar agenda mexicana. La convención sobre ciberdelincuencia refuerza marcos para combatir lavado a través de medios digitales, impactando supervisión de fintech y remesas. Recortes presupuestarios podrían limitar asistencia técnica a México."
+        },
+        "EGMONT": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Reuniones de Grupos de Trabajo concluyeron en Arusha, Tanzania"
+          ],
+          "temas": "Reuniones de TATWG (Asistencia Técnica), MSCWG (Membresía), IEWG (Intercambio de Información) y PPWG (Políticas) celebradas del 26 al 30 de enero de 2026 en Arusha, Tanzania, con más de 400 representantes de UIFs. Planificación estratégica, intercambio de conocimiento y fortalecimiento de capacidades.",
+          "regulaciones": "Membresía actual: 181 UIFs tras incorporación de Mozambique, Gambia, Guinea Ecuatorial y Sierra Leona (julio 2025). Nuevo Vicepresidente: Daniel Thelesklaf (Alemania). Presidenta: Elżbieta Franków-Jaśkiewicz (Polonia).",
+          "eventos": "Próximo Pleno Anual: julio 2026 (sede por confirmar). Día Internacional de la UIF: 9 de junio.",
+          "alertas": "Sin alertas urgentes. Resultados de los grupos de trabajo serán insumo para próximas directrices de cooperación FIU-FIU.",
+          "relevanciaMX": "UIF México participa activamente en los grupos de trabajo. Fortalecimiento de intercambio de información bilateral con UIFs de la región, esencial para supervisión transfronteriza contra narcotráfico y corrupción."
+        },
+        "BANCO_MUNDIAL": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "International Integrity Compliance Guidelines actualizadas (enero 2026)"
+          ],
+          "temas": "Revisión de directrices para programas de cumplimiento en entidades sancionadas. Las 'International Integrity Compliance Guidelines' fueron actualizadas el 9 de enero de 2026 con énfasis en prevención de obstrucción, diligencia debida en fusiones y adquisiciones (M&A), y riesgos tecnológicos.",
+          "regulaciones": "International Integrity Compliance Guidelines (actualización enero 2026): primera revisión mayor en años. Toolkit NRA para evaluación de riesgos nacionales disponible. Iniciativa StAR (Stolen Asset Recovery) continúa con UNODC.",
+          "eventos": "Sin eventos nuevos anunciados esta semana.",
+          "alertas": "Las nuevas guías impactan directamente a entidades involucradas en proyectos financiados por el Banco Mundial.",
+          "relevanciaMX": "Impacta supervisión de proyectos financiados por el Banco Mundial en México. Requiere ajustes en programas de cumplimiento y matrices de riesgo para evitar sanciones en sectores como infraestructura. Toolkit NRA fortalece evaluación nacional de riesgos."
+        },
+        "WOLFSBERG": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin publicaciones nuevas esta semana. Se mantienen vigentes los principios y guías sobre KYC, sanciones, pagos y monitoreo de actividades sospechosas.",
+          "regulaciones": "Vigente: Guía sobre Monitoreo Efectivo de Actividades Sospechosas (2024). 12 bancos miembros (post fusión UBS-Credit Suisse).",
+          "eventos": "Sin eventos anunciados.",
+          "alertas": "Ninguna.",
+          "relevanciaMX": "Sin impactos directos esta semana. Bancos mexicanos de mayor tamaño siguen alineados de facto a principios Wolfsberg en KYC, pagos y sanciones."
+        },
+        "GAFILAT": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin publicaciones nuevas; contenido más reciente son resultados del LII Pleno (diciembre 2025, Antigua, Guatemala). Confirmación de que el próximo Pleno FATF será en febrero 2026 bajo presidencia de México. Evento paralelo GAFILAT-BID programado para 8 de febrero en CDMX.",
+          "regulaciones": "Vigentes: Plan Estratégico 2026-2030 aprobado en diciembre 2025. Quinta Ronda de Evaluaciones Mutuas iniciada. Documentos de mejores prácticas sobre beneficiarios finales. Informe de Tipologías de Lavado de Activos 2025.",
+          "eventos": "Evento GAFILAT-BID: 8 febrero 2026 en Ciudad de México sobre lavado por organizaciones criminales y alianzas público-privadas en América Latina. Presidencia Pro Témpore 2026: Panamá (Isabel Vecchio Arófulo).",
+          "alertas": "Premio CAMPUS GAFILAT 2025 reconoció a México por liderazgo en capacitación regional AML/CFT.",
+          "relevanciaMX": "El rol de México en la presidencia del FATF y la relevancia de GAFILAT incrementan el escrutinio sobre efectividad del régimen AML/CFT mexicano. Evaluación Mutua 2026 bajo nueva metodología. Plan Estratégico 2026-2030 alineado con prioridades mexicanas."
+        },
+        "OFAC": {
+          "novedades": 4,
+          "detalleNovedades": [
+            "Licencia General 46 para petróleo venezolano (29 enero)",
+            "Licencia General 47 para diluyentes estadounidenses a Venezuela (3 febrero)",
+            "Designaciones Irán: Ministro del Interior y redes IRGC (30 enero)",
+            "Actualizaciones SDN List (2 febrero)"
+          ],
+          "temas": "Semana intensa en acciones de OFAC. Licencias Generales 46 y 47 autorizan ciertas actividades con petróleo de origen venezolano y exportación de diluyentes estadounidenses (nafta, crudo ligero) hacia Venezuela. Designaciones contra funcionarios iraníes por represión violenta, incluyendo Ministro del Interior y redes IRGC. Sanciones a exchanges de criptoactivos (Zedcex, Zedxion) vinculados a Babak Zanjani. Actualizaciones de SDN List con remociones y adiciones.",
+          "regulaciones": "GL 46: 'Authorizing Certain Activities Involving Venezuelan-Origin Oil' (29 enero 2026). GL 47: Autoriza exportación de diluyentes de origen estadounidense hacia Venezuela (3 febrero 2026). GL 131B extendida hasta 28 febrero para negociaciones Lukoil (Rusia). Shadow fleet iraní: 29 buques sancionados (dic 2025), más de 180 buques acumulados.",
+          "eventos": "Sin eventos públicos nuevos.",
+          "alertas": "URGENTE: Actualizar screening de contrapartes venezolanas, iraníes y rusas. Instituciones con exposición a hidrocarburos, comercio marítimo y criptoactivos deben revisar inmediatamente cláusulas contractuales y análisis de riesgo.",
+          "relevanciaMX": "ALTA: Cooperación UIF-OFAC en casos de casinos y cárteles vigente. Empresas mexicanas en cadenas de valor de hidrocarburos deben actualizar screening por GL 46/47. Riesgo de sanciones secundarias para entidades con vínculos venezolanos, iraníes o rusos. Monitorear SDN list para cumplimiento."
+        },
+        "UE": {
+          "novedades": 3,
+          "detalleNovedades": [
+            "Reglamentos Delegados 2026/46 y 2026/83: Rusia añadida a lista alto riesgo AML (29 enero)",
+            "Sanciones contra Irán: 15 individuos y 6 entidades (30 enero)",
+            "AMLA publica Documento de Programación Única 2026-2028 (4 febrero)"
+          ],
+          "temas": "Semana muy activa para la UE en materia AML/sanciones. Los Reglamentos Delegados 2026/46 y 2026/83 modifican la lista de terceros países de alto riesgo, incluyendo a Rusia desde el 29 de enero. La Autoridad Antilavado (AMLA) publicó su Documento de Programación Única 2026-2028 definiendo prioridades: selección de 40 entidades para supervisión directa en 2027. Nuevas sanciones a Irán por represión de derechos humanos: congelación de activos y prohibiciones de viaje a 15 individuos y 6 entidades.",
+          "regulaciones": "Reglamentos Delegados (UE) 2026/46 y 2026/83: actualización lista de terceros países de alto riesgo AML/CFT. AMLA SPD 2026-2028: primera metodología común de evaluación de riesgos para toda la UE, pruebas piloto en 2026. Reglamento AML (aplicación 10 julio 2027). Directiva que criminaliza violación de sanciones UE ya en vigor.",
+          "eventos": "AMLA sede: Frankfurt. Presidenta: Bruna Szego (Italia). Consulta pública sobre estándares de cooperación AMLA-supervisores nacionales cerrada 27 enero.",
+          "alertas": "URGENTE: La inclusión de Rusia en la lista de alto riesgo AML de la UE tiene impacto directo en clasificación de clientes y debida diligencia reforzada para toda entidad con obligaciones bajo normativa europea. Actualizar matrices de riesgo país inmediatamente.",
+          "relevanciaMX": "ALTA: Entidades mexicanas con presencia en UE o corresponsalía con bancos europeos deben reflejar cambios en lista de alto riesgo en matrices de país. El modelo AMLA ofrece referencia para supervisión centralizada aplicable a CNBV y UIF. La criminalización de violación de sanciones UE eleva el estándar de cumplimiento para instituciones con operaciones transfronterizas."
+        },
+        "FINCEN": {
+          "novedades": 2,
+          "detalleNovedades": [
+            "Posposición de regla PLD/FT para asesores de inversión hasta enero 2028",
+            "Regla de Bienes Raíces Residenciales vigente 1 marzo 2026"
+          ],
+          "temas": "Ajustes regulatorios importantes. La regla para asesores de inversión (IA AML Rule) fue pospuesta hasta el 1 de enero de 2028. La Regla de Bienes Raíces Residenciales entrará en vigor el 1 de marzo de 2026. Las GTOs residenciales expiran el 28 de febrero. Operación frontera suroeste (dic 2025): más de 100 MSBs investigados con enfoque en lavado por cárteles. Reunión del TOC-WG en enero 2026 con 16 UIFs participantes.",
+          "regulaciones": "Regla IA AML: pospuesta hasta 1 enero 2028 (desde enero 2026). Regla Bienes Raíces Residenciales: vigente 1 marzo 2026. GTOs residenciales expiran 28 febrero 2026. GTO Minnesota (12 febrero-10 agosto 2026): reportes mejorados para transferencias ≥$3,000.",
+          "eventos": "GTO Minnesota inicia 12 febrero 2026. Regla Bienes Raíces entra en vigor 1 marzo 2026.",
+          "alertas": "Operación frontera suroeste: 6 avisos de investigación, decenas de referencias al IRS, 50+ cartas de cumplimiento a MSBs. Tendencia regulatoria más estricta sobre vehículos inmobiliarios y de inversión.",
+          "relevanciaMX": "ALTA: Cooperación FinCEN-UIF en casos transfronterizos vigente. Operación fronteriza impacta MSBs con vínculos México-EE.UU. Grupos financieros mexicanos con presencia en EE.UU. deben prepararse para regla de bienes raíces. Modelo GTOs aplicable a zonas de alto riesgo mexicanas."
+        },
+        "TRANSPARENCY": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Anuncio de lanzamiento del CPI 2025 para el 10 de febrero de 2026"
+          ],
+          "temas": "Transparency International anuncia que el Índice de Percepción de la Corrupción (CPI) 2025 se lanzará el 10 de febrero de 2026. Materiales bajo embargo desde el 3 de febrero para medios registrados. Se espera evaluación de 180 países.",
+          "regulaciones": "CPI 2024 (publicado febrero 2025): promedio global 43/100 estancado. EE.UU. bajó a 65 (-4 puntos). Enfoque temático en corrupción y cambio climático.",
+          "eventos": "Lanzamiento CPI 2025: 10 febrero 2026. Evento UK sobre CPI y riesgos geopolíticos: 24 febrero 2026.",
+          "alertas": "PREPARARSE: El lanzamiento del CPI 2025 la próxima semana tendrá impacto en percepción internacional. Preparar análisis de posición de México y comunicación preventiva.",
+          "relevanciaMX": "ALTA: El CPI es indicador clave para evaluación de riesgos país. La calificación de México influye en percepción de inversores, evaluaciones FATF y decisiones de corresponsalía bancaria internacional. Preparar respuesta institucional ante resultados."
+        },
+        "IEP": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin publicaciones nuevas esta semana. Se mantienen vigentes los análisis del Global Peace Index 2025 (junio 2025): paz global en mínimo histórico, 59 conflictos activos, 152,000 muertes por conflictos en 2024.",
+          "regulaciones": "GPI 2025 vigente. Próximo GPI 2026 esperado en junio 2026. Índice de Paz México (MPI) mide violencia subnacional.",
+          "eventos": "Sin eventos esta semana.",
+          "alertas": "Monitorear publicaciones sobre fragmentación global y potencias medias.",
+          "relevanciaMX": "Los índices IEP son insumo estructural para segmentar riesgo geográfico de violencia y crimen organizado, impactando evaluación de riesgo LA/FT de entidades financieras mexicanas."
+        },
+        "SHCP": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Coordinación de logística para FATF Week en Ciudad de México"
+          ],
+          "temas": "SHCP coordina preparativos para la FATF Week del 9-13 de febrero en Ciudad de México. México como anfitrión bajo presidencia de FATF demuestra compromiso institucional. Presupuesto UIF 2026: $168.9M MXN (+3.3% vs 2025). Presupuesto total antilavado (UIF+FGR): $927M MXN.",
+          "regulaciones": "Sin nuevas disposiciones esta semana. Calendarios LFPIORPI vigentes. Operativo casinos (nov 2025): 13 casinos bloqueados en 8 estados sigue generando efectos.",
+          "eventos": "FATF Week: 9-13 febrero 2026, Ciudad de México.",
+          "alertas": "Ninguna nueva esta semana.",
+          "relevanciaMX": "SHCP como coordinador de la agenda AML/CFT nacional. Presupuesto incrementado refleja compromiso. Papel clave en canalizar cambios internacionales (OFAC, UE, FATF) a legislación y políticas nacionales."
+        },
+        "CNBV": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin circulares o comunicados nuevos AML/CFT esta semana. Se mantienen vigentes disposiciones generales y criterios de supervisión.",
+          "regulaciones": "Vigentes: Sanciones a CIBanco ($92.1M), Intercam ($53.6M) y Vector ($26.4M) por fallas PLD post-señalamientos FinCEN. Convocatoria certificación PLD/FT 2026: exámenes 27 junio y 24 octubre.",
+          "eventos": "Certificación PLD/FT 2026: 27 junio y 24 octubre.",
+          "alertas": "Se espera que próximas revisiones incorporen cambios de listas de alto riesgo UE, tendencias OFAC/FinCEN y estándares FATF sobre beneficiario final y sectores DNFBP.",
+          "relevanciaMX": "Supervisión reforzada post-señalamientos FinCEN. Tolerancia baja ante fallas PLD. Coordinación con UIF en detección de patrones sospechosos."
+        },
+        "UIF": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados nuevos esta semana. Continúan vigentes acciones y criterios difundidos. Nuevo titular Omar Reyes Colmenares (agosto 2025) fortalece enfoque operativo. Dirección Especializada en Organizaciones Delictivas (creada mayo 2025) en consolidación.",
+          "regulaciones": "Lista de Personas Bloqueadas vigente: 6,948 sujetos activos (45,274 cuentas, $4,387M MXN). Cooperación bilateral con EE.UU.: 19 objetivos bloqueados (nov 2025). Operativo Cártel del Pacífico: 31 involucrados identificados.",
+          "eventos": "Sin eventos nuevos. UIF participará en FATF Week como actor clave.",
+          "alertas": "Verificar lista de bloqueo actualizada. Oportunidad para auditar reporteo interno ante silencio regulatorio.",
+          "relevanciaMX": "UIF es el actor clave para traducir cambios internacionales (sanciones OFAC/UE, estándares FATF/GAFILAT) en tipologías, señales de alerta y reportes de operaciones inusuales. Se espera actividad significativa post-Plenario FATF febrero."
+        }
+      }
+    },
     "2026-01-30": {
       "fecha": "30 de enero de 2026",
       "resumen": "Semana de preparación para México: próximo Plenario FATF será en Ciudad de México (9-13 febrero 2026) bajo presidencia mexicana. UE impone nuevas sanciones a Irán por drones y misiles. FinCEN emite alerta sobre fraude en programas de nutrición infantil. Transparency International anuncia lanzamiento del CPI para el 10 de febrero. CNBV publica convocatoria para certificación PLD/FT 2026.",
@@ -157,7 +320,9 @@
         },
         "UNODC": {
           "novedades": 1,
-          "detalleNovedades": ["Herramienta cálculo fechas liberación prisiones Filipinas"],
+          "detalleNovedades": [
+            "Herramienta cálculo fechas liberación prisiones Filipinas"
+          ],
           "temas": "Lanzamiento de herramienta para calcular fechas de liberación en prisiones de Filipinas.",
           "regulaciones": "Freedom, calculated: new tool brings clarity to prison release dates.",
           "eventos": "Sin eventos esta semana.",
@@ -211,7 +376,9 @@
         },
         "UE": {
           "novedades": 1,
-          "detalleNovedades": ["Nuevas sanciones a Irán por drones y misiles (29 ene)"],
+          "detalleNovedades": [
+            "Nuevas sanciones a Irán por drones y misiles (29 ene)"
+          ],
           "temas": "La Comisión Europea adoptó un nuevo paquete de sanciones contra Irán el 29 de enero de 2026, enfocado en dos áreas principales: (1) transferencia de drones y misiles balísticos a terceros países en conflicto, y (2) represión interna contra manifestantes y activistas de derechos humanos. El paquete incluye congelamiento de activos y prohibición de viaje a individuos y entidades involucradas en el programa de drones y misiles iraní, así como funcionarios responsables de violaciones de derechos humanos. Se estima que el paquete afecta a más de 30 nuevas personas y entidades.",
           "regulaciones": "El Reglamento de sanciones del 29 de enero 2026 es de aplicación inmediata en todos los Estados miembros de la UE. Las entidades financieras deben actualizar sus filtros de cumplimiento para incluir las nuevas designaciones. El congelamiento de activos aplica a todos los fondos y recursos económicos en territorio de la UE. Las sanciones se suman al régimen existente contra Irán que incluye restricciones al sector energético, financiero y de armas.",
           "eventos": "La UE continúa coordinando con socios transatlánticos en materia de sanciones. Se esperan posibles designaciones adicionales en febrero dependiendo del desarrollo de conflictos regionales.",
@@ -220,7 +387,9 @@
         },
         "FINCEN": {
           "novedades": 1,
-          "detalleNovedades": ["Alerta fraude programas nutrición infantil (FIN-2026-Alert001)"],
+          "detalleNovedades": [
+            "Alerta fraude programas nutrición infantil (FIN-2026-Alert001)"
+          ],
           "temas": "FinCEN emitió la alerta FIN-2026-Alert001 sobre esquemas de fraude identificados en programas federales de nutrición infantil en Estados Unidos. La alerta detalla tipologías específicas de cómo organizaciones criminales han explotado los programas Child and Adult Care Food Program (CACFP) y Summer Food Service Program (SFSP). Los esquemas incluyen: creación de centros de cuidado infantil ficticios, inflación de número de beneficiarios, colusión con proveedores de alimentos, y uso de empresas fachada para desviar fondos. FinCEN estima que el fraude ha desviado cientos de millones de dólares de programas diseñados para alimentar a niños en situación de vulnerabilidad.",
           "regulaciones": "La alerta establece un nuevo término clave para reportes de actividad sospechosa (SAR): 'FIN-2026-NUT001' que debe incluirse en el campo narrativo cuando se identifiquen actividades relacionadas con fraude en programas de nutrición. Las instituciones financieras deben implementar monitoreo específico para: transacciones inusuales de organizaciones sin fines de lucro relacionadas con alimentación, patrones de facturación inconsistentes con volumen de operaciones, y flujos de efectivo que no corresponden con el tamaño de la organización.",
           "eventos": "FinCEN coordinará con el Departamento de Agricultura (USDA) y el HHS para investigaciones cruzadas. Se esperan más alertas relacionadas con fraude en programas federales durante 2026.",
@@ -229,7 +398,9 @@
         },
         "TRANSPARENCY": {
           "novedades": 1,
-          "detalleNovedades": ["CPI 2026 se lanzará el 10 de febrero"],
+          "detalleNovedades": [
+            "CPI 2026 se lanzará el 10 de febrero"
+          ],
           "temas": "Transparency International anunció que el Índice de Percepción de la Corrupción (CPI) 2026 será publicado el 10 de febrero de 2026. El CPI es el principal indicador global que mide la percepción de corrupción en el sector público de 180 países. El índice utiliza una escala de 0 (altamente corrupto) a 100 (muy limpio) y se basa en encuestas y evaluaciones de expertos de 13 fuentes independientes. El CPI influye directamente en decisiones de inversión, calificaciones de riesgo país, y percepciones internacionales sobre gobernanza. México históricamente ha oscilado entre los puestos 120-130 con puntajes alrededor de 31-35 puntos.",
           "regulaciones": "El CPI 2025 vigente posiciona a México en el lugar 126 de 180 países con 31 puntos. Los datos del nuevo CPI 2026 reflejarán la percepción del periodo 2024-2025. Las entidades financieras utilizan el CPI como insumo para matrices de riesgo país, decisiones de EDD, y evaluación de contrapartes. Un deterioro en el CPI puede impactar costos de financiamiento soberano y privado.",
           "eventos": "Lanzamiento global: 10 de febrero de 2026 a las 6:00 AM hora de Berlín (11:00 PM del 9 de febrero hora CDMX). Se espera amplia cobertura mediática internacional y análisis por país. Transparency México típicamente emite comunicados específicos sobre la posición del país.",
@@ -238,7 +409,13 @@
         },
         "IEP": {
           "novedades": 5,
-          "detalleNovedades": ["Potencias medias remodelan orden global", "Era post-superpotencias confirmada", "UAE como conector global", "Ascenso de Indonesia", "Informe Gran Fragmentación"],
+          "detalleNovedades": [
+            "Potencias medias remodelan orden global",
+            "Era post-superpotencias confirmada",
+            "UAE como conector global",
+            "Ascenso de Indonesia",
+            "Informe Gran Fragmentación"
+          ],
           "temas": "El Institute for Economics and Peace publicó una serie de análisis que documentan el surgimiento de las 'potencias medias' como actores cada vez más determinantes en el orden mundial. Los informes incluyen: (1) 'Middle Powers Reshaping Global Order' - análisis de cómo países como India, Turquía, Arabia Saudita, Brasil e Indonesia están llenando vacíos de poder; (2) 'The Great Fragmentation Report' - documentación del colapso del orden mundial unipolar hacia un sistema multipolar fragmentado; (3) Estudios de caso específicos sobre UAE como hub financiero y conector global, e Indonesia como potencia emergente en el Pacífico. Los informes alertan sobre el aumento de 'zonas grises' donde el derecho internacional tradicional tiene menos aplicabilidad.",
           "regulaciones": "Los informes del IEP no son regulaciones pero informan análisis de riesgo. Global Peace Index (GPI) y Global Terrorism Index (GTI) vigentes. México posicionado en nivel 'bajo de paz' en GPI 2025 (posición 137 de 163). El GTI muestra a México con niveles 'altos' de impacto terrorista por violencia de cárteles.",
           "eventos": "IEP publicará actualización del Global Peace Index en junio 2026 y del Global Terrorism Index en marzo 2026. Estos índices son referencia para matrices de riesgo país y evaluación de amenazas.",
@@ -247,7 +424,9 @@
         },
         "SHCP": {
           "novedades": 1,
-          "detalleNovedades": ["Calendario LFPIORPI 2026 vigente"],
+          "detalleNovedades": [
+            "Calendario LFPIORPI 2026 vigente"
+          ],
           "temas": "Calendario operativo 2026 para cumplimiento de obligaciones bajo Ley Federal PLD.",
           "regulaciones": "Calendarización de avisos e informes para sujetos obligados.",
           "eventos": "Sin eventos.",
@@ -256,7 +435,9 @@
         },
         "CNBV": {
           "novedades": 1,
-          "detalleNovedades": ["Convocatoria certificación PLD/FT 2026 publicada"],
+          "detalleNovedades": [
+            "Convocatoria certificación PLD/FT 2026 publicada"
+          ],
           "temas": "La Comisión Nacional Bancaria y de Valores (CNBV) publicó la convocatoria oficial para el proceso de certificación de oficiales de cumplimiento en materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo (PLD/FT) para el año 2026. La certificación es obligatoria para oficiales de cumplimiento de entidades supervisadas por CNBV, incluyendo bancos, casas de bolsa, fondos de inversión, SOFOMES reguladas, entre otros. El proceso incluye: registro en línea, entrega de documentación, y presentación de examen. Los temas del examen abarcan: marco legal PLD/FT (LFPIORPI, DCG), identificación de clientes, operaciones relevantes e inusuales, reportes regulatorios, y tipologías de lavado de dinero.",
           "regulaciones": "La convocatoria establece dos fechas de evaluación para 2026: Primera evaluación: 27 de junio de 2026; Segunda evaluación: 24 de octubre de 2026. Fechas límite de registro: 30 días antes de cada evaluación. Los oficiales con certificación próxima a vencer tienen sus certificados prorrogados automáticamente hasta la publicación de resultados. La certificación tiene vigencia de 3 años. El examen consta de 100 preguntas de opción múltiple con duración de 3 horas. Se requiere 70% de aciertos para aprobar.",
           "eventos": "Sesiones informativas virtuales de CNBV programadas para marzo y mayo 2026. Material de estudio disponible en portal de CNBV. Empresas de capacitación ofrecerán cursos preparatorios a partir de febrero.",
@@ -285,20 +466,166 @@
         "México preside FATF hasta junio 2026"
       ],
       "datos": {
-        "FATF": { "novedades": 2, "detalleNovedades": ["Progreso Surinam en medidas AML/CFT", "Progreso Islas Vírgenes Británicas"], "temas": "Progresos evaluaciones mutuas.", "regulaciones": "Informes de progreso publicados.", "eventos": "Preparativos Plenario febrero.", "alertas": "Sin nuevas listas.", "relevanciaMX": "México preside FATF." },
-        "UNODC": { "novedades": 3, "detalleNovedades": ["Informe trata-corrupción", "Apoyo Montenegro", "Briefing Haití"], "temas": "Vínculos trata-corrupción.", "regulaciones": "Informe conexiones.", "eventos": "Briefing marzo.", "alertas": "Ninguna.", "relevanciaMX": "Actualizar matrices." },
-        "EGMONT": { "novedades": 0, "detalleNovedades": [], "temas": "Plan Estratégico 2022-2027.", "regulaciones": "Sin guías.", "eventos": "Sin eventos.", "alertas": "Ninguna.", "relevanciaMX": "Mejorar analítica." },
-        "BANCO_MUNDIAL": { "novedades": 2, "detalleNovedades": ["Actualización Integrity Guidelines", "Perspectivas económicas"], "temas": "Actualización Guidelines.", "regulaciones": "PEPs, terceros, M&A.", "eventos": "Webinars.", "alertas": "Nuevo benchmark.", "relevanciaMX": "Alinear programas." },
-        "WOLFSBERG": { "novedades": 1, "detalleNovedades": ["Nuevo co-presidente"], "temas": "Nuevo liderazgo.", "regulaciones": "Vigentes guías.", "eventos": "Sin eventos.", "alertas": "Ninguna.", "relevanciaMX": "Influirá guías." },
-        "GAFILAT": { "novedades": 0, "detalleNovedades": [], "temas": "Panamá asumirá presidencia.", "regulaciones": "Sin guías.", "eventos": "Sin eventos.", "alertas": "Ninguna.", "relevanciaMX": "Acelerar beneficiario final." },
-        "OFAC": { "novedades": 4, "detalleNovedades": ["Narcotráfico 22 ene", "Terrorismo 21 ene", "Hutíes 16 ene", "Irán 15 ene"], "temas": "Semana muy activa.", "regulaciones": "Licencias Rusia.", "eventos": "Sin eventos.", "alertas": "Efectos inmediatos.", "relevanciaMX": "MUY ALTA." },
-        "UE": { "novedades": 3, "detalleNovedades": ["Rusia lista alto riesgo", "Sanciones Hamas", "Tope petróleo ruso"], "temas": "RUSIA alto riesgo AML.", "regulaciones": "Reglamentos 2026/46 y 2026/83.", "eventos": "Sin eventos.", "alertas": "EDD obligatorio Rusia.", "relevanciaMX": "Aplicar EDD." },
-        "FINCEN": { "novedades": 2, "detalleNovedades": ["Postergación regla AML a 2028", "Grupo crimen transnacional"], "temas": "Postergación regla.", "regulaciones": "Enero 2028.", "eventos": "Sin eventos.", "alertas": "Alivio regulatorio.", "relevanciaMX": "Más tiempo." },
-        "TRANSPARENCY": { "novedades": 2, "detalleNovedades": ["Venezuela corrupción", "Sumatra deforestación"], "temas": "Venezuela y Sumatra.", "regulaciones": "CPI vigente.", "eventos": "Sin eventos.", "alertas": "Monitorear CPI.", "relevanciaMX": "CPI referencia." },
-        "IEP": { "novedades": 0, "detalleNovedades": [], "temas": "Vigentes GTI y GPI.", "regulaciones": "Sin publicaciones.", "eventos": "Sin eventos.", "alertas": "Ninguna.", "relevanciaMX": "Riesgo geopolítico." },
-        "SHCP": { "novedades": 1, "detalleNovedades": ["Presupuesto 927 mdp"], "temas": "Presupuesto 2026.", "regulaciones": "927 mdp.", "eventos": "Sin eventos.", "alertas": "Riesgo juegos.", "relevanciaMX": "Supervisión intensa." },
-        "CNBV": { "novedades": 2, "detalleNovedades": ["Reglas fraude 2 ene", "MTU 1 ene"], "temas": "Reglas vigentes.", "regulaciones": "Fraude y MTU.", "eventos": "Implementación.", "alertas": "Sanciones bancos.", "relevanciaMX": "Integrar fraude-PLD." },
-        "UIF": { "novedades": 1, "detalleNovedades": ["Dirección Organizaciones Delictivas"], "temas": "Nueva Dirección.", "regulaciones": "Sin tipologías.", "eventos": "Sin eventos.", "alertas": "Lista bloqueados.", "relevanciaMX": "Investigación agresiva." }
+        "FATF": {
+          "novedades": 2,
+          "detalleNovedades": [
+            "Progreso Surinam en medidas AML/CFT",
+            "Progreso Islas Vírgenes Británicas"
+          ],
+          "temas": "Progresos evaluaciones mutuas.",
+          "regulaciones": "Informes de progreso publicados.",
+          "eventos": "Preparativos Plenario febrero.",
+          "alertas": "Sin nuevas listas.",
+          "relevanciaMX": "México preside FATF."
+        },
+        "UNODC": {
+          "novedades": 3,
+          "detalleNovedades": [
+            "Informe trata-corrupción",
+            "Apoyo Montenegro",
+            "Briefing Haití"
+          ],
+          "temas": "Vínculos trata-corrupción.",
+          "regulaciones": "Informe conexiones.",
+          "eventos": "Briefing marzo.",
+          "alertas": "Ninguna.",
+          "relevanciaMX": "Actualizar matrices."
+        },
+        "EGMONT": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Plan Estratégico 2022-2027.",
+          "regulaciones": "Sin guías.",
+          "eventos": "Sin eventos.",
+          "alertas": "Ninguna.",
+          "relevanciaMX": "Mejorar analítica."
+        },
+        "BANCO_MUNDIAL": {
+          "novedades": 2,
+          "detalleNovedades": [
+            "Actualización Integrity Guidelines",
+            "Perspectivas económicas"
+          ],
+          "temas": "Actualización Guidelines.",
+          "regulaciones": "PEPs, terceros, M&A.",
+          "eventos": "Webinars.",
+          "alertas": "Nuevo benchmark.",
+          "relevanciaMX": "Alinear programas."
+        },
+        "WOLFSBERG": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Nuevo co-presidente"
+          ],
+          "temas": "Nuevo liderazgo.",
+          "regulaciones": "Vigentes guías.",
+          "eventos": "Sin eventos.",
+          "alertas": "Ninguna.",
+          "relevanciaMX": "Influirá guías."
+        },
+        "GAFILAT": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Panamá asumirá presidencia.",
+          "regulaciones": "Sin guías.",
+          "eventos": "Sin eventos.",
+          "alertas": "Ninguna.",
+          "relevanciaMX": "Acelerar beneficiario final."
+        },
+        "OFAC": {
+          "novedades": 4,
+          "detalleNovedades": [
+            "Narcotráfico 22 ene",
+            "Terrorismo 21 ene",
+            "Hutíes 16 ene",
+            "Irán 15 ene"
+          ],
+          "temas": "Semana muy activa.",
+          "regulaciones": "Licencias Rusia.",
+          "eventos": "Sin eventos.",
+          "alertas": "Efectos inmediatos.",
+          "relevanciaMX": "MUY ALTA."
+        },
+        "UE": {
+          "novedades": 3,
+          "detalleNovedades": [
+            "Rusia lista alto riesgo",
+            "Sanciones Hamas",
+            "Tope petróleo ruso"
+          ],
+          "temas": "RUSIA alto riesgo AML.",
+          "regulaciones": "Reglamentos 2026/46 y 2026/83.",
+          "eventos": "Sin eventos.",
+          "alertas": "EDD obligatorio Rusia.",
+          "relevanciaMX": "Aplicar EDD."
+        },
+        "FINCEN": {
+          "novedades": 2,
+          "detalleNovedades": [
+            "Postergación regla AML a 2028",
+            "Grupo crimen transnacional"
+          ],
+          "temas": "Postergación regla.",
+          "regulaciones": "Enero 2028.",
+          "eventos": "Sin eventos.",
+          "alertas": "Alivio regulatorio.",
+          "relevanciaMX": "Más tiempo."
+        },
+        "TRANSPARENCY": {
+          "novedades": 2,
+          "detalleNovedades": [
+            "Venezuela corrupción",
+            "Sumatra deforestación"
+          ],
+          "temas": "Venezuela y Sumatra.",
+          "regulaciones": "CPI vigente.",
+          "eventos": "Sin eventos.",
+          "alertas": "Monitorear CPI.",
+          "relevanciaMX": "CPI referencia."
+        },
+        "IEP": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Vigentes GTI y GPI.",
+          "regulaciones": "Sin publicaciones.",
+          "eventos": "Sin eventos.",
+          "alertas": "Ninguna.",
+          "relevanciaMX": "Riesgo geopolítico."
+        },
+        "SHCP": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Presupuesto 927 mdp"
+          ],
+          "temas": "Presupuesto 2026.",
+          "regulaciones": "927 mdp.",
+          "eventos": "Sin eventos.",
+          "alertas": "Riesgo juegos.",
+          "relevanciaMX": "Supervisión intensa."
+        },
+        "CNBV": {
+          "novedades": 2,
+          "detalleNovedades": [
+            "Reglas fraude 2 ene",
+            "MTU 1 ene"
+          ],
+          "temas": "Reglas vigentes.",
+          "regulaciones": "Fraude y MTU.",
+          "eventos": "Implementación.",
+          "alertas": "Sanciones bancos.",
+          "relevanciaMX": "Integrar fraude-PLD."
+        },
+        "UIF": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Dirección Organizaciones Delictivas"
+          ],
+          "temas": "Nueva Dirección.",
+          "regulaciones": "Sin tipologías.",
+          "eventos": "Sin eventos.",
+          "alertas": "Lista bloqueados.",
+          "relevanciaMX": "Investigación agresiva."
+        }
       }
     },
     "2026-01-16": {
@@ -312,20 +639,148 @@
         "Capacitación internacional disponible"
       ],
       "datos": {
-        "FATF": { "novedades": 0, "detalleNovedades": [], "temas": "Agenda reformas.", "regulaciones": "Vigentes reportes TF.", "eventos": "Preparativos 5ª ronda.", "alertas": "Sin listas.", "relevanciaMX": "Fase crítica." },
-        "UNODC": { "novedades": 2, "detalleNovedades": ["Narcotráfico Libia", "Montenegro trata"], "temas": "Narcotráfico y trata.", "regulaciones": "Informe norte África.", "eventos": "Grupo Expertos.", "alertas": "Sin alertas.", "relevanciaMX": "Variable geográfica." },
-        "EGMONT": { "novedades": 1, "detalleNovedades": ["EAFCS 2026 Dublín"], "temas": "European Summit.", "regulaciones": "Agenda intercambio.", "eventos": "29 abril Dublín.", "alertas": "Sin advertencias.", "relevanciaMX": "Indicadores ROS." },
-        "BANCO_MUNDIAL": { "novedades": 0, "detalleNovedades": [], "temas": "Agenda integridad.", "regulaciones": "Sin manuales.", "eventos": "Desarrollo.", "alertas": "No aplica.", "relevanciaMX": "Marcos integridad." },
-        "WOLFSBERG": { "novedades": 1, "detalleNovedades": ["Compromisos Forum 2025"], "temas": "Forum 2025.", "regulaciones": "Monitoreo blockchain.", "eventos": "Sin foro.", "alertas": "Ninguna.", "relevanciaMX": "Sistemas monitoreo." },
-        "GAFILAT": { "novedades": 1, "detalleNovedades": ["Panamá Presidencia 2026"], "temas": "Panamá asume.", "regulaciones": "Sin guías.", "eventos": "Plenarios 2026.", "alertas": "Sin listas.", "relevanciaMX": "Agenda alineada." },
-        "OFAC": { "novedades": 0, "detalleNovedades": [], "temas": "Sin comunicados.", "regulaciones": "Sin regulaciones.", "eventos": "Sin eventos.", "alertas": "Verificar SDN.", "relevanciaMX": "Operaciones USD." },
-        "UE": { "novedades": 0, "detalleNovedades": [], "temas": "Sin comunicados.", "regulaciones": "Sin regulaciones.", "eventos": "Sin eventos.", "alertas": "Monitorear sanciones.", "relevanciaMX": "Corresponsalía." },
-        "FINCEN": { "novedades": 0, "detalleNovedades": [], "temas": "Sin comunicados.", "regulaciones": "Sin regulaciones.", "eventos": "Sin eventos.", "alertas": "Verificar advisories.", "relevanciaMX": "Tipologías." },
-        "TRANSPARENCY": { "novedades": 0, "detalleNovedades": [], "temas": "Sin comunicados.", "regulaciones": "CPI vigente.", "eventos": "Sin eventos.", "alertas": "Monitorear CPI.", "relevanciaMX": "Riesgo país." },
-        "IEP": { "novedades": 0, "detalleNovedades": [], "temas": "Sin comunicados.", "regulaciones": "Índices vigentes.", "eventos": "Sin eventos.", "alertas": "Monitorear.", "relevanciaMX": "Datos CFT." },
-        "SHCP": { "novedades": 1, "detalleNovedades": ["Presupuesto 2026 asignado"], "temas": "Presupuesto.", "regulaciones": "927 mdp.", "eventos": "Sin eventos.", "alertas": "Casinos.", "relevanciaMX": "Supervisión." },
-        "CNBV": { "novedades": 2, "detalleNovedades": ["Reglas fraude 2 ene", "MTU 1 ene"], "temas": "Reglas fraude y MTU.", "regulaciones": "Vigentes.", "eventos": "Implementación.", "alertas": "Sanciones.", "relevanciaMX": "Convergencia." },
-        "UIF": { "novedades": 1, "detalleNovedades": ["Nueva Dirección Delictivas"], "temas": "Incremento y Dirección.", "regulaciones": "Sin tipologías.", "eventos": "Sin eventos.", "alertas": "Lista bloqueo.", "relevanciaMX": "Investigación." }
+        "FATF": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Agenda reformas.",
+          "regulaciones": "Vigentes reportes TF.",
+          "eventos": "Preparativos 5ª ronda.",
+          "alertas": "Sin listas.",
+          "relevanciaMX": "Fase crítica."
+        },
+        "UNODC": {
+          "novedades": 2,
+          "detalleNovedades": [
+            "Narcotráfico Libia",
+            "Montenegro trata"
+          ],
+          "temas": "Narcotráfico y trata.",
+          "regulaciones": "Informe norte África.",
+          "eventos": "Grupo Expertos.",
+          "alertas": "Sin alertas.",
+          "relevanciaMX": "Variable geográfica."
+        },
+        "EGMONT": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "EAFCS 2026 Dublín"
+          ],
+          "temas": "European Summit.",
+          "regulaciones": "Agenda intercambio.",
+          "eventos": "29 abril Dublín.",
+          "alertas": "Sin advertencias.",
+          "relevanciaMX": "Indicadores ROS."
+        },
+        "BANCO_MUNDIAL": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Agenda integridad.",
+          "regulaciones": "Sin manuales.",
+          "eventos": "Desarrollo.",
+          "alertas": "No aplica.",
+          "relevanciaMX": "Marcos integridad."
+        },
+        "WOLFSBERG": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Compromisos Forum 2025"
+          ],
+          "temas": "Forum 2025.",
+          "regulaciones": "Monitoreo blockchain.",
+          "eventos": "Sin foro.",
+          "alertas": "Ninguna.",
+          "relevanciaMX": "Sistemas monitoreo."
+        },
+        "GAFILAT": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Panamá Presidencia 2026"
+          ],
+          "temas": "Panamá asume.",
+          "regulaciones": "Sin guías.",
+          "eventos": "Plenarios 2026.",
+          "alertas": "Sin listas.",
+          "relevanciaMX": "Agenda alineada."
+        },
+        "OFAC": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados.",
+          "regulaciones": "Sin regulaciones.",
+          "eventos": "Sin eventos.",
+          "alertas": "Verificar SDN.",
+          "relevanciaMX": "Operaciones USD."
+        },
+        "UE": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados.",
+          "regulaciones": "Sin regulaciones.",
+          "eventos": "Sin eventos.",
+          "alertas": "Monitorear sanciones.",
+          "relevanciaMX": "Corresponsalía."
+        },
+        "FINCEN": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados.",
+          "regulaciones": "Sin regulaciones.",
+          "eventos": "Sin eventos.",
+          "alertas": "Verificar advisories.",
+          "relevanciaMX": "Tipologías."
+        },
+        "TRANSPARENCY": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados.",
+          "regulaciones": "CPI vigente.",
+          "eventos": "Sin eventos.",
+          "alertas": "Monitorear CPI.",
+          "relevanciaMX": "Riesgo país."
+        },
+        "IEP": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados.",
+          "regulaciones": "Índices vigentes.",
+          "eventos": "Sin eventos.",
+          "alertas": "Monitorear.",
+          "relevanciaMX": "Datos CFT."
+        },
+        "SHCP": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Presupuesto 2026 asignado"
+          ],
+          "temas": "Presupuesto.",
+          "regulaciones": "927 mdp.",
+          "eventos": "Sin eventos.",
+          "alertas": "Casinos.",
+          "relevanciaMX": "Supervisión."
+        },
+        "CNBV": {
+          "novedades": 2,
+          "detalleNovedades": [
+            "Reglas fraude 2 ene",
+            "MTU 1 ene"
+          ],
+          "temas": "Reglas fraude y MTU.",
+          "regulaciones": "Vigentes.",
+          "eventos": "Implementación.",
+          "alertas": "Sanciones.",
+          "relevanciaMX": "Convergencia."
+        },
+        "UIF": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Nueva Dirección Delictivas"
+          ],
+          "temas": "Incremento y Dirección.",
+          "regulaciones": "Sin tipologías.",
+          "eventos": "Sin eventos.",
+          "alertas": "Lista bloqueo.",
+          "relevanciaMX": "Investigación."
+        }
       }
     },
     "2026-01-09": {
@@ -339,20 +794,145 @@
         "UNODC y Banco Mundial orientarán asistencia técnica"
       ],
       "datos": {
-        "FATF": { "novedades": 1, "detalleNovedades": ["Evaluación México septiembre 2026"], "temas": "Plenaria septiembre.", "regulaciones": "Énfasis efectividad.", "eventos": "Entrenamientos.", "alertas": "Sin listas.", "relevanciaMX": "Ruta crítica." },
-        "UNODC": { "novedades": 1, "detalleNovedades": ["Consulta Estrategia 2026-2030"], "temas": "Estrategia.", "regulaciones": "Asistencia técnica.", "eventos": "Delitos ambientales.", "alertas": "Ciberdelito.", "relevanciaMX": "Investigación digital." },
-        "EGMONT": { "novedades": 2, "detalleNovedades": ["Reuniones Arusha", "Agenda 2022-2027"], "temas": "Arusha y agenda.", "regulaciones": "Activos virtuales.", "eventos": "26-30 enero.", "alertas": "Autonomía FIUs.", "relevanciaMX": "Evidenciar cooperación." },
-        "BANCO_MUNDIAL": { "novedades": 0, "detalleNovedades": [], "temas": "Agenda integridad.", "regulaciones": "Diagnósticos.", "eventos": "Macroeconómico.", "alertas": "Ninguna.", "relevanciaMX": "Reformas." },
-        "WOLFSBERG": { "novedades": 0, "detalleNovedades": [], "temas": "RBA 2025.", "regulaciones": "Stablecoins.", "eventos": "Forum 2025.", "alertas": "Ninguna.", "relevanciaMX": "Monitoreo CNBV." },
-        "GAFILAT": { "novedades": 0, "detalleNovedades": [], "temas": "Panamá presidencia.", "regulaciones": "5ª ronda.", "eventos": "Formación.", "alertas": "Sin listas.", "relevanciaMX": "Temas México." },
-        "OFAC": { "novedades": 0, "detalleNovedades": [], "temas": "Sin comunicados.", "regulaciones": "Sin regulaciones.", "eventos": "Sin eventos.", "alertas": "SDN.", "relevanciaMX": "USD." },
-        "UE": { "novedades": 0, "detalleNovedades": [], "temas": "Sin comunicados.", "regulaciones": "Sin regulaciones.", "eventos": "Sin eventos.", "alertas": "Sanciones UE.", "relevanciaMX": "Corresponsalía." },
-        "FINCEN": { "novedades": 0, "detalleNovedades": [], "temas": "Sin comunicados.", "regulaciones": "Sin regulaciones.", "eventos": "Sin eventos.", "alertas": "Advisories.", "relevanciaMX": "Tipologías." },
-        "TRANSPARENCY": { "novedades": 0, "detalleNovedades": [], "temas": "Sin comunicados.", "regulaciones": "CPI.", "eventos": "Sin eventos.", "alertas": "CPI.", "relevanciaMX": "Riesgo." },
-        "IEP": { "novedades": 0, "detalleNovedades": [], "temas": "Sin comunicados.", "regulaciones": "Índices.", "eventos": "Sin eventos.", "alertas": "Índices.", "relevanciaMX": "CFT." },
-        "SHCP": { "novedades": 1, "detalleNovedades": ["Aumento recursos 2026"], "temas": "Recursos.", "regulaciones": "Sin disposiciones.", "eventos": "Sin eventos.", "alertas": "Casinos.", "relevanciaMX": "Supervisión." },
-        "CNBV": { "novedades": 1, "detalleNovedades": ["CIBanco/Intercam sanciones"], "temas": "Sanciones bancos.", "regulaciones": "Fraude y MTU.", "eventos": "Sin eventos.", "alertas": "Sanciones.", "relevanciaMX": "Tolerancia baja." },
-        "UIF": { "novedades": 1, "detalleNovedades": ["Estructura delictivas"], "temas": "Estructura especializada.", "regulaciones": "Sin tipologías.", "eventos": "Sin eventos.", "alertas": "Lista bloqueo.", "relevanciaMX": "Investigación." }
+        "FATF": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Evaluación México septiembre 2026"
+          ],
+          "temas": "Plenaria septiembre.",
+          "regulaciones": "Énfasis efectividad.",
+          "eventos": "Entrenamientos.",
+          "alertas": "Sin listas.",
+          "relevanciaMX": "Ruta crítica."
+        },
+        "UNODC": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Consulta Estrategia 2026-2030"
+          ],
+          "temas": "Estrategia.",
+          "regulaciones": "Asistencia técnica.",
+          "eventos": "Delitos ambientales.",
+          "alertas": "Ciberdelito.",
+          "relevanciaMX": "Investigación digital."
+        },
+        "EGMONT": {
+          "novedades": 2,
+          "detalleNovedades": [
+            "Reuniones Arusha",
+            "Agenda 2022-2027"
+          ],
+          "temas": "Arusha y agenda.",
+          "regulaciones": "Activos virtuales.",
+          "eventos": "26-30 enero.",
+          "alertas": "Autonomía FIUs.",
+          "relevanciaMX": "Evidenciar cooperación."
+        },
+        "BANCO_MUNDIAL": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Agenda integridad.",
+          "regulaciones": "Diagnósticos.",
+          "eventos": "Macroeconómico.",
+          "alertas": "Ninguna.",
+          "relevanciaMX": "Reformas."
+        },
+        "WOLFSBERG": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "RBA 2025.",
+          "regulaciones": "Stablecoins.",
+          "eventos": "Forum 2025.",
+          "alertas": "Ninguna.",
+          "relevanciaMX": "Monitoreo CNBV."
+        },
+        "GAFILAT": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Panamá presidencia.",
+          "regulaciones": "5ª ronda.",
+          "eventos": "Formación.",
+          "alertas": "Sin listas.",
+          "relevanciaMX": "Temas México."
+        },
+        "OFAC": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados.",
+          "regulaciones": "Sin regulaciones.",
+          "eventos": "Sin eventos.",
+          "alertas": "SDN.",
+          "relevanciaMX": "USD."
+        },
+        "UE": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados.",
+          "regulaciones": "Sin regulaciones.",
+          "eventos": "Sin eventos.",
+          "alertas": "Sanciones UE.",
+          "relevanciaMX": "Corresponsalía."
+        },
+        "FINCEN": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados.",
+          "regulaciones": "Sin regulaciones.",
+          "eventos": "Sin eventos.",
+          "alertas": "Advisories.",
+          "relevanciaMX": "Tipologías."
+        },
+        "TRANSPARENCY": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados.",
+          "regulaciones": "CPI.",
+          "eventos": "Sin eventos.",
+          "alertas": "CPI.",
+          "relevanciaMX": "Riesgo."
+        },
+        "IEP": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin comunicados.",
+          "regulaciones": "Índices.",
+          "eventos": "Sin eventos.",
+          "alertas": "Índices.",
+          "relevanciaMX": "CFT."
+        },
+        "SHCP": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Aumento recursos 2026"
+          ],
+          "temas": "Recursos.",
+          "regulaciones": "Sin disposiciones.",
+          "eventos": "Sin eventos.",
+          "alertas": "Casinos.",
+          "relevanciaMX": "Supervisión."
+        },
+        "CNBV": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "CIBanco/Intercam sanciones"
+          ],
+          "temas": "Sanciones bancos.",
+          "regulaciones": "Fraude y MTU.",
+          "eventos": "Sin eventos.",
+          "alertas": "Sanciones.",
+          "relevanciaMX": "Tolerancia baja."
+        },
+        "UIF": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Estructura delictivas"
+          ],
+          "temas": "Estructura especializada.",
+          "regulaciones": "Sin tipologías.",
+          "eventos": "Sin eventos.",
+          "alertas": "Lista bloqueo.",
+          "relevanciaMX": "Investigación."
+        }
       }
     }
   }
