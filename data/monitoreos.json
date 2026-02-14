@@ -277,17 +277,6 @@
           "alertas": "URGENTE: Operación Southwest Border impacta directamente ecosistema de remesas México-EE.UU. Regla RRE efectiva 1 marzo. Portal de whistleblower aumenta exposición de entidades mexicanas a investigaciones internacionales.",
           "relevanciaMX": "ALTA. La operación fronteriza contra MSBs impacta directamente el flujo de remesas hacia México. Bancos receptores deben intensificar debida diligencia sobre contrapartes. La regla RRE afecta transacciones inmobiliarias de mexicanos en EE.UU. El portal de whistleblower incentiva reportes directos a autoridades estadounidenses, aumentando riesgo legal transfronterizo."
         },
-        "TRANSPARENCIA": {
-          "novedades": 1,
-          "detalleNovedades": [
-            "10 feb: Publicación del Índice de Percepción de Corrupción (CPI) 2025  -  México obtiene 27/100, lugar 141 de 182 países (último entre OCDE)"
-          ],
-          "temas": "CPI 2025: promedio global cayó a 42 (mínimo en una década). Solo 5 países arriba de 80 (eran 12 hace una década). Dinamarca lidera (89). México 27/100, identificado como país peligroso para periodistas de corrupción. Democracias en declive: EE.UU. (64), Canadá (75), UK (70). 36 de 50 países con caídas significativas también restringieron espacio cívico.",
-          "regulaciones": "CPI 2025 Report. Análisis regionales (Américas: promedio 42, sin progreso en una década). 12 de 33 países americanos han empeorado significativamente desde 2012.",
-          "eventos": "Lanzamiento CPI 2025 (10 feb 2026). Eventos regionales de presentación (feb-mar 2026).",
-          "alertas": "México 27/100  -  score crítico publicado durante Semana GAFI en CDMX. Último lugar OCDE. Alimenta matrices de riesgo de bancos globales.",
-          "relevanciaMX": "CRÍTICA. La puntuación de 27 durante la Semana GAFI agrega presión máxima. Este dato alimenta las matrices de riesgo país de instituciones financieras internacionales, eleva la probabilidad de de-risking y cierre de cuentas corresponsales. México es señalado como particularmente peligroso para periodistas que cubren corrupción."
-        },
         "IEP": {
           "novedades": 2,
           "detalleNovedades": [
@@ -335,6 +324,17 @@
           "eventos": "Sin eventos adicionales esta semana.",
           "alertas": "Implementación de guías no es opcional  -  es la vara de medición para la evaluación actual.",
           "relevanciaMX": "MÁXIMA. Acciones concretas de México para demostrar ante GAFI el fortalecimiento de mecanismos de reporte y efectividad del sistema de inteligencia financiera  -  áreas históricamente débiles en evaluación 2018. Alto valor como benchmark de supervisión: se puede convertir en gap assessment por indicador/control."
+        },
+        "TRANSPARENCY": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "10 feb: Publicación del Índice de Percepción de Corrupción (CPI) 2025  -  México obtiene 27/100, lugar 141 de 182 países (último entre OCDE)"
+          ],
+          "temas": "CPI 2025: promedio global cayó a 42 (mínimo en una década). Solo 5 países arriba de 80 (eran 12 hace una década). Dinamarca lidera (89). México 27/100, identificado como país peligroso para periodistas de corrupción. Democracias en declive: EE.UU. (64), Canadá (75), UK (70). 36 de 50 países con caídas significativas también restringieron espacio cívico.",
+          "regulaciones": "CPI 2025 Report. Análisis regionales (Américas: promedio 42, sin progreso en una década). 12 de 33 países americanos han empeorado significativamente desde 2012.",
+          "eventos": "Lanzamiento CPI 2025 (10 feb 2026). Eventos regionales de presentación (feb-mar 2026).",
+          "alertas": "México 27/100  -  score crítico publicado durante Semana GAFI en CDMX. Último lugar OCDE. Alimenta matrices de riesgo de bancos globales.",
+          "relevanciaMX": "CRÍTICA. La puntuación de 27 durante la Semana GAFI agrega presión máxima. Este dato alimenta las matrices de riesgo país de instituciones financieras internacionales, eleva la probabilidad de de-risking y cierre de cuentas corresponsales. México es señalado como particularmente peligroso para periodistas que cubren corrupción."
         }
       }
     },
