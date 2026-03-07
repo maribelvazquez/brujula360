@@ -3,8 +3,8 @@
     "app": "Brújula360 Intelligence Hub",
     "empresa": "360educa",
     "autora": "C.P. Maribel Vázquez Menchaca",
-    "version": "1.4.0",
-    "ultimaActualizacion": "2026-02-13"
+    "version": "1.7.0",
+    "ultimaActualizacion": "2026-03-06"
   },
   "organismos": {
     "FATF": {
@@ -135,6 +135,516 @@
     }
   },
   "monitoreos": {
+    "2026-03-06": {
+      "fecha": "6 de marzo de 2026",
+      "resumen": "ALERTA MAXIMA: La visita in-situ FATF-GAFILAT a Mexico inicia el 9 de marzo de 2026. FinCEN activa la Regla de Reporte de Bienes Raices Residenciales (1 marzo). OFAC actualiza SDN con RDC, Rusia y Venezuela. FATF publica reportes sobre activos virtuales. GAFILAT cierra registro de Campus Virtual el 9 de marzo. El sistema ALA/CFT mexicano entra en su momento de mayor escrutinio internacional en una decada.",
+      "puntosClavesMX": [
+        "VISITA IN-SITU FATF-GAFILAT A MEXICO INICIA EL 9 DE MARZO. Los evaluadores internacionales revisaran documentos, entrevistaran funcionarios y verificaran resultados. El periodo de preparacion termino: ahora comienza la evidencia. Cada accion del sistema ALA/CFT mexicano es observable en tiempo real.",
+        "FinCEN activa Regla de Bienes Raices Residenciales (1 marzo): los flujos de capital mexicano hacia el mercado inmobiliario de EE.UU. quedan bajo reporte obligatorio. Instituciones mexicanas con clientes activos en mercado inmobiliario estadounidense deben actualizar sus programas de cumplimiento.",
+        "REGISTRO CAMPUS VIRTUAL GAFILAT CIERRA EL 9 DE MARZO: el mismo dia que inicia la evaluacion. Capacitar al personal con este programa antes del cierre es la accion de menor costo y mayor impacto visible de la semana.",
+        "FATF publica reportes sobre activos virtuales: oVASPs offshore y stablecoins/unhosted wallets. Las ITFs y exchanges mexicanos tienen hoja de ruta clara sobre los nuevos estandares. Los evaluadores verificaran si las instituciones han incorporado estos riesgos.",
+        "Prioridad inmediata de la semana: actualizar listas de screening (SDN + LPB), verificar que matrices de riesgo incluyan fraude ciberhabilitado y activos virtuales, inscribir personal en Campus GAFILAT antes del 9 de marzo, y asegurar que los documentos de due diligence esten listos para entrevistas con evaluadores."
+      ],
+      "datos": {
+        "FATF": {
+          "novedades": 3,
+          "detalleNovedades": [
+            "Publicacion: 'Understanding and Mitigating Offshore VASP Risks' (inicio marzo): el documento analiza como los proveedores de activos virtuales offshore explotan brechas de supervision transfronteriza para mover fondos ilicitos.",
+            "Publicacion: 'Targeted Report on Stablecoins and Unhosted Wallets' (inicio marzo): aborda riesgos de la Regla de Viaje (Travel Rule) en transacciones P2P y wallets no custodiadas.",
+            "ALERTA: Visita in-situ de evaluacion mutua a Mexico inicia el 9 de marzo de 2026. Evaluacion conducida conjuntamente por FATF y GAFILAT. Los resultados seran discutidos en Plenaria de octubre 2026."
+          ],
+          "temas": "Publicaciones sobre activos virtuales: oVASPs y stablecoins/unhosted wallets. Inicio de visita in-situ a Mexico. El FATF inicia el ciclo de evaluacion directa de la efectividad del sistema ALA/CFT mexicano.",
+          "regulaciones": "Reportes sobre activos virtuales (oVASPs y stablecoins) publicados. Estos documentos seran referencia de los evaluadores al analizar el cumplimiento de la Recomendacion 15 (activos virtuales) por parte de Mexico.",
+          "eventos": "Visita in-situ evaluacion mutua Mexico (9 marzo 2026 - inicio). Discusion plenaria resultados evaluacion: octubre 2026.",
+          "alertas": "ALERTA CRITICA: La visita in-situ comienza el 9 de marzo. Los evaluadores revisaran: 1) marco normativo y su adecuacion a los 40 estandares FATF, 2) supervision efectiva de entidades obligadas, 3) investigacion y procesamiento de casos de LA/FT, 4) cooperacion internacional. El resultado de esta evaluacion determinara el posicionamiento de Mexico en el sistema ALA/CFT global por los proximos 8-10 anos.",
+          "relevanciaMX": "MAXIMA. Mexico es el sujeto de la evaluacion. La presidencia del FATF mientras se recibe la evaluacion es un arma de doble filo: mayor visibilidad global, pero tambien mayor exigencia de coherencia entre liderazgo retorico y efectividad real del sistema."
+        },
+        "UNODC": {
+          "novedades": 2,
+          "detalleNovedades": [
+            "69a Sesion de la Comision de Estupefacientes (CND) (9-13 marzo, Viena): debates cruciales sobre evolucion del mercado de drogas sinteticas (nitazenos, opioides), impacto en sistemas financieros y estrategias de respuesta.",
+            "Global Fraud Summit (16-17 marzo, Viena): FATF-INTERPOL-UNODC presentaran declaracion conjunta urgiendo medidas contra fraude transnacional. Mexico tiene oportunidad de posicionarse con casos concretos (red CJNG Nayarit)."
+          ],
+          "temas": "Drogas sinteticas y su impacto en sistemas financieros. Coordinacion multilateral contra fraude transnacional. La semana del 9-13 marzo concentra eventos internacionales clave (CND Viena + evaluacion in-situ Mexico).",
+          "regulaciones": "Sin nuevas publicaciones normativas esta semana. Los resultados de la CND orientaran actualizaciones normativas sobre control de precursores.",
+          "eventos": "CND 69a sesion (9-13 marzo, Viena). Global Fraud Summit (16-17 marzo, Viena).",
+          "alertas": "La alerta sobre nitazenos (opioides sinteticos) publicada en febrero es relevante para matrices de riesgo de instituciones con presencia en zonas de trafico de drogas sinteticas.",
+          "relevanciaMX": "Alta. El Global Fraud Summit es oportunidad para Mexico de presentar los casos de coordinacion OFAC-UIF contra CJNG como ejemplo de buenas practicas en la lucha contra el fraude transnacional."
+        },
+        "EGMONT": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin nuevas publicaciones. El Chair's Statement de las reuniones de Tanzania (publicado semana previa) y los avances en Egmont Secure Web siguen siendo referencia activa.",
+          "regulaciones": "Sin nuevas publicaciones.",
+          "eventos": "Proxima Plenaria Egmont: Baku, Azerbaiyan (julio 2026).",
+          "alertas": "Sin alertas.",
+          "relevanciaMX": "Alta (contexto). Los canales Egmont son mecanismo de intercambio de inteligencia que los evaluadores FATF verificaran esta semana durante la visita in-situ."
+        },
+        "BANCO_MUNDIAL": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin nuevas publicaciones. El Banco Mundial participa como observador en el proceso de evaluacion mutua de Mexico. Sus metodologias de evaluacion son referente tecnico para los evaluadores.",
+          "regulaciones": "Sin nuevas publicaciones.",
+          "eventos": "Sin eventos nuevos.",
+          "alertas": "Sin alertas.",
+          "relevanciaMX": "Media. El BM es referente tecnico en la evaluacion. Mexico debera demostrar que su NRA (Evaluacion Nacional de Riesgos) cumple con los estandares metodologicos promovidos por el Banco Mundial."
+        },
+        "WOLFSBERG": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin nuevas publicaciones. La guidance sobre stablecoins (publicada semana previa) y la declaracion RBA son las referencias mas recientes. Los evaluadores FATF utilizaran estos documentos como benchmark de mejores practicas de la banca privada internacional.",
+          "regulaciones": "Sin nuevas publicaciones.",
+          "eventos": "Sin eventos nuevos.",
+          "alertas": "Sin alertas.",
+          "relevanciaMX": "Media. Los estandares Wolfsberg son referencia que los evaluadores verificaran en la banca mexicana con corresponsalia internacional."
+        },
+        "GAFILAT": {
+          "novedades": 2,
+          "detalleNovedades": [
+            "ALERTA: Campus Virtual GAFILAT - registro cierra el 9 de marzo. Acceso gratuito para sujetos obligados del sector publico y privado del 1 de abril al 31 de diciembre 2026. Cursos disponibles: ALA/CFT, evaluaciones mutuas, activos virtuales, FT, recuperacion de activos.",
+            "Coordinacion FATF-GAFILAT para visita in-situ a Mexico (inicio 9 marzo): GAFILAT participa como co-evaluador en la evaluacion mutua de su miembro mas activo en la region."
+          ],
+          "temas": "Campus Virtual como herramienta de capacitacion regional gratuita - registro urgente. Co-evaluacion de Mexico como hito para la organizacion y para la region. El resultado de la evaluacion de Mexico influira en los estandares y expectativas para el resto de los miembros GAFILAT.",
+          "regulaciones": "Sin nuevas publicaciones normativas.",
+          "eventos": "URGENTE: Registro Campus Virtual cierra el 9 de marzo. Evaluacion in-situ Mexico inicia el 9 de marzo.",
+          "alertas": "URGENTE: El registro para el Campus Virtual GAFILAT cierra HOY (9 marzo) o este fin de semana. Es la oportunidad de capacitacion ALA/CFT regional gratuita mas importante del ano. Las instituciones que no inscriban a su personal perderan el beneficio.",
+          "relevanciaMX": "Muy alta. GAFILAT es co-evaluador de Mexico. El reconocimiento de Mexico como referente tecnico regional (Premio Campus 2025) estara a prueba cuando los evaluadores contrasten el liderazgo formal con los resultados operativos del sistema."
+        },
+        "OFAC": {
+          "novedades": 3,
+          "detalleNovedades": [
+            "2 marzo: Republica Democratica del Congo (RDC) - designaciones contra grupos armados y sus redes de financiamiento vinculadas al conflicto en el este del Congo. Incluye sanciones a las Fuerzas de Defensa de Ruanda (RDF).",
+            "5 marzo: Rusia y Venezuela - actualizaciones continuas SDN List. Nuevas entidades vinculadas a evasion de sanciones y sector energetico.",
+            "Acuerdo de enforcement 3.777 MDD por violaciones a sanciones contra Siria (25 feb, formalizado inicio marzo)."
+          ],
+          "temas": "Designaciones RDC/Ruanda por conflicto en Africa Central. Continuacion del cerco a Rusia y Venezuela. Enforcement activo: acuerdo de 3.777 MDD por violaciones a sanciones Siria.",
+          "regulaciones": "Actualizaciones SDN List (RDC, Rusia, Venezuela). Actualizacion Licencias Generales Venezuela.",
+          "eventos": "Sin eventos publicos.",
+          "alertas": "Actualizacion SDN List esta semana. Los sistemas de screening deben estar al dia previo a cualquier operacion con contrapartes que tengan conexion con Africa Central, Rusia o Venezuela.",
+          "relevanciaMX": "Media-alta. Las actualizaciones continuas de OFAC obligan a un proceso de screening dinamico. En el contexto de la evaluacion in-situ, los evaluadores verificaran si las instituciones mexicanas tienen procesos efectivos de actualizacion de listas."
+        },
+        "UE": {
+          "novedades": 2,
+          "detalleNovedades": [
+            "AMLA avanza en preparacion para supervision directa: la presidenta Bruna Szego confirma que la metodologia de evaluacion de riesgos esta en fase de pruebas piloto con las primeras entidades candidatas a supervision directa desde 2028.",
+            "Lista de terceros paises de alto riesgo (vigente): Bolivia y British Virgin Islands confirmados en la lista actualizada. Institucion mexicana con clientes o corresponsales con conexion a estas jurisdicciones debe aplicar debida diligencia reforzada."
+          ],
+          "temas": "AMLA en construccion activa de capacidades supervisoras. Lista de paises de alto riesgo vigente con Bolivia y BVI. El Single Rulebook AML de la UE establece el estandar que la banca corresponsal mexicana en Europa debera cumplir desde 2027.",
+          "regulaciones": "Lista terceros paises alto riesgo UE (vigente, incluye Bolivia y BVI). Consulta AMLA sobre RTS penalidades armonizadas (abierta).",
+          "eventos": "Sin eventos publicos especificos.",
+          "alertas": "Lista UE de paises de alto riesgo vigente: Bolivia y British Virgin Islands. Las instituciones mexicanas con relaciones de corresponsalía o clientes vinculados a estas jurisdicciones deben aplicar debida diligencia reforzada.",
+          "relevanciaMX": "Media-alta. Las filiales de bancos europeos en Mexico necesitaran alinearse al Single Rulebook de la UE. Mexico debera demostrar equivalencia de su marco ALA/CFT para mantener relaciones de corresponsalía con la banca europea."
+        },
+        "FINCEN": {
+          "novedades": 2,
+          "detalleNovedades": [
+            "Regla de Reporte de Bienes Raices Residenciales ENTRA EN VIGOR el 1 de marzo de 2026: los profesionales involucrados en cierres de propiedades residenciales en EE.UU. deben reportar transferencias de capital a FinCEN cuando involucren ciertas entidades legales.",
+            "Regla AML para Asesores de Inversion pospuesta hasta enero 2028: el sector de asesores de inversion tiene plazo adicional para cumplir con requisitos ALA/CFT completos."
+          ],
+          "temas": "Entrada en vigor de la Regla de Bienes Raices Residenciales. Postergacion de la regla para asesores de inversion. El cerco de transparencia en el mercado inmobiliario de EE.UU. se activa.",
+          "regulaciones": "Residential Real Estate Reporting Rule en vigor (1 marzo). Regla AML Asesores de Inversion pospuesta a enero 2028.",
+          "eventos": "Sin eventos publicos.",
+          "alertas": "La Regla de Bienes Raices Residenciales ya esta vigente. Los flujos de capital mexicano hacia propiedades en EE.UU. a traves de entidades legales quedan bajo reporte obligatorio. Las instituciones mexicanas deben revisar sus programas de cumplimiento para clientes con actividad en este mercado.",
+          "relevanciaMX": "Alta. Mexico es uno de los principales origenes de capital hacia el mercado inmobiliario de EE.UU. (especialmente Texas, Florida, California). La nueva regla crea transparencia en flujos que historicamente han sido canal de lavado. El enforcement fronterizo FinCEN + MOU UIF-IRS crea un cerco sin precedente."
+        },
+        "TRANSPARENCY": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin nuevas publicaciones. El IPC 2025 (Mexico 27/100, ultimo lugar OCDE, lugar 141/182) es el dato vigente que los evaluadores FATF tienen sobre la mesa esta semana.",
+          "regulaciones": "Sin nuevas publicaciones.",
+          "eventos": "Sin eventos.",
+          "alertas": "Sin alertas.",
+          "relevanciaMX": "Alta (dato vigente). El IPC 27/100 forma parte del contexto de la evaluacion. Los evaluadores del FATF son profesionales que conocen el entorno de corrupcion como variable que afecta la efectividad del sistema ALA/CFT."
+        },
+        "IEP": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Anuncio oficial: lanzamiento del Global Terrorism Index 2026 el 19 de marzo, con webinar publico. El GTI historicamente posiciona a Mexico entre los paises mas afectados por violencia de grupos criminales (top 10 mundial). Los datos del GTI 2026 seran insumo para matrices de riesgo de FT."
+          ],
+          "temas": "Preparacion del GTI 2026: terrorismo, violencia de grupos criminales y su impacto economico. La fragmentacion geopolitica global como contexto de riesgo para cadenas de suministro.",
+          "regulaciones": "Sin publicaciones normativas.",
+          "eventos": "Webinar GTI 2026 (19 marzo 2026). Lanzamiento GPI (Global Peace Index) anticipado para junio 2026.",
+          "alertas": "Sin alertas urgentes.",
+          "relevanciaMX": "Media-alta. El GTI 2026 (19 marzo) sera publicado mientras la visita in-situ FATF esta en curso. Si Mexico mantiene su posicion en el top 10 de paises mas afectados por violencia criminal, esto reforzara la presion sobre el componente FT de la evaluacion."
+        },
+        "SHCP": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Superavit presupuestal enero 2026: SHCP reporta el primer superavit en el Requerimiento Financiero del Sector Publico (RFSP) desde 2020, con crecimiento tributario del 11.5% real en enero, el mas alto desde 2015. Indicador de fortaleza fiscal relevante como contexto de la evaluacion."
+          ],
+          "temas": "Posicionamiento fiscal de Mexico en el arranque del sexenio. Modernizacion de aduanas y digitalizacion de procesos como herramientas contra huachicol fiscal y factureras. Credencial de estabilidad para contexto de evaluacion mutua.",
+          "regulaciones": "Convocatoria Certificacion PLD/FT 2026 vigente. Registro: 1-28 abril.",
+          "eventos": "Registro Certificacion PLD/FT 2026 abre el 1 de abril.",
+          "alertas": "Sin alertas ALA/CFT directas esta semana.",
+          "relevanciaMX": "Media-alta. El superavit fiscal y el crecimiento tributario son indicadores de fortaleza institucional que el gobierno mexicano usara como contexto positivo ante los evaluadores FATF. La modernizacion fiscal complementa el fortalecimiento del regimen ALA/CFT."
+        },
+        "CNBV": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Revocacion de autorizacion a Lehman Brothers Mexico (inicio marzo): accion administrativa de limpieza del registro oficial de entidades supervisadas. 18 anos despues de la quiebra global del grupo, se formalizan los procedimientos de liquidacion en Mexico."
+          ],
+          "temas": "Limpieza del registro de entidades supervisadas. La CNBV entra a la semana de evaluacion in-situ con un registro actualizado como parte de sus obligaciones de supervision formal.",
+          "regulaciones": "Sin nuevas circulares o disposiciones ALA/CFT esta semana.",
+          "eventos": "Sin eventos publicos.",
+          "alertas": "Sin alertas urgentes.",
+          "relevanciaMX": "Alta (contexto). La CNBV es una de las autoridades que los evaluadores FATF entrevistaran durante la visita in-situ. La calidad de su supervision, la cobertura de sus revisiones ALA/CFT y la contundencia de sus acciones sancionatorias seran evaluadas directamente."
+        },
+        "UIF": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Inicio de visita in-situ FATF-GAFILAT a Mexico (9 marzo): la UIF es la institucion central del sistema ALA/CFT mexicano y el principal punto de contacto con los evaluadores. Omar Reyes Colmenares encabeza la interaccion con el equipo evaluador. Los indicadores de efectividad: volumen y calidad de ROS/ROI, tiempo de respuesta, coordinacion con FGR, y uso de inteligencia financiera en condenas judiciales, seran el nucleo de la evaluacion."
+          ],
+          "temas": "La UIF bajo el microscopio FATF. Los indicadores de efectividad del sistema de inteligencia financiera mexicano se someten a evaluacion directa. El MOU UIF-IRS (27 feb), los bloqueos CJNG y las Guias de Mejores Practicas son evidencia acumulada que los evaluadores revisaran.",
+          "regulaciones": "Sin nuevas disposiciones esta semana. El marco regulatorio existente es el sujeto de evaluacion.",
+          "eventos": "Visita in-situ evaluacion mutua FATF-GAFILAT Mexico (inicio 9 marzo).",
+          "alertas": "ALERTA: Con la visita in-situ en curso, todas las instituciones financieras supervisadas deben asegurar que sus documentos de cumplimiento, matrices de riesgo, registros de due diligence y reportes de operaciones inusuales esten en orden. Los evaluadores pueden solicitar muestras de cualquier sujeto obligado.",
+          "relevanciaMX": "MAXIMA. La UIF es el corazon del sistema ALA/CFT mexicano. El resultado de la evaluacion dependera en gran medida de la capacidad de la UIF para demostrar que la inteligencia financiera que produce genera investigaciones, procesamientos y condenas reales."
+        }
+      }
+    },
+    "2026-02-27": {
+      "fecha": "27 de febrero de 2026",
+      "resumen": "FATF publica reporte sobre fraude ciberhabilitado confirmando que el fraude es el principal generador de activos ilicitos en 90% de jurisdicciones. OFAC intensifica designaciones: Iran shadow fleet, Rusia/ciber (Operation Zero) y Nicaragua. UIF firma MOU historico con IRS Criminal Investigation para intercambio de inteligencia financiera. Wolfsberg Group publica guidance sobre stablecoins. GAFILAT emite alerta sobre mulas financieras y lavado cripto en Latam.",
+      "puntosClavesMX": [
+        "MOU UIF-IRS Criminal Investigation (27 feb): primer acuerdo bilateral de intercambio de inteligencia financiera con enfoque en trafico ilicito de armas, en el contexto de la administracion Trump. Marca el fin de la opacidad en activos transfronterizos. Esperese aumento en solicitudes de informacion y bloqueos de cuentas.",
+        "FATF Cyber-Enabled Fraud (24 feb): el fraude ciberhabilitado genera 40%+ de crimenes en Reino Unido y es riesgo principal de ML en 90% de jurisdicciones. Las matrices de riesgo mexicanas que no contemplen este vector estaran desactualizadas frente a los evaluadores FATF.",
+        "GAFILAT alerta mulas financieras y cripto P2P (24-26 feb): tipologia directamente relevante para bancos, fintechs y cooperativas mexicanas. Revisar reglas de monitoreo de transacciones fragmentadas y transferencias a wallets no identificados.",
+        "OFAC Operation Zero (24 feb): Sergey Zelenyuk y Matrix LLC designados por comercializar exploits ciberneticos. Refuerza la convergencia ciberseguridad-cumplimiento: los programas ALA/CFT deben integrar riesgos de fraude digital.",
+        "Wolfsberg guidance stablecoins (feb): marco para bancos mexicanos que busquen ofrecer servicios a emisores de stablecoins. Reduce incertidumbre regulatoria y riesgo de de-risking indiscriminado en el ecosistema cripto."
+      ],
+      "datos": {
+        "FATF": {
+          "novedades": 3,
+          "detalleNovedades": [
+            "Reporte 'Cyber-Enabled Fraud - Digitalisation and ML/TF/PF Risks' (24 feb): el fraude ciberhabilitado representa 40%+ de crimenes en el Reino Unido. 156 jurisdicciones (90% de las evaluadas) lo identifican como principal riesgo de lavado de dinero. El reporte insta a usar tecnicas innovadoras para prevenir el fraude y recuperar activos para victimas.",
+            "Learning and Development Forum (25-26 feb, Londres): organizado por HM Treasury y City of London Corporation. Enfoque en supervision basada en riesgo con participacion del Wolfsberg Group y representantes de 200+ jurisdicciones.",
+            "Avance en publicacion de dos reportes sobre activos virtuales aprobados en Plenaria: 'Understanding and Mitigating Offshore VASP Risks' y 'Targeted Report on Stablecoins and Unhosted Wallets'. Publicacion anticipada para marzo 2026."
+          ],
+          "temas": "Fraude ciberhabilitado como amenaza principal global de lavado. Activos virtuales offshore y stablecoins bajo nuevo escrutinio normativo. Supervision basada en riesgo como metodologia del ciclo 2026-2028.",
+          "regulaciones": "Reporte Cyber-Enabled Fraud (24 feb). Dos reportes sobre activos virtuales en proceso de publicacion para marzo 2026.",
+          "eventos": "Learning and Development Forum (25-26 feb, Londres). Proximo presidente FATF designado: Giles Thomson (UK), julio 2026.",
+          "alertas": "El reporte de fraude ciberhabilitado es lectura obligada para actualizar matrices de riesgo. Las instituciones que no tengan escenarios de monitoreo para fraude digital estaran expuestas en la evaluacion.",
+          "relevanciaMX": "Muy alta. Con la visita in-situ FATF iniciando el 9 de marzo, las matrices de riesgo de las instituciones mexicanas deben incorporar el vector de fraude ciberhabilitado. Los evaluadores verificaran si los programas de cumplimiento contemplan este riesgo."
+        },
+        "UNODC": {
+          "novedades": 2,
+          "detalleNovedades": [
+            "Participacion activa en preparacion del Global Fraud Summit (16-17 marzo, Viena): coordinacion con FATF e INTERPOL para presentar declaracion conjunta urgiendo medidas contra fraude transnacional.",
+            "Continuacion de actividades COPAK (Pakistan): taller sobre uso de inteligencia financiera y retroalimentacion de autoridades de procuracion de justicia (Karachi). Modelo aplicable para Mexico en coordinacion FGR-UIF."
+          ],
+          "temas": "Coordinacion multilateral contra fraude transnacional (FATF-INTERPOL-UNODC). Inteligencia financiera como herramienta de procuracion de justicia. Modelos nacionales de planes contra crimen organizado.",
+          "regulaciones": "Sin nuevas publicaciones normativas esta semana.",
+          "eventos": "Global Fraud Summit (16-17 marzo, Viena): participacion conjunta FATF-INTERPOL-UNODC.",
+          "alertas": "Sin alertas directas.",
+          "relevanciaMX": "Media-alta. La coordinacion FATF-INTERPOL-UNODC contra fraude transnacional establece un estandar de cooperacion interinstitucional que Mexico debera demostrar ante evaluadores. El modelo Pakistan de uso de inteligencia financiera en procuracion es referente para la relacion FGR-UIF."
+        },
+        "EGMONT": {
+          "novedades": 2,
+          "detalleNovedades": [
+            "Publicacion del Chair's Statement de las reuniones anuales (26-30 enero, Arusha, Tanzania): 400+ representantes de UIFs del mundo. Avances en modernizacion de Egmont Secure Web (ESW) con pilotos de data matching para investigaciones transnacionales.",
+            "Aprobacion de desarrollo de nuevo curso sobre Analisis Operativo y guia sobre uso de OSINT en inteligencia financiera."
+          ],
+          "temas": "Modernizacion tecnologica de la red Egmont. Inteligencia Artificial y Machine Learning en analisis financiero de UIFs. Alianzas Publico-Privadas como modelo de colaboracion con sector financiero. Proxima Plenaria en Baku (julio 2026).",
+          "regulaciones": "Analisis Horizontal de Efectividad ALA/CFT en Europa II. Guia para autoridades de procuracion de justicia sobre cooperacion internacional informal.",
+          "eventos": "Proxima Plenaria Egmont: Baku, Azerbaiyan (julio 2026). Webinar conjunto con IAP sobre cooperacion internacional informal.",
+          "alertas": "Sin alertas urgentes.",
+          "relevanciaMX": "Alta. La UIF Mexico forma parte de los 170+ miembros Egmont. El uso de canales Egmont para intercambio de informacion es un indicador clave en la evaluacion mutua FATF. Los avances en data matching de la ESW refuerzan la capacidad de Mexico para cooperacion transnacional."
+        },
+        "BANCO_MUNDIAL": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin nuevas publicaciones esta semana. La Technical Note sobre pagos digitales e identidad (publicada semana previa) y el Simposio sobre Beneficiarios Finales siguen siendo referencia activa.",
+          "regulaciones": "Sin nuevas publicaciones.",
+          "eventos": "Sin eventos nuevos.",
+          "alertas": "Sin alertas.",
+          "relevanciaMX": "Media. El Banco Mundial es observador en el proceso de evaluacion mutua de Mexico. Sus metodologias de NRA (National Risk Assessment) son estandar que Mexico debe demostrar dominar."
+        },
+        "WOLFSBERG": {
+          "novedades": 2,
+          "detalleNovedades": [
+            "Publicacion: 'Guidance on the Provision of Banking Services to Fiat-backed Stablecoin Issuers': el grupo sugiere aplicar principios similares a la banca corresponsal para evaluar a emisores de stablecoins, analizando robustez de controles ALA/CFT y transparencia de reservas.",
+            "Declaracion sobre reafirmacion del Enfoque Basado en Riesgos (RBA): el Grupo advierte que el exceso de cumplimiento tecnico-formal esta reduciendo la efectividad del sistema al desviar atencion de deteccion real de crimenes."
+          ],
+          "temas": "Normalizacion de servicios bancarios a emisores de stablecoins. Reafirmacion del enfoque basado en riesgos como filosofia de supervision. Critica al over-compliance como problema sistemico.",
+          "regulaciones": "Guidance sobre stablecoins respaldadas por moneda fiat. Declaracion RBA Statement.",
+          "eventos": "Participacion en FATF Learning and Development Forum (25-26 feb, Londres).",
+          "alertas": "Sin alertas urgentes.",
+          "relevanciaMX": "Media-alta. La guidance de Wolfsberg sobre stablecoins es el marco de referencia para bancos mexicanos que busquen interactuar con el ecosistema cripto. La declaracion RBA es relevante para el dialogo CNBV-sujetos obligados sobre proporcionalidad en KYC."
+        },
+        "GAFILAT": {
+          "novedades": 2,
+          "detalleNovedades": [
+            "Alerta sobre mulas financieras y lavado via plataformas P2P cripto en America Latina (24-26 feb): tipologia en ascenso que involucra uso de cuentas prestanombres para mover activos ilicitos, combinado con exchanges descentralizados.",
+            "Anuncio: Campus Virtual GAFILAT habilitara acceso gratuito para sujetos obligados del sector publico y privado del 1 de abril al 31 de diciembre 2026. Registro disponible hasta el 9 de marzo."
+          ],
+          "temas": "Alerta tipologica sobre mulas financieras y cripto P2P. Campus Virtual como herramienta de capacitacion regional gratuita. Evaluaciones mutuas de Quinta Ronda en progreso.",
+          "regulaciones": "Alerta sobre mulas financieras y plataformas P2P cripto en Latam.",
+          "eventos": "Webinar: 'El ABC de la prevencion ALA/CFT' (2 de marzo de 2026). Campus Virtual GAFILAT: acceso gratuito 1 abril - 31 dic 2026, registro hasta 9 marzo.",
+          "alertas": "ALERTA: Mulas financieras y lavado cripto P2P en ascenso en Latam. Las instituciones mexicanas deben revisar sus reglas de monitoreo para detectar cuentas con patrones de receptor-emisor inusuales y transacciones hacia wallets no identificados. Registro Campus Virtual cierra 9 marzo.",
+          "relevanciaMX": "Alta. La alerta de mulas financieras es directamente aplicable al contexto mexicano dado el volumen de remesas y la proliferacion de fintechs. El Campus Virtual es oportunidad de capacitacion gratuita con cierre de registro el mismo dia que inicia la visita in-situ FATF."
+        },
+        "OFAC": {
+          "novedades": 5,
+          "detalleNovedades": [
+            "25 feb: Iran - Designaciones relacionadas con 'shadow fleet' (flota sombra de petroleros): buques adicionales bajo sanciones por evasion de restricciones al petroleo iraniano.",
+            "24 feb: Operation Zero/Exploits ciberneticos: Sergey Zelenyuk y Matrix LLC LLC designados bajo EO 13694 por comercializar herramientas ciberneticas robadas al gobierno de EE.UU.",
+            "24-26 feb: Rusia - multiples actualizaciones SDN: nuevas entidades y personas fisicas vinculadas a la maquinaria de guerra y evasion de sanciones.",
+            "26 feb: Nicaragua - designaciones a funcionarios del gobierno de Nicaragua vinculados a represion politica.",
+            "25 feb: Acuerdo de enforcement por 3.777 MDD por violaciones a sanciones contra Siria."
+          ],
+          "temas": "Semana de alta intensidad en designaciones: Iran (shadow fleet), Rusia (guerra), Nicaragua (represion), ciber (Operation Zero). El uso de sanciones como herramienta de politica exterior se mantiene agresivo bajo la administracion Trump.",
+          "regulaciones": "Actualizaciones multiples SDN List. Nuevas Licencias Generales Venezuela (GL 50, 50A): transacciones autorizadas para BP, Chevron, Eni, Repsol, Shell y Maurel and Prom en sector petroleo y gas.",
+          "eventos": "Sin eventos publicos.",
+          "alertas": "URGENTE: Multiples actualizaciones SDN esta semana. Los sistemas de screening deben estar actualizados. La convergencia de designaciones ciberneticas (Operation Zero) con el programa de sanciones es un indicador de la nueva frontera del cumplimiento.",
+          "relevanciaMX": "Alta. Las Licencias Generales Venezuela (GL 50/50A) abren ventana para el sector energetico con condiciones estrictas. Las designaciones de Operation Zero son relevantes para fintechs y exchanges cripto mexicanos que deben asegurar que no procesan transacciones de actores ciberneticos sancionados."
+        },
+        "UE": {
+          "novedades": 3,
+          "detalleNovedades": [
+            "Council Implementing Regulation (EU) 2026/431 (23 feb): actualizacion del regimen de sanciones contra Rusia, adiciona personas y entidades al listado.",
+            "Decision/Regulation de terrorismo (26 feb): ampliacion del ambito de la lista terrorista de la UE.",
+            "Consulta publica AMLA sobre RTS de penalidades armonizadas para entidades supervisadas (abierta desde febrero): busca estandarizar sanciones en toda la UE."
+          ],
+          "temas": "Sanciones Rusia (20 paquete en negociacion, vetado por Hungria). Ampliacion lista terrorista. AMLA consolida su marco normativo previo a supervisión directa en 2028.",
+          "regulaciones": "Regulation (EU) 2026/431 Rusia. Ampliacion lista terrorista UE. Consulta AMLA sobre penalidades armonizadas.",
+          "eventos": "Debate sobre 20 paquete de sanciones contra Rusia (bloqueado temporalmente por Hungria).",
+          "alertas": "Alineacion de terceros paises a sanciones Rusia (5 marzo): instituciones mexicanas con operaciones en paises que comercian con Rusia deben verificar exposicion indirecta. La lista de terceros paises de alto riesgo UE vigente incluye Bolivia y British Virgin Islands.",
+          "relevanciaMX": "Media. El impacto es indirecto: instituciones mexicanas con corresponsales en UE deben monitorear actualizaciones de listas de sanciones. El proceso de alineacion de terceros paises podria afectar relaciones comerciales Mexico-Europa."
+        },
+        "FINCEN": {
+          "novedades": 3,
+          "detalleNovedades": [
+            "Geographic Targeting Order (GTO) Minnesota: orden enfocada en MSBs vinculados a fraude de programas de asistencia gubernamental en Minnesota. Modelo de uso de GTOs para delitos financieros no tradicionales.",
+            "Continuacion Operacion Southwest Border: 100+ MSBs investigados, 6 notificaciones formales, decenas referencias IRS, 50+ cartas de cumplimiento. Enforcement sin precedente en la region.",
+            "Portal confidencial para whistleblowers activo: incentivos economicos para denunciantes de esquemas de lavado y evasion de sanciones. Puede resultar en informacion interna sobre redes con nexos mexicanos."
+          ],
+          "temas": "Enforcement agresivo en frontera suroeste. GTOs como herramienta de monitoreo geografico intensificado. Portal de whistleblowers como mecanismo de inteligencia. La Regla de Bienes Raices Residenciales entra en vigor el 1 de marzo.",
+          "regulaciones": "GTO Minnesota. Regla Residential Real Estate Reporting (efectiva 1 marzo). Exceptive Order FIN-2026-R001 CDD en vigor.",
+          "eventos": "Sin eventos publicos.",
+          "alertas": "La Regla de Bienes Raices Residenciales entra en vigor el 1 de marzo. Los profesionales mexicanos involucrados en cierres de bienes raices en EE.UU. deben conocer sus obligaciones de reporte.",
+          "relevanciaMX": "Alta. El enforcement fronterizo FinCEN y el MOU UIF-IRS (27 feb) crean un cerco de inteligencia financiera en el corredor binacional. Los transmisores de dinero mexicanos con operaciones en EE.UU. son el segmento de mayor riesgo en este contexto."
+        },
+        "TRANSPARENCY": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin nuevas publicaciones. El IPC 2025 (Mexico 27/100, lugar 141/182) sigue siendo la referencia de percepcion de corrupcion vigente para evaluadores internacionales.",
+          "regulaciones": "Sin nuevas publicaciones.",
+          "eventos": "Sin eventos nuevos.",
+          "alertas": "Sin alertas.",
+          "relevanciaMX": "Alta (dato vigente). El IPC 27/100 sera referencia activa durante la visita in-situ FATF que inicia el 9 de marzo."
+        },
+        "IEP": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin nuevas publicaciones. El reporte 'The Great Fragmentation' (publicado previamente) analiza la multipolaridad geopolitica y sus implicaciones para cadenas de suministro y seguridad corporativa.",
+          "regulaciones": "Sin publicaciones.",
+          "eventos": "Webinar lanzamiento Global Terrorism Index 2026 (19 marzo 2026).",
+          "alertas": "Sin alertas.",
+          "relevanciaMX": "Baja-media. Los datos de fragmentacion geopolitica son insumo para matrices de riesgo geografico de instituciones mexicanas con operaciones globales."
+        },
+        "SHCP": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Seguimiento a presidencia mexicana del FATF: el Secretario Edgar Amador Zamora mantiene agenda activa en foros internacionales reafirmando el compromiso de Mexico con los estandares ALA/CFT. Mexico reconocido en GAFILAT como referencia tecnica regional."
+          ],
+          "temas": "Presidencia FATF y posicionamiento internacional de Mexico. Preparacion de la administracion fiscal 2026 con enfoque en digitalizacion y combate a factureras.",
+          "regulaciones": "Sin nuevas disposiciones ALA/CFT esta semana. La Convocatoria de Certificacion PLD/FT 2026 (publicada semana previa) sigue vigente.",
+          "eventos": "Registro Certificacion PLD/FT 2026: 1-28 abril. Evaluacion 1: 27 junio. Evaluacion 2: 24 octubre.",
+          "alertas": "Sin alertas nuevas.",
+          "relevanciaMX": "Alta. El posicionamiento de Mexico como lider regional en formacion tecnica ALA/CFT (Premio Campus GAFILAT 2025) contrasta con el IPC 27/100. Los evaluadores pondran atencion en esta tension entre capacidades tecnicas y contexto de corrupcion."
+        },
+        "CNBV": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Actualizacion 23 feb: INFONAVIT_R04 Cartera de credito - actualizacion de requerimientos de reporte para carteras de credito hipotecario. Relevante en el contexto de la nueva Regla de Bienes Raices Residenciales de FinCEN."
+          ],
+          "temas": "Actualizacion de reportes regulatorios para cartera hipotecaria. Supervision de fintechs en contexto de Mexico Primera Fintech Week. La CNBV prepara respuesta a la brecha de supervision (89 autorizadas vs ~800 operando).",
+          "regulaciones": "INFONAVIT_R04 actualizado. Circulares de reporte en proceso continuo de actualizacion.",
+          "eventos": "Mexico Primera Fintech Week finaliza (27 feb). Proximas acciones de supervision fintech anticipadas.",
+          "alertas": "Sin alertas urgentes.",
+          "relevanciaMX": "Alta. La actualizacion de INFONAVIT_R04 complementa el contexto de la Regla de Bienes Raices de FinCEN. La CNBV necesita demostrar avances en supervision fintech antes de la discusion de la evaluacion mutua en octubre 2026."
+        },
+        "UIF": {
+          "novedades": 2,
+          "detalleNovedades": [
+            "MOU UIF-IRS Criminal Investigation (27 feb): Memorandum de Entendimiento para intercambio bilateral de inteligencia financiera. Enfoque especifico en trafico ilicito de armas. Primer acuerdo de este tipo en el contexto de la administracion Trump. Firmantes: Omar Reyes Colmenares (UIF) y Guy Ficco (IRS-CI).",
+            "Convenio UIF-Loteria Nacional (confirmacion 27 feb): formalizacion del mecanismo de prevencion de lavado de dinero en el sector de sorteos y juegos. Primer convenio formal de la Loteria Nacional con la UIF."
+          ],
+          "temas": "Diplomacia financiera bilateral: MOU con IRS-CI como sena de cooperacion en contexto diplomatico complejo Mexico-EE.UU. Expansion del perimetro ALA/CFT al sector de sorteos y juegos.",
+          "regulaciones": "MOU UIF-IRS Criminal Investigation. Convenio UIF-Loteria Nacional.",
+          "eventos": "Firma MOU UIF-IRS Criminal Investigation (27 feb). Firma Convenio UIF-Loteria Nacional.",
+          "alertas": "El MOU UIF-IRS activa un canal bilateral de inteligencia financiera que incrementara la velocidad de intercambio de informacion sobre cuentas transfronterizas. Las instituciones deben estar preparadas para responder solicitudes con mayor rapidez.",
+          "relevanciaMX": "Muy alta. El MOU es el logro diplomatico financiero mas significativo del periodo. Demuestra ante evaluadores FATF que Mexico cuenta con mecanismos formales y activos de cooperacion internacional, un indicador clave de efectividad del sistema ALA/CFT."
+        }
+      }
+    },
+    "2026-02-20": {
+      "fecha": "20 de febrero de 2026",
+      "resumen": "OFAC y UIF coordinan accion historica contra red CJNG de fraude de tiempos compartidos en Nayarit: 5 individuos y 19 entidades bloqueados simultaneamente en EE.UU. y Mexico. UNODC realiza taller de capacitacion en CDMX sobre laboratorios clandestinos. Banco Mundial publica nota tecnica sobre pagos digitales e identidad para ALA/CFT. SHCP convoca a Certificacion PLD/FT 2026.",
+      "puntosClavesMX": [
+        "Coordinacion OFAC-UIF contra CJNG en Nayarit (19 feb): accion conjunta sin precedente reciente bloquea red de fraude de tiempos compartidos. Las instituciones del sector turismo e inmobiliario deben actualizar screening de inmediato y revisar cuentas con patrones de ingresos del exterior.",
+        "UIF Comunicado No. 15: 7 nuevos sujetos (6 personas fisicas, 1 moral) en Lista de Personas Bloqueadas. Accion directamente vinculada a designacion OFAC. Obliga a bloqueo inmediato de cuentas y emision de Reportes de Operacion Inusual.",
+        "SHCP convoca Certificacion PLD/FT 2026: dos evaluaciones (27 junio y 24 octubre), registro primera etapa 1-28 abril. Con la visita in-situ FATF activa, contar con personal certificado es evidencia clave de efectividad del sistema.",
+        "Banco Mundial: nota tecnica sobre pagos digitales e identidad verificable con ALA/CFT. Marco de referencia para CNBV y UIF en actualizacion de cumplimiento digital y KYC en entornos fintech.",
+        "UNODC capacita a 39 funcionarios mexicanos (SEMAR, SEDENA, SSPC, FGR) en deteccion de laboratorios clandestinos. Refuerza cooperacion bilateral Mexico-Canada y demuestra capacidad operativa ante evaluadores FATF."
+      ],
+      "datos": {
+        "FATF": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin nuevas publicaciones esta semana. Los resultados de la 5a Plenaria (9-13 feb) y la actualizacion de lista gris (Kuwait, Papua Nueva Guinea) fueron publicados la semana anterior. El organismo prepara los reportes sobre activos virtuales aprobados en Plenaria.",
+          "regulaciones": "Se mantienen vigentes: lista de jurisdicciones bajo monitoreo intensificado (Kuwait, Papua Nueva Guinea agregados 13 feb), llamada a contramedidas contra Iran, y nueva metodologia de evaluacion.",
+          "eventos": "Sin eventos adicionales. El Learning and Development Forum se celebrara 25-26 feb en Londres.",
+          "alertas": "Sin nuevas alertas esta semana.",
+          "relevanciaMX": "Alta. La evaluacion mutua de Mexico sigue su curso. Cada accion de autoridades mexicanas es evidencia para los evaluadores del FATF."
+        },
+        "UNODC": {
+          "novedades": 2,
+          "detalleNovedades": [
+            "Taller capacitacion laboratorios clandestinos (20 feb, CDMX): UNODC + RCMP Canada + SEMAR. Primer Modulo del proyecto ALERT/STAND sobre desmantelamiento e investigacion de laboratorios de drogas sinteticas.",
+            "Participacion en preparativos del Global Fraud Summit (16-17 marzo, Viena) junto con FATF e INTERPOL."
+          ],
+          "temas": "Capacitacion operativa en deteccion y desmantelamiento de laboratorios clandestinos de drogas sinteticas. Cooperacion trilateral Mexico-Canada-UNODC como modelo de asistencia tecnica regional.",
+          "regulaciones": "Sin nuevas publicaciones normativas. El taller forma parte del proyecto ALERT/STAND para reduccion de oferta de drogas sinteticas.",
+          "eventos": "Taller laboratorios clandestinos (20 feb, CDMX). Preparativos Global Fraud Summit Viena (16-17 mar).",
+          "alertas": "Sin alertas globales directas. Se refuerza la importancia de monitorear trafico de precursores quimicos como delito precedente al lavado.",
+          "relevanciaMX": "Alta. Capacitacion de 39 funcionarios de SEMAR, SEDENA, SSPC y FGR demuestra ante evaluadores FATF fortalecimiento de capacidades operativas. Los laboratorios clandestinos son fuente primaria de activos ilicitos que ingresan al sistema financiero."
+        },
+        "EGMONT": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin nuevas publicaciones esta semana. Los resultados de las reuniones anuales (26-30 enero, Arusha, Tanzania) siguen siendo referencia activa: avances en modernizacion de Egmont Secure Web y uso de IA en UIFs.",
+          "regulaciones": "Sin nuevas guias o estandares.",
+          "eventos": "Preparativos para Plenaria Egmont en Baku (julio 2026).",
+          "alertas": "Sin alertas.",
+          "relevanciaMX": "Media. La UIF Mexico utiliza los canales Egmont para intercambio de inteligencia financiera con 170+ UIFs del mundo, mecanismo clave durante la evaluacion mutua en curso."
+        },
+        "BANCO_MUNDIAL": {
+          "novedades": 2,
+          "detalleNovedades": [
+            "Technical Note: 'Enabling Trusted, Inclusive Fast Payments through Digital ID' (febrero 2026): integracion de credenciales verificables con ALA/CFT, KYC, CDD y screening de sanciones en pagos instantaneos.",
+            "Research Symposium on Beneficial Ownership Transparency (febrero): avances en registros de beneficiarios finales y herramientas de acceso para autoridades."
+          ],
+          "temas": "Convergencia de identidad digital, pagos instantaneos y cumplimiento ALA/CFT. Transparencia de beneficiarios finales como eje de integridad financiera. Controles para IA generativa en cumplimiento corporativo.",
+          "regulaciones": "Technical Note sobre pagos digitales e identidad verificable. Actualizacion de Guias de Cumplimiento de Integridad (ICG) del Grupo BM: extiende responsabilidad de cumplimiento a mandos medios e incluye controles para uso de IA generativa.",
+          "eventos": "Research Symposium on Beneficial Ownership Transparency (febrero 2026).",
+          "alertas": "Inhabilitacion de empresa india Transformers and Rectifiers (3 anos 7 meses) por practicas fraudulentas y corruptas en proyecto BM.",
+          "relevanciaMX": "Media-alta. La nota tecnica sobre pagos digitales es referente para CNBV y UIF en actualizacion de marcos de cumplimiento digital. Las nuevas ICG del BM impactan a empresas mexicanas con contratos o proyectos financiados por el Banco Mundial."
+        },
+        "WOLFSBERG": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin publicaciones nuevas en el periodo. El grupo prepara su participacion en el Learning and Development Forum FATF (25-26 feb, Londres).",
+          "regulaciones": "Se mantienen vigentes las guias de 2025 sobre corresponsalia bancaria, KYC y pagos. La guidance sobre stablecoins esta en proceso de actualizacion.",
+          "eventos": "Participacion en FATF Learning and Development Forum (25-26 feb, Londres).",
+          "alertas": "Sin alertas.",
+          "relevanciaMX": "Baja-media. Los estandares Wolfsberg son referencia para bancos mexicanos con corresponsalia internacional, especialmente en contexto de de-risking."
+        },
+        "GAFILAT": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Seguimiento activo a evaluaciones mutuas de la 5a Ronda: reunion cara a cara con Paraguay (9-10 feb) como parte del proceso de evaluacion regional."
+          ],
+          "temas": "Quinta Ronda de Evaluaciones Mutuas en marcha. Plan Estrategico 2026-2030 orienta el trabajo: mayor enfasis en efectividad sobre cumplimiento tecnico, seguimiento digital e indicadores de desempeno. Mexico como referencia tecnica regional.",
+          "regulaciones": "Plan Estrategico 2026-2030 aprobado en LII Pleno (dic 2025). Prioridades: activos virtuales, FT, recuperacion de activos, efectividad demostrable.",
+          "eventos": "Evaluacion cara a cara Paraguay (9-10 feb). Preparacion evaluacion Mexico (conjunta FATF-GAFILAT, in-situ inicia 9 marzo).",
+          "alertas": "Sin alertas formales esta semana.",
+          "relevanciaMX": "Alta. La evaluacion conjunta FATF-GAFILAT de Mexico esta en marcha. Como miembro y actual referente de la red, Mexico debe mantener coherencia entre normativa, supervision y resultados demostrables."
+        },
+        "OFAC": {
+          "novedades": 4,
+          "detalleNovedades": [
+            "19 feb: Designacion red fraude tiempos compartidos CJNG - Nayarit: Jose Luis Gutierrez Ochoa 'Tolin' y red Kovay Gardens (5 individuos + 19 entidades) bajo EO 14059 (trafico de drogas) y EO 13224 (terrorismo). Operaban estafas contra ciudadanos estadounidenses y canadienses.",
+            "19 feb: Coordinacion directa con UIF Mexico para bloqueo simultaneo en Lista de Personas Bloqueadas mexicana.",
+            "Multa IMG Academy 1.7 MDD por contratos de colegiatura con padres de familia vinculados a cartel mexicano. Mensaje: cualquier entidad puede ser alcanzada por sanciones por nexos indirectos.",
+            "Actualizaciones SDN List semana del 17-21 feb: ajustes en programas Venezuela y otras jurisdicciones."
+          ],
+          "temas": "Operacion coordinada EE.UU.-Mexico contra CJNG en sector turismo. Fraude de tiempos compartidos como tipologia de lavado sofisticada. Expansion del perimetro de sanciones a entidades del sector privado por nexos indirectos con cartel.",
+          "regulaciones": "Nuevas Licencias Generales Venezuela (GL 47, 48): ajustes operativos para sector energia. Actualizaciones SDN List.",
+          "eventos": "Sin eventos publicos.",
+          "alertas": "URGENTE: Designacion CJNG Nayarit (19 feb). Instituciones financieras deben: 1) actualizar listas de screening inmediatamente, 2) revisar cuentas de empresas del sector turismo/inmobiliario con flujos del exterior, 3) emitir ROI/SAR si aplica.",
+          "relevanciaMX": "Muy alta. Primera accion coordinada EE.UU.-Mexico con bloqueo simultaneo en LPB y SDN en 2026. Demuestra nivel de cooperacion bilateral activo. El sector de tiempos compartidos y hospitalidad debe ser revisado por todas las instituciones supervisadas."
+        },
+        "UE": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Continuacion de trabajo en AMLA: pruebas piloto de metodologia de evaluacion de riesgos para seleccion de entidades bajo supervision directa desde 2028."
+          ],
+          "temas": "AMLA avanza en construccion de metodologia de supervision directa. La presidenta Bruna Szego confirma inicio de pruebas del proceso de seleccion. El Single Rulebook AML sigue su proceso de adopcion.",
+          "regulaciones": "Consulta publica sobre RTS (Regulatory Technical Standards) de penalidades armonizadas abierta. AMLD6 en proceso de implementacion por estados miembros.",
+          "eventos": "Sin eventos publicos especificos esta semana.",
+          "alertas": "Sin alertas urgentes.",
+          "relevanciaMX": "Media. Las filiales de bancos europeos en Mexico deberan adoptar estandares de gobernanza AMLA a partir de 2027-2028. La lista de terceros paises de alto riesgo de la UE (actualizada a finales de enero) sigue vigente con Bolivia y British Virgin Islands."
+        },
+        "FINCEN": {
+          "novedades": 1,
+          "detalleNovedades": [
+            "Operacion enforcement frontera suroeste en curso: mas de 100 MSBs (centros cambiarios y transmisores de dinero) bajo investigacion. 6 notificaciones formales emitidas, decenas de referencias al IRS Criminal Investigation, 50+ cartas de cumplimiento."
+          ],
+          "temas": "Enforcement agresivo contra MSBs en zona fronteriza. Coordinacion FinCEN-IRS en investigacion de centros cambiarios con patrones sospechosos. Regla de Reporte de Bienes Raices Residenciales se acerca a su entrada en vigor (1 marzo).",
+          "regulaciones": "Recordatorio: Residential Real Estate Reporting Rule entra en vigor 1 de marzo de 2026. Orden FIN-2026-R001 de alivio CDD en vigor.",
+          "eventos": "Sin eventos publicos.",
+          "alertas": "Alerta fronteriza: MSBs con operaciones en corredor fronterizo Mexico-EE.UU. bajo escrutinio intensificado. El enforcement de FinCEN complementa las investigaciones de la DEA y el IRS sobre flujos financieros de carteles.",
+          "relevanciaMX": "Alta. El enforcement fronterizo de FinCEN impacta directamente a transmisores de dinero mexicanos con operaciones en EE.UU. El MOU UIF-IRS (27 feb) que se firmara esta semana amplifica la coordinacion bilateral."
+        },
+        "TRANSPARENCY": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "El IPC 2025 (publicado 10 feb) sigue siendo el dato de referencia: Mexico 27/100, lugar 141/182, ultimo lugar OCDE. Sin nuevas publicaciones esta semana.",
+          "regulaciones": "Sin nuevas publicaciones.",
+          "eventos": "Presentaciones regionales del IPC 2025 en curso.",
+          "alertas": "Sin alertas nuevas.",
+          "relevanciaMX": "Alta (dato en vigor). El IPC 27/100 es insumo activo para la evaluacion mutua FATF en curso. Los evaluadores lo utilizan como contexto del entorno de corrupcion en el que opera el sistema ALA/CFT mexicano."
+        },
+        "IEP": {
+          "novedades": 0,
+          "detalleNovedades": [],
+          "temas": "Sin publicaciones nuevas. El Global Terrorism Index 2026 se lanzara el 19 de marzo. Históricamente posiciona a Mexico entre los paises mas afectados por violencia de grupos criminales.",
+          "regulaciones": "Sin publicaciones.",
+          "eventos": "Webinar lanzamiento GTI 2026 (19 marzo 2026).",
+          "alertas": "Sin alertas.",
+          "relevanciaMX": "Baja-media. Los datos del GTI 2026 seran insumo para matrices de riesgo de FT y crimen organizado transnacional en evaluaciones de riesgo nacionales."
+        },
+        "SHCP": {
+          "novedades": 2,
+          "detalleNovedades": [
+            "Convocatoria Certificacion PLD/FT 2026 publicada en DOF: dos evaluaciones anuales (27 junio y 24 octubre 2026), 1,500 lugares cada una. Registro primera evaluacion: 1 al 28 de abril. Sedes: CDMX, Jalisco y Nuevo Leon.",
+            "Convenio SHCP-UIF con Loteria Nacional (18 feb): ampliacion de la cobertura sectorial del regimen ALA/CFT al sector de sorteos y juegos."
+          ],
+          "temas": "Fortalecimiento de capacidades tecnicas del sector: certificacion profesional PLD/FT 2026 y expansion sectorial del regimen a sorteos y juegos. Acciones de cara a la evaluacion mutua FATF.",
+          "regulaciones": "Convocatoria Certificacion PLD/FT 2026 (DOF). Convenio SHCP-UIF-Loteria Nacional para prevencion de lavado en juegos y sorteos.",
+          "eventos": "Registro certificacion PLD/FT: 1-28 abril 2026. Evaluacion 1: 27 junio. Evaluacion 2: 24 octubre.",
+          "alertas": "El registro para la certificacion abre en abril. Las instituciones deben planear la participacion de su personal con anticipacion.",
+          "relevanciaMX": "Alta. La certificacion PLD/FT 2026 es evidencia directa de fortalecimiento de capacidades para los evaluadores FATF. La expansion al sector sorteos y juegos demuestra ampliacion del perimetro del regimen ALA/CFT."
+        },
+        "CNBV": {
+          "novedades": 3,
+          "detalleNovedades": [
+            "Actualizaciones guias soporte reportes regulatorios (11-19 feb): CUB_R13, CUCB_R01/R10/R12, CUSOFIPOS_R04/R01. Catalogos minimos y estados financieros para fondos, grupos financieros, casas de bolsa.",
+            "Mexico Primera Fintech Week (23-27 feb): reconocimiento de ~800 empresas fintech operando en el mercado, con solo 89 autorizadas por la CNBV. El titular participo reconociendo el valor de la innovacion financiera.",
+            "Revocacion de autorizacion a Lehman Brothers Mexico: accion administrativa de limpieza del registro de entidades supervisadas."
+          ],
+          "temas": "Actualizacion de guias de reporte regulatorio. Brecha de supervision fintech: 800 empresas operando vs 89 autorizadas. Limpieza del registro de entidades. La CNBV bajo presion de demostrar efectividad supervisora ante evaluadores FATF.",
+          "regulaciones": "Actualizaciones: INFONAVIT_R04 Cartera de credito, CUSOFIPOS_R04/R01, CUB_R13, CUCB_R01/R10/R12. Catalogos minimos actualizados.",
+          "eventos": "Mexico Primera Fintech Week (23-27 feb). Participacion del titular de la CNBV.",
+          "alertas": "La brecha de 89 autorizadas vs ~800 operando es un hallazgo que los evaluadores FATF identificaran como riesgo de supervision. Las fintechs no autorizadas operan fuera del regimen ALA/CFT.",
+          "relevanciaMX": "Alta. Las actualizaciones de guias de reporte son accion directa de mejora del sistema. La brecha de supervision fintech representa un riesgo significativo en el contexto de la evaluacion mutua en curso."
+        },
+        "UIF": {
+          "novedades": 3,
+          "detalleNovedades": [
+            "Comunicado No. 15 (19 feb): adicion de 7 sujetos (6 personas fisicas, 1 persona moral) a la Lista de Personas Bloqueadas (LPB) por red de fraude de tiempos compartidos vinculada al CJNG en Nayarit. Accion coordinada con designacion simultanea de OFAC.",
+            "Convenio UIF-Loteria Nacional (18 feb): fortalecimiento de capacidades preventivas del sector de juegos y sorteos. Primera accion formal de incorporacion de Loteria Nacional al regimen ALA/CFT.",
+            "Seguimiento a Guias de Mejores Practicas emitidas la semana previa para transmisores de dinero y almacenes generales de deposito."
+          ],
+          "temas": "Coordinacion bilateral EE.UU.-Mexico contra CJNG. Expansion sectorial del regimen a sorteos y juegos. Omar Reyes Colmenares refuerza el perfil activo de la UIF de cara a la evaluacion mutua.",
+          "regulaciones": "Actualizacion LPB (Comunicado No. 15). Convenio con Loteria Nacional.",
+          "eventos": "Sin eventos publicos.",
+          "alertas": "URGENTE: Actualizacion LPB. Todas las instituciones financieras deben verificar sus sistemas de screening contra la nueva LPB actualizada en un plazo de 24 horas de publicado el comunicado.",
+          "relevanciaMX": "Muy alta. La coordinacion OFAC-UIF es la accion binacional mas significativa del periodo. Demuestra ante evaluadores FATF que Mexico cuenta con mecanismos de cooperacion internacional efectivos y capacidad de accion rapida."
+        }
+      }
+    },
     "2026-02-13": {
       "fecha": "13 de febrero de 2026",
       "resumen": "Semana histórica: la 5ª Plenaria del GAFI en CDMX bajo presidencia mexicana coincide con la evaluación mutua de México en curso. Transparency International publica el CPI 2025 con México en 27/100 (lugar 141 de 182). FinCEN emite alivio exceptivo en CDD y refuerza operación fronteriza contra 100+ MSBs. OFAC despliega designaciones múltiples (Irán, Hezbolá, Venezuela). UIF emite Guías de Mejores Prácticas para transmisores de dinero y almacenes. Indonesia admitida como miembro #40 del GAFI.",
